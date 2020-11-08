@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block body %}
-{% include 'subnavbar.html' with brand='Popis automobila' %}
+{% include 'subnavbar.html' with brand='Popis automobila' object_name='automobil' create_url='cars:create' %}
+
 <div class="container my-3">
     {% for car in car_list %}
     {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:3 %}

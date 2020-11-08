@@ -22,9 +22,9 @@
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'events:create' %}">
+                    <a class="nav-link" href="{% url create_url %}">
                         <i class="fas fa-calendar-plus"></i>
-                        <span>Dodaj novi događaj</span>
+                        <span>Dodaj novi {{ object_name }}</span>
                     </a>
                 </li>
                 {% endif %}

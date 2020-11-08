@@ -1,4 +1,5 @@
 from .models import Car
+from .forms import CarModelForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
@@ -20,11 +21,14 @@ class CarDetailView(DetailView):
 
 class CarCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Car
+    form_class = CarModelForm
     success_message = "Automobil uspješno stvoren"
+    success_url = "/cars/"
 
 
 class CarUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Car
+    form_class = CarModelForm
     success_message = "Automobil uspješno ažuriran"
 
 

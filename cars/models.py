@@ -37,8 +37,12 @@ class Car(models.Model):
 
     # Images
     image       = models.ImageField("Slika", upload_to='cars/images/', blank=False, null=True)
-    gallery     = models.ForeignKey("gallery.Gallery", verbose_name="Galerija", on_delete=models.CASCADE)
+    gallery     = models.ForeignKey("gallery.Gallery", null=True, blank=True, verbose_name="Galerija", on_delete=models.CASCADE)
     
+
+    def get_full_name(self):
+        full_name = "{model}, {year}".format(model=self.model, year=self.year)
+        return full_name.strip()
 
     def __str__(self):
         return "{make} {model}, {year}".format(self.make, self.model, self.year)
@@ -54,7 +58,6 @@ class Car(models.Model):
 class Manufacturer(models.Model):
 
     # General
-    id      = models.IntegerField("ID", primary_key=True)
     name    = models.CharField("Naziv", max_length=128)
 
     class Meta:
@@ -68,7 +71,6 @@ class Manufacturer(models.Model):
 class Model(models.Model):
 
     # General
-    id      = models.IntegerField("ID", primary_key=True)
     name    = models.CharField("Naziv", max_length=50)
 
     # Foreign keys
