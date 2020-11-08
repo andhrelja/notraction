@@ -45,7 +45,10 @@ class Car(models.Model):
         return full_name.strip()
 
     def __str__(self):
-        return "{make} {model}, {year}".format(self.make, self.model, self.year)
+        return "{manufacturer} {model}, {year}".format(
+            manufacturer=self.model.manufacturer, 
+            model=self.model, 
+            year=self.year)
     
     def get_absolute_url(self):
         return reverse("cars:detail", kwargs={"pk": self.pk})
