@@ -96,7 +96,7 @@ class County(models.Model):
                     county=county)
             if settings.DEBUG:
                 print("[INFO] Županija {} s pripadajućim "
-                    "gradovima uspješno stvorena".format(county))                    
+                    "gradovima uspješno stvorena".format(county))
 
     def __str__(self):
         return self.name

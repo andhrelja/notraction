@@ -93,6 +93,9 @@ class Model(models.Model):
                     id=model_id,
                     name=model['name'],
                     manufacturer=make)
+            if settings.DEBUG:
+                print("[INFO] Proizvodjac {} s pripadajućim "
+                    "gradovima uspješno stvorena".format(make))                    
 
     def __str__(self):
         return self.name
