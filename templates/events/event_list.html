@@ -2,6 +2,7 @@
 
 {% block body %}
 {% include 'subnavbar.html' with brand='Popis događaja' object_name='događaj' create_url='events:create' %}
+{% include 'messages.html' %}
 
 <div class="container my-3">
     {% for event in event_list %}

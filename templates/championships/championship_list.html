@@ -2,6 +2,7 @@
 
 {% block body %}
 {% include 'subnavbar.html' with brand='Popis prvenstava' object_name='prvenstvo' create_url='championships:create' %}
+{% include 'messages.html' %}
 
 <div class="container my-3">
     {% for championship in championship_list %}
