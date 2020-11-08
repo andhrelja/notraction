@@ -1,0 +1,89 @@
+<!-- Footer -->
+<footer class="page-footer font-small bg-light pt-4">
+  <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+    <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">AMK No Traction</h6>
+                <p>Auto moto klub No Traction je hrvatski automobilistički klub iz Pule</p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Linkovi</h6>
+                {% if user.id %}
+                <p>
+                    <a href="{% url 'accounts:detail' user.profile.id %}">Moj račun
+                    </a>
+                </p>
+                {% endif %}
+                <p>
+                    <a href="{% url 'cars:list' %}">Automobili</a>
+                </p>
+                <p>
+                    <a href="{% url 'drivers:list' %}">Vozači</a>
+                </p>
+                <p>
+                    <a href="#">Prvenstva</a>
+                </p>
+                <p>
+                    <a href="{% url 'events:list' %}">Događaji</a>
+                </p>
+                <p>
+                    <a href="{% url 'home:about' %}">O nama</a>
+                </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Kontakt</h6>
+                <p>
+                    <i class="fas fa-home"></i>
+                    <span>Jeromelina 34, Pula, Hrvatska</span>
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <span><a href="mailto:amk.notraction@gmail.com">amk.notraction@gmail.com</a></span>
+                </p>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Footer links -->
+        <hr>
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+                <!--Copyright-->
+                <p class="text-center text-md-left">© 2020 Copyright:
+                    <a href="https://github.com/andhrelja">
+                        <strong>Andrea Hrelja</strong>
+                    </a>
+                </p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+            <!-- Social buttons -->
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/pg/aknotraction">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.youtube.com/channel/UCU3uOi0CKy_gA8fExgBAgwQ">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Grid column -->
+        </div>
+    <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+</footer>
+<!-- Footer -->

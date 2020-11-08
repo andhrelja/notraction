@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container p-3">
+    <div class="card m-auto border-secondary mb-3">
+        <div class="card-header bg-primary p-3">
+            <h2 class="h2 text-light mb-0"><strong>Novi događaj</strong></h2>
+        </div>
+        <div class="card-body p-5">
+            <form method="post" action="{% url 'events:create' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+                {% include 'alt_form_snippet.html' %}
+                <input type="submit" class="btn btn-secondary" value="Spremi događaj">
+                <a href="{% url 'events:list' %}" class="btn btn-outline-danger">Odustani</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+toggleActive("events");
+</script>
+
+{% endblock body %}
+

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% include 'subnavbar.html' with brand='Popis događaja' %}
+<div class="container my-3">
+    {% for event in event_list %}
+    {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:3 %}
+    <div class="row">
+    {% endif %}
+    <div class="col-sm-4 mb-3">
+        <div class="card bg-light h-100">
+            <div class="card-header p-0">
+                <img width="100%" src="{{ event.cover.url }}">
+            </div>
+            <div class="card-body h-100">
+                <h4 class="card-title">{{ event }}</h4>
+                <small class="card-text">{{ event.start_date }} - {{ event.end_date }}</small>
+                <p class="card-text">{{ event.location_name }}</p>
+            </div>
+        </div>
+    </div>
+    {% if forloop.counter0|add:1|divisibleby:3%}
+    </div>
+    {% endif %}
+    {% endfor %}
+
+</div>
+
+<script>
+toggleActive("events");
+</script>
+
+{% endblock body %}
+

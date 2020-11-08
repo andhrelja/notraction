@@ -1,0 +1,16 @@
+<div class="container pt-5">
+    <div class="card m-auto border-primary mb-3" style="max-width: 50em">
+        <div class="card-header bg-primary p-3">
+            <h2 class="h2 text-light mb-0"><strong>Prijava</strong></h2>
+        </div>
+        <div class="card-body p-5">
+            <form method="post" action="{% url 'accounts:login' %}">
+            {% csrf_token %}
+                {% include 'form_snippet.html' %}
+                <input type="submit" class="btn btn-secondary" value="Prijavi se">
+                <br><br>
+                <p>Još nemaš profil? <a class="btn btn-danger ml-2" href="{% url 'accounts:create' %}">Registracija</a>
+            </form>
+        </div>
+    </div>
+</div>

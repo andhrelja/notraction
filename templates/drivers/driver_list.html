@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% include 'subnavbar.html' with brand='Popis vozača' %}
+<div class="container my-3">
+    {% for driver in driver_list %}
+    {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:3 %}
+    <div class="row">
+    {% endif %}
+    <div class="col-md-4 mb-3">
+        <div class="card bg-light h-100">
+            <div class="card-header p-0">
+                <img width="100%" src="{{ driver.driver_image.url }}">
+            </div>
+            <div class="card-body h-100">
+                <h4 class="card-title">{{ driver.get_full_name }}</h4>
+                <small class="card-text">{{ driver.location_name }}</small>
+                <p class="card-text">{{ driver.car_set.first }}</p>
+            </div>
+        </div>
+    </div>
+    {% if forloop.counter0|add:1|divisibleby:3%}
+    </div>
+    {% endif %}
+    {% endfor %}
+
+</div>
+
+<script>
+toggleActive("drivers");
+</script>
+
+{% endblock body %}
+

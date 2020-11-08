@@ -1,0 +1,52 @@
+<div class="form-snippet pb-2">
+    {% if form.non_field_errors %}
+    <ul class="list-unstyled">
+    {% for error in form.non_field_errors %}
+        <li class="text-danger"><strong>Greška:</strong> {{ error }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-md-6">
+        {% for field in form %}
+        {% if forloop.counter0 < 3 %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}" class="control-label">{{ field.label }}</label>
+                {% if field.errors %}
+                <ul class="ml-0">
+                {% for error in field.errors %}
+                    <li class="text-danger">{{ error }}</li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+                {{ field }}
+                {% if field.help_text %}
+                <p class="help text-primary">{{ field.help_text|safe }}</p>
+                {% endif %}
+            </div>
+        {% endif %}
+        {% endfor %}
+        </div>
+        <div class="col-md-6">
+        {% for field in form %}
+        {% if forloop.counter0 > 2 %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}" class="control-label">{{ field.label }}</label>
+                {% if field.errors %}
+                <ul class="ml-0">
+                {% for error in field.errors %}
+                    <li class="text-danger">{{ error }}</li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+                {{ field }}
+                {% if field.help_text %}
+                <p class="help text-primary">{{ field.help_text|safe }}</p>
+                {% endif %}
+            </div>
+        {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+</div>

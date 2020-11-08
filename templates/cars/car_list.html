@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% include 'subnavbar.html' with brand='Popis automobila' %}
+<div class="container my-3">
+    {% for car in car_list %}
+    {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:3 %}
+    <div class="row">
+    {% endif %}
+    <div class="col-md-4 mb-3">
+        <div class="card bg-light h-100">
+            <div class="card-header p-0">
+                <img width="100%" src="{{ car.image.url }}">
+            </div>
+            <div class="card-body h-100">
+                <h4 class="card-title">{{ car.get_full_name }}</h4>
+                <small class="card-text">{{ car.driver }}</small>
+                <p class="card-text">{{ car.description }}</p>
+            </div>
+        </div>
+    </div>
+    {% if forloop.counter0|add:1|divisibleby:3%}
+    </div>
+    {% endif %}
+    {% endfor %}
+
+</div>
+
+<script>
+toggleActive("cars");
+</script>
+
+{% endblock body %}
+
