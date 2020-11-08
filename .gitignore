@@ -2,7 +2,7 @@
 data.json
 read_cis_api.py
 read_data_json.py
-
+staticfiles/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

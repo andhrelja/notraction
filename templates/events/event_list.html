@@ -9,18 +9,18 @@
     {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:3 %}
     <div class="row">
     {% endif %}
-    <div class="col-sm-4 mb-3">
-        <div class="card h-100">
-            <div class="card-header p-0">
-                <img width="100%" src="{{ event.cover.url }}">
-            </div>
-            <div class="card-body h-100">
-                <h4 class="card-title">{{ event }}</h4>
-                <small class="card-text">{{ event.start_date }} - {{ event.end_date }}</small>
-                <p class="card-text">{{ event.location_name }}</p>
+        <div class="col-sm-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header p-0">
+                    <img width="100%" src="{{ event.cover.url }}">
+                </div>
+                <div class="card-body h-100">
+                    <h4 class="card-title">{{ event }}</h4>
+                    <small class="card-text">{{ event.start_date }} - {{ event.end_date }}</small>
+                    <p class="card-text">{{ event.location_name }}</p>
+                </div>
             </div>
         </div>
-    </div>
     {% if forloop.counter0|add:1|divisibleby:3%}
     </div>
     {% endif %}
