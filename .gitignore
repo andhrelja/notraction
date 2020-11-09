@@ -1,7 +1,5 @@
 .vscode/
-data.json
 read_cis_api.py
-read_data_json.py
 staticfiles/
 missing_models.txt
 

@@ -1,0 +1,820 @@
+[
+    {
+        "model": "events.event",
+        "pk": 1,
+        "fields": {
+            "city_id": 475,
+            "author_id": 1,
+            "name": "5. No Traction Weekend",
+            "cover": "events/images/5notraction.jpg",
+            "description": "<span class=\"oi732d6d ik7dh3pa d2edcug0 qv66sw1b c1et5uql a8c37x1j muag1w35 ew0dbk1b jq4qci2q a3bd9o3v knj5qynh oo9gr5id\" dir=\"auto\"><div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">AMK No Traction Vas ovim putem poziva na jubilarni 5. No Traction Weekend, koji će se odr\u017eati 08.-09.06.2019.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Svi detalji u vezi susreta biti će uskoro objavljeni.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Vaš Team No Traction! </div></span>",
+            "start_date": "2019-06-08",
+            "end_date": "2019-06-09",
+            "start_time": "10:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 2,
+        "fields": {
+            "city_id": 475,
+            "author_id": 1,
+            "name": "4. No Traction Event",
+            "cover": "events/images/4notraction.jpg",
+            "description": "<div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Team\r\n No Traction Vas ovim putem poziva na ovogodišnji 4. No Traction \r\nWeekend, koji će se odr\u017eati 02.-03.06.2018. s početkom u 10:00 sati na \r\nlokaciji Društveni centar Rojc, Pula. </div><div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Ove godine pripremamo program uz \r\nširoku ponudu za sve ljubitelje drifta, gymkhane, stunta i dru\u017eenja. \r\nOrganizirant će se tako\u0111er u sklopu susreta i No Traction Party koji će \r\nzapočeti u 22:00 u Klubu Kotač uz odličnu muziku naših DJ-a, te ponuda \r\nhrana i piće tokom trajanja susreta.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Za\r\n sve ostale goste koje dolaze iz daljnih krajeva Hrvatske i inozemstva \r\nosigurali smo i smještaj po povoljnim cijenama te besplatno kampiranje \r\nna lokaciji meet-a. Svi zainteresirani neka nam se jave u inbox na našoj\r\n Facebook stranici kako bismo smještaj mogli rezervirati unaprijed.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b>Subota 02.06.<br></b></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b><br></b>10:00 Slu\u017ebeno otvaranje</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">10:00-12:00 Prijave za natjecanja u svim kategorijama</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">12:00-14:00 Drift trening i kvalifikacije - Series</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">14:00-15:00 Pauza</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">15:00-18:00 Drift natjecanje - Series</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">18:00-20:00 Drift Taxi &amp; Stunt Show</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">20:00-22:00 Klub Kotač - Nastup Breakdance grupe AB Original Crew iz Pule i igre u odmjeravanju snaga<br>22:00 Klub Kotač - No Traction Party</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b>Nedjelja 03.06.<br></b></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b><br></b>09:00 Početak programa</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">09:00-10:00 Prijave za drift natjecanje - Pro</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">10:00-12:00 Drift trening</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">10:00-12:00 Prijave vozila za natjecanje u kategorijama:</div><ul><li>Loudest Car</li><li>Lowest Car</li><li>Best Project Car</li><li>Best Oldschool</li><li>Best Stunt Show<br></li></ul><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">12:00-13:00 Pauza<br>13:00-12:00 Drift natjecanje - Pro<br>12:00-18:00 Drift &amp; Stunt Show<br>18:00-19:00 Podjela zahvalnica svim klubovima i sudionicima susreta<br>19:00 Kraj programa</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">*Organizator zadr\u017eava pravo promjene programa.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Vaš Team No Traction!</div>",
+            "start_date": "2018-06-02",
+            "end_date": "2018-06-03",
+            "start_time": "10:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 3,
+        "fields": {
+            "city_id": 475,
+            "author_id": 1,
+            "name": "3. No Traction Weekend",
+            "cover": "events/images/3notraction.jpg",
+            "description": "<div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Pozdrav ekipo, </div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">No\r\n Traction Team Vas ovim putem poziva na ovogodišnji 3. No Traction \r\nWeekend, koji će se odr\u017eavati od 10. do 11. lipnja 2017. godine, na već \r\npoznatoj lokaciji Katarina i Monumenti u Puli. I ove godine pripremamo \r\nvrhunski program uz široku ponudu za sve ljubitelje oktanskog duha. \r\nZagarantirana zabava uz drift (+ gosti iznena\u0111enja), organizirane igre i\r\n DJ-e, te hrana i piće po akcijskim cijenama. </div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Tako\u0111er će se odr\u017eati upis novih članova i podjela članskih iskaznica te majca za sve članove kluba. </div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Za\r\n sve ostale goste koje dolaze iz daljnih krajeva Hrvatske i inozemstva \r\nosigurali smo i smještaj u apartmanima po povoljnim cijenama te \r\nbesplatno kampiranje na lokaciji meet-a. Svi zainteresirani neka nam se \r\njave u inbox na našoj Facebook stranici kako bismo smještaj i mogli \r\nrezervirati unaprijed.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b>Subota 10.06.</b></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">10:00 Slu\u017ebeno otvorenje meet-a i najava programa<br>10:00-13:00 Trening Drift vozača \u2013 Amateri<br>13:00-15:00 Truck Show<br>15:00-17:00 Drift &amp; Stunt show<br>18:00 Defile vozila po gradu<br>20:00-22:00 Nastup Breakdance grupe AB Original Crew iz Pule i nagradne igre <br>22:00-04:00 No Traction Party</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b>Nedjelja 11.06.</b></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b><br></b>09:00 Najava dnevnog programa<br>09:00-10:00 Trening Drift vozača \u2013Amateri<br>10:00-11:00 Trening Drift vozača \u2013 Pro<br>11:00-13:00 Natjecanje Drift vozača \u2013 Amateri<br>13:00-14:00 Natjecanje vozila u raznim kategorijama:</div><ul><li>Best Truck show</li><li>Best Oldschool</li><li>Loudest Car</li><li>Lowest Car<br></li></ul><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">14:00 Sexy Car Wash i natjecanje vozila u kategoriji:</div><ul><li> Best Burnout</li></ul><p>15:00-18:00 Drift Taxi &amp; Stunt Show<br>18:00-19:00 Podjela zahvalnica svim klubovima i sudionicima meet-a<br>19:00 Kraj programa</p><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">*Organizator zadr\u017eava pravo promjene programa.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Vaš No Traction Team! <span class=\"q9uorilb tbxw36s4 knj5qynh kvgmc6g5 ditlmg2l oygrvhab nvdbi5me fgm26odu gl3lb2sf hhz5lgdu\"><img alt=\"(y)\" src=\"https://static.xx.fbcdn.net/images/emoji.php/v9/e40/1/12/LIKE.png\" width=\"12\" height=\"12\"></span></div>",
+            "start_date": "2017-06-10",
+            "end_date": "2017-06-11",
+            "start_time": "10:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 4,
+        "fields": {
+            "city_id": 475,
+            "author_id": 1,
+            "name": "2. No Traction Weekend",
+            "cover": "events/images/2notraction.jpg",
+            "description": "<div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Poštovani No Traction fanovi,</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">pozivamo\r\n Vas na 2. No Traction Weekend, koji će se odr\u017eati od 04.- 05.06. na \r\nlokaciji Katarina i Monumenti u Puli. Garantirana zabava uz RC cars, \r\ndrift show (+ gosti: pro-drifteri iz Hrvatske), natjecanje vozila u \r\nraznim kategorijama i DJ program, te hrana i piće po akcijskim cijenama.\r\n Tako\u0111er će se odr\u017eati upis novih članova i podjela članskih iskaznica \r\nte majca za sve članove kluba. </div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Za sve \u017eeljne dobrog provoda organiziramo i No Traction PARTY u subotu 04.06. s početkom u 22:00h; te ste svi pozvani! <span class=\"q9uorilb tbxw36s4 knj5qynh kvgmc6g5 ditlmg2l oygrvhab nvdbi5me fgm26odu gl3lb2sf hhz5lgdu\"><img alt=\"(y)\" src=\"https://static.xx.fbcdn.net/images/emoji.php/v9/e40/1/12/LIKE.png\" width=\"12\" height=\"12\"></span></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Za\r\n sve ostale koje dolaze iz daljnih krajeva Hrvatske tako\u0111er smo \r\nosigurali i smještaj u apartmanima po super povoljnim cijenama te \r\nbesplatno kampiranje na lokaciji meet-a. Svi zainteresirani neka nam se \r\njave u inbox na našoj Facebook stranici kako bismo smještaj i sve ostalo\r\n mogli organizirati unaprijed.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br><b>Subota 04.06.<br></b><br>10:00 Slu\u017ebeno otvorenje meet-a<br>11:00 Najava dnevnog programa<br>12:00 Dnevni glazbeni program uz Dj-a Gabi<br>13:00 Drift &amp; Stunt show (tokom cijelog dana)<br>14:00 Predstavljanje vozača, vozila i partnere kluba<br>15:00 Dodjela klubskih iskaznica za članove<br>17:00 Rc Drift Show (Modelarski drift automobili)<br>18:00 Defile vozila po gradu<br>22:00-04:00 Open air party uz Dj-a Nikola Z Kukurini</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b>Nedjelja 05.06.</b></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><b><br></b>11:00 Najava dnevnog programa<br>12:00 Dnevni glazbeni program uz Dj-a Gabi<br>12:00 Drift &amp; Stunt show (tokom cijelog dana)<br>14:00 Natjecanje vozila u raznim kategorijama:</div><ul><li>Best ///M</li><li>Best Oldschool</li><li>Best Car Project</li><li>Lowest Car</li></ul><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">19:00 Podjela zahvalnica svim sudionicima meet-a<br>20:00 Svečano zatvaranje susreta</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Svi detalji u vezi susreta biti će pravovremeno objavljeni na našoj Facebook stranici.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Vaš No Traction Team! <span class=\"q9uorilb tbxw36s4 knj5qynh kvgmc6g5 ditlmg2l oygrvhab nvdbi5me fgm26odu gl3lb2sf hhz5lgdu\"><img alt=\"\ud83d\ude09\" src=\"https://static.xx.fbcdn.net/images/emoji.php/v9/t57/1/12/1f609.png\" width=\"12\" height=\"12\"></span></div>",
+            "start_date": "2016-06-04",
+            "end_date": "2016-06-05",
+            "start_time": "10:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 5,
+        "fields": {
+            "city_id": 475,
+            "author_id": 1,
+            "name": "1. No Traction Party",
+            "cover": "events/images/1notraction.jpg",
+            "description": "<p><span class=\"oi732d6d ik7dh3pa d2edcug0 qv66sw1b c1et5uql a8c37x1j muag1w35 ew0dbk1b jq4qci2q a3bd9o3v knj5qynh oo9gr5id\" dir=\"auto\"><div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Poštovani članovi, fanovi i ostali simpatizeri No Traction-a,</div><div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Kao\r\n što smo najavili pozivamo vas na 1. NO TRACTION PARTY povodom kraja \r\ngodine u Diamond Lounge BAR-u u Fa\u017eani s početkom u 21:00 za sve naše \r\nčlanove, fanove, prijatelje i ostale simpatizere kluba. Pridru\u017eite nam \r\nse u subotu 19.12.2015. kako bi se svi zajedno podru\u017eili uz odličnu \r\ndomaću i stranu muziku i razna pića po promocijskim cijenama. + Jager \r\niznena\u0111enje!</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Za sve goste party-a organiziran je besplatan parking. <span class=\"q9uorilb tbxw36s4 knj5qynh kvgmc6g5 ditlmg2l oygrvhab nvdbi5me fgm26odu gl3lb2sf hhz5lgdu\"><img alt=\"\ud83d\ude09\" src=\"https://static.xx.fbcdn.net/images/emoji.php/v9/t57/1/12/1f609.png\" width=\"12\" height=\"12\"></span></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Za\r\n kolege koji dolaze iz daljnijih krajeva Hrvatske smo organizirali \r\nsmještaj i večeru (Konoba Feral, Fa\u017eana) po akcijskim cijenama. (Upit u \r\ninbox)</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Vidimo se na party-u!  <br>NoTraction Crew <span class=\"q9uorilb tbxw36s4 knj5qynh kvgmc6g5 ditlmg2l oygrvhab nvdbi5me fgm26odu gl3lb2sf hhz5lgdu\"><img alt=\"(y)\" src=\"https://static.xx.fbcdn.net/images/emoji.php/v9/e40/1/12/LIKE.png\" width=\"12\" height=\"12\"></span></div></span></p>",
+            "start_date": "2015-12-19",
+            "end_date": "2015-12-19",
+            "start_time": "21:00:00",
+            "end_time": "00:00:00"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 6,
+        "fields": {
+            "city_id": 475,
+            "author_id": 1,
+            "name": "Nadolazeći No Traction Event",
+            "cover": "events/images/No_traction._.jpg",
+            "description": "<div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">AMK No Traction Vas ovim putem poziva na nadolazeći No Traction Event, koji će se odr\u017eati 05.-06.06.2021.</div><div class=\"kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Svi detalji u vezi susreta biti će uskoro objavljeni.</div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\"><br></div><div class=\"o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql\">Vaš Team No Traction! </div>",
+            "start_date": "2021-06-05",
+            "end_date": "2021-06-06",
+            "start_time": "10:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 1,
+        "fields": {
+            "first_name": "Amira",
+            "last_name": "Bradarić",
+            "city_id": 475,
+            "birth_date": "1981-09-21",
+            "driver_image": "drivers/images/Amira_Bradaric.jpg",
+            "email": "amira.bradaric@amk.hr",
+            "phone": "+385 99 2342812"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 2,
+        "fields": {
+            "first_name": "Igor",
+            "last_name": "Vareško",
+            "city_id": 475,
+            "birth_date": "1981-09-21",
+            "driver_image": "drivers/images/Igor_Varesko.jpg",
+            "email": "igor.varesko@amk.hr",
+            "phone": "+385 996709497"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 3,
+        "fields": {
+            "first_name": "Ivan",
+            "last_name": "Višković",
+            "city_id": 475,
+            "birth_date": "1991-07-04",
+            "driver_image": "drivers/images/Ivan_Viskovic.jpg",
+            "email": "ivan.viskovic@akm.hr",
+            "phone": "+385 917273 214"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 4,
+        "fields": {
+            "first_name": "Leon",
+            "last_name": "Dubroja",
+            "city_id": 475,
+            "birth_date": "1992-02-08",
+            "driver_image": "drivers/images/Leon_Dubroja.jpg",
+            "email": "leon.dubroja@amk.hr",
+            "phone": "+395 92 312 312"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 5,
+        "fields": {
+            "first_name": "Matija",
+            "last_name": "Brkljačić",
+            "city_id": 475,
+            "birth_date": "1994-10-27",
+            "driver_image": "drivers/images/Matija_Brkljacic.jpg",
+            "email": "matija.brkljacic@amk.hr",
+            "phone": "+385 99 2342812"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 6,
+        "fields": {
+            "first_name": "Rade",
+            "last_name": "Kosanović",
+            "city_id": 475,
+            "birth_date": "1984-12-09",
+            "driver_image": "drivers/images/Rade_Kosanovic.jpg",
+            "email": "rade.kosanovic@amk.hr",
+            "phone": "+385 917273 214"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 7,
+        "fields": {
+            "first_name": "Roberto",
+            "last_name": "Randić",
+            "city_id": 475,
+            "birth_date": "1995-08-12",
+            "driver_image": "drivers/images/Roberto_Randic.jpg",
+            "email": "roberto.randic@amk.hr",
+            "phone": "+385 99 2342812"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 8,
+        "fields": {
+            "first_name": "Saša",
+            "last_name": "Radola",
+            "city_id": 475,
+            "birth_date": "1992-02-19",
+            "driver_image": "drivers/images/Sasa_Radola.jpg",
+            "email": "sasa.radola@amk.hr",
+            "phone": "+385 99 2342812"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 9,
+        "fields": {
+            "first_name": "Toni",
+            "last_name": "Cukon",
+            "city_id": 475,
+            "birth_date": "1996-09-09",
+            "driver_image": "drivers/images/Toni_Cukon.jpg",
+            "email": "toni.cukon@amk.hr",
+            "phone": "+385 99 2342812"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 10,
+        "fields": {
+            "first_name": "Tony",
+            "last_name": "Višković",
+            "city_id": 475,
+            "birth_date": "1984-09-12",
+            "driver_image": "drivers/images/Tony_Viskovic.jpg",
+            "email": "tony.viskovic@amk.hr",
+            "phone": "+385 917273 214"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 11,
+        "fields": {
+            "first_name": "Vedran",
+            "last_name": "Divković",
+            "city_id": 475,
+            "birth_date": "1990-12-06",
+            "driver_image": "drivers/images/Vedran_Divkovic.jpg",
+            "email": "vedran.divkovic@amk.hr",
+            "phone": "+395 92 312 312"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 12,
+        "fields": {
+            "first_name": "Alen",
+            "last_name": "Celega",
+            "city_id": 475,
+            "birth_date": "1991-07-21",
+            "driver_image": "drivers/images/Alen_Celega.jpg",
+            "email": "alen@celega.com",
+            "phone": "+385 99 2342812"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 13,
+        "fields": {
+            "first_name": "Marina",
+            "last_name": "Lisica",
+            "city_id": 475,
+            "birth_date": "1987-09-18",
+            "driver_image": "drivers/images/Marina_Lisica.jpg",
+            "email": "marina.lisica@amk.hr",
+            "phone": "+385 917273 214"
+        }
+    },
+    {
+        "model": "drivers.Driver",
+        "pk": 14,
+        "fields": {
+            "first_name": "Igor",
+            "last_name": "Lisica",
+            "city_id": 475,
+            "birth_date": "1986-06-12",
+            "driver_image": "drivers/images/Igor_Lisica.jpg",
+            "email": "igor.lisica@amk.hr",
+            "phone": "+385 99 2342812"
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 1,
+        "fields": {
+            "driver_id": 1,
+            "gallery": null,
+            "model_name": "106",
+            "image": "cars/images/Amira_Bradaric.jpg",
+            "capacity": 1,
+            "horse_power": 85,
+            "year": 2001
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 2,
+        "fields": {
+            "driver_id": 2,
+            "gallery": null,
+            "model_name": "Clio",
+            "image": "cars/images/Igor_Varesko.jpg",
+            "capacity": 2,
+            "horse_power": 90,
+            "year": 2004
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 3,
+        "fields": {
+            "driver_id": 3,
+            "gallery": null,
+            "model_name": "330i",
+            "image": "cars/images/Ivan_Viskovic.jpg",
+            "capacity": 3,
+            "horse_power": 115,
+            "year": 1998
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 4,
+        "fields": {
+            "driver_id": 4,
+            "gallery": null,
+            "model_name": "Clio",
+            "image": "cars/images/Leon_Dubroja.jpg",
+            "capacity": 2,
+            "horse_power": 80,
+            "year": 2002
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 5,
+        "fields": {
+            "driver_id": 5,
+            "gallery": null,
+            "model_name": "Civic",
+            "image": "cars/images/Matija_Brkljacic.jpg",
+            "capacity": 2,
+            "horse_power": 103,
+            "year": 2006
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 6,
+        "fields": {
+            "driver_id": 6,
+            "gallery": null,
+            "model_name": "330i",
+            "image": "cars/images/Rade_Kosanovic.jpg",
+            "capacity": 4,
+            "horse_power": 134,
+            "year": 1998
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 7,
+        "fields": {
+            "driver_id": 7,
+            "gallery": null,
+            "model_name": "330i",
+            "image": "cars/images/Roberto_Randic.jpg",
+            "capacity": 3,
+            "horse_power": 120,
+            "year": 1997
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 8,
+        "fields": {
+            "driver_id": 8,
+            "gallery": null,
+            "model_name": "Civic",
+            "image": "cars/images/Sasa_Radola.jpg",
+            "capacity": 3,
+            "horse_power": 130,
+            "year": 2009
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 9,
+        "fields": {
+            "driver_id": 9,
+            "gallery": null,
+            "model_name": "Saxo",
+            "image": "cars/images/Toni_Cukon.jpg",
+            "capacity": 1,
+            "horse_power": 80,
+            "year": 2002
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 10,
+        "fields": {
+            "driver_id": 10,
+            "gallery": null,
+            "model_name": "330i",
+            "image": "cars/images/Tony_Viskovic.jpg",
+            "capacity": 3,
+            "horse_power": 110,
+            "year": 1999
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 11,
+        "fields": {
+            "driver_id": 11,
+            "gallery": null,
+            "model_name": "106",
+            "image": "cars/images/Vedran_Divkovic.jpg",
+            "capacity": 2,
+            "horse_power": 110,
+            "year": 2001
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 12,
+        "fields": {
+            "driver_id": 12,
+            "gallery": null,
+            "model_name": "Golf",
+            "image": "cars/images/Alen_Celega.jpg",
+            "capacity": 4,
+            "horse_power": 130,
+            "year": 1982
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 13,
+        "fields": {
+            "driver_id": 13,
+            "gallery": null,
+            "model_name": "106",
+            "image": "cars/images/Marina_Lisica.jpg",
+            "capacity": 3,
+            "horse_power": 95,
+            "year": 2003
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 14,
+        "fields": {
+            "driver_id": 14,
+            "gallery": null,
+            "model_name": "106",
+            "image": "cars/images/Igor_Lisica.jpg",
+            "capacity": 3,
+            "horse_power": 95,
+            "year": 2001
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 1,
+        "fields": {
+            "city_id": 475,
+            "discipline_id": 3,
+            "name": "CDC",
+            "level": "Prvenstvo Hrvatske",
+            "start_date": "2016-06-04",
+            "end_date": "2016-06-06"
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 2,
+        "fields": {
+            "city_id": 55,
+            "discipline_id": 2,
+            "name": "Formula Driver",
+            "level": "Prvenstvo Primorsko-goranske \u017eupanije",
+            "start_date": "2017-07-30",
+            "end_date": "2017-08-01"
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 3,
+        "fields": {
+            "city_id": 475,
+            "discipline_id": 3,
+            "name": "CDC",
+            "level": "Prvenstvo Hrvatske",
+            "start_date": "2018-06-02",
+            "end_date": "2018-06-04"
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 4,
+        "fields": {
+            "city_id": 111,
+            "discipline_id": 1,
+            "name": "Brdo",
+            "level": "Prvenstvo Hrvatske",
+            "start_date": "2018-09-08",
+            "end_date": "2018-09-09"
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 5,
+        "fields": {
+            "city_id": 475,
+            "discipline_id": 2,
+            "name": "Formula Driver",
+            "level": "Prvenstvo Hrvatske",
+            "start_date": "2018-08-02",
+            "end_date": "2018-08-04"
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 1,
+        "fields": {
+            "name": "General",
+            "championship_id": 1
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 2,
+        "fields": {
+            "name": "Klasa 5",
+            "championship_id": 2
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 3,
+        "fields": {
+            "name": "General",
+            "championship_id": 3
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 4,
+        "fields": {
+            "name": "Grupa N",
+            "championship_id": 4
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 5,
+        "fields": {
+            "name": "Klasa 3 - N2000",
+            "championship_id": 4
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 6,
+        "fields": {
+            "name": "Juniori",
+            "championship_id": 5
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 7,
+        "fields": {
+            "name": "Vozačice",
+            "championship_id": 5
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 8,
+        "fields": {
+            "name": "Klasa 2",
+            "championship_id": 5
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 9,
+        "fields": {
+            "name": "Klasa 3",
+            "championship_id": 5
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 10,
+        "fields": {
+            "name": "Klasa 4",
+            "championship_id": 5
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 11,
+        "fields": {
+            "name": "Klasa 5",
+            "championship_id": 5
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 1,
+        "fields": {
+            "category_id": 1,
+            "driver_id": 3,
+            "position": 6
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 2,
+        "fields": {
+            "category_id": 1,
+            "driver_id": 6,
+            "position": 11
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 3,
+        "fields": {
+            "category_id": 1,
+            "driver_id": 7,
+            "position": 4
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 4,
+        "fields": {
+            "category_id": 1,
+            "driver_id": 10,
+            "position": 13
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 5,
+        "fields": {
+            "category_id": 2,
+            "driver_id": 3,
+            "position": 25
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 6,
+        "fields": {
+            "category_id": 3,
+            "driver_id": 3,
+            "position": 3
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 7,
+        "fields": {
+            "category_id": 3,
+            "driver_id": 6,
+            "position": 6
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 8,
+        "fields": {
+            "category_id": 3,
+            "driver_id": 7,
+            "position": 5
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 9,
+        "fields": {
+            "category_id": 3,
+            "driver_id": 10,
+            "position": 8
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 10,
+        "fields": {
+            "category_id": 4,
+            "driver_id": 5,
+            "position": 6
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 11,
+        "fields": {
+            "category_id": 4,
+            "driver_id": 8,
+            "position": 4
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 12,
+        "fields": {
+            "category_id": 5,
+            "driver_id": 5,
+            "position": 3
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 13,
+        "fields": {
+            "category_id": 5,
+            "driver_id": 8,
+            "position": 1
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 14,
+        "fields": {
+            "category_id": 6,
+            "driver_id": 5,
+            "position": 3
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 15,
+        "fields": {
+            "category_id": 6,
+            "driver_id": 9,
+            "position": 1
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 16,
+        "fields": {
+            "category_id": 6,
+            "driver_id": 10,
+            "position": 5
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 17,
+        "fields": {
+            "category_id": 7,
+            "driver_id": 1,
+            "position": 4
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 18,
+        "fields": {
+            "category_id": 8,
+            "driver_id": 3,
+            "position": 14
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 19,
+        "fields": {
+            "category_id": 8,
+            "driver_id": 9,
+            "position": 5
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 20,
+        "fields": {
+            "category_id": 8,
+            "driver_id": 10,
+            "position": 12
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 21,
+        "fields": {
+            "category_id": 9,
+            "driver_id": 2,
+            "position": 10
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 22,
+        "fields": {
+            "category_id": 10,
+            "driver_id": 11,
+            "position": 6
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 23,
+        "fields": {
+            "category_id": 11,
+            "driver_id": 5,
+            "position": 5
+        }
+    },
+    {
+        "model": "championships.categorydriverposition",
+        "pk": 24,
+        "fields": {
+            "category_id": 11,
+            "driver_id": 12,
+            "position": 6
+        }
+    }
+]
