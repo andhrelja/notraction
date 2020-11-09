@@ -1,0 +1,51 @@
+    <!-- Sub horizontal navigation -->
+    <nav class="navbar navbar-expand-sm navbar-light border-bottom" style="background-color: #e6e6e6">
+        <a class="navbar-brand" href="{% url 'home:index' %}">
+            <h3 class="h3 mb-0">{{ brand }}</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".subnavbar">
+            <i class="fas fa-caret-down fa-lg"></i>
+        </button>
+        <div class="navbar-collapse collapse w-100 order-3 subnavbar">
+            <ul class="navbar-nav ml-auto">
+                {% if brand == "Vozač" %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'cars:detail' object.car_set.first.pk %}">
+                        <i class="fas fa-car"></i>
+                        <span>Automobil</span>
+                    </a>
+                </li>                
+                {% elif brand == "Automobil" %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-id-card"></i>
+                        <span>Vozač</span>
+                    </a>
+                </li>
+                {% elif brand == "Događaj" %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Rezultati</span>
+                    </a>
+                </li>
+                {% endif %}
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-photo-video"></i>
+                        <span>Galerija</span>
+                    </a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url update_url object.id %}">
+                        <i class="fas fa-pen"></i>
+                        <span>Uredi {{ object_name }}</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+    <!-- End of sub horizontal navigation -->

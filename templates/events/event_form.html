@@ -12,7 +12,7 @@
         <div class="card-body p-5">
             <form method="post" action="{% url 'events:create' %}" enctype="multipart/form-data">
             {% csrf_token %}
-                {% include 'alt_form_snippet.html' %}
+                {% include 'form_snippet_alt.html' %}
                 <input type="submit" class="btn btn-secondary" value="Spremi događaj">
                 <a href="{% url 'events:list' %}" class="btn btn-outline-danger">Odustani</a>
             </form>

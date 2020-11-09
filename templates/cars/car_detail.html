@@ -1,7 +1,54 @@
 {% extends 'base.html' %}
 
 {% block body %}
+{% include 'subnavbar_detail.html' with brand='Automobil' object_name='automobil' update_url='cars:update' %}
 {% include 'messages.html' %}
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card w-100">
+                <div class="card-header bg-primary">
+                    <h3 class="h3 card-title text-light mb-0">Detalji o automobilu</h3>
+                </div>
+                <div class="card-body h-100">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="{{ car.image.url }}" alt="{{ car.image }}" class="w-100">
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-id-card"></i>
+                                    <span class="pl-3">{{ car.driver.get_full_name }}</span>
+                                </li>                            
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-car"></i>
+                                    <span class="pl-3">{{ car.get_full_name }}</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span class="pl-3">{{ car.horse_power }} HP</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-box-open"></i>
+                                    <span class="pl-3">{{ car.get_capacity_display }} ccm</span>
+                                </li>
+                            </ul>
+                            <ul class="list-group mt-3">
+                                <li class="list-group-item align-items-start">
+                                    <h5 class="mb-1">Opis automobila</h5>
+                                    <hr>
+                                    <p class="mb-1">{{ car.description|safe }}</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
 toggleActive("cars");

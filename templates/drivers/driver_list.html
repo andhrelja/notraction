@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block body %}
-{% include 'subnavbar.html' with brand='Popis vozača' object_name='vozač' create_url='drivers:create' %}
+{% include 'subnavbar_list.html' with brand='Popis vozača' object_name='vozača' create_url='drivers:create' %}
 {% include 'messages.html' %}
 
-<div class="container my-3">
+<div class="container py-3">
     {% for driver in driver_list %}
     {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:3 %}
     <div class="row">
     {% endif %}
     <div class="col-md-4 mb-3">
-        <div class="card h-100">
+        <div class="card card-link h-100" onclick="location.href='{% url 'drivers:detail' driver.pk %}'" style="cursor:pointer">
             <div class="card-header p-0">
                 <img width="100%" src="{{ driver.driver_image.url }}">
             </div>

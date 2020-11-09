@@ -1,7 +1,43 @@
 {% extends 'base.html' %}
 
 {% block body %}
+{% include 'subnavbar_detail.html' with brand='Vozač' object_name='vozača' update_url='drivers:update' %}
 {% include 'messages.html' %}
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card w-100">
+                <div class="card-header bg-primary">
+                    <h3 class="h3 card-title text-light mb-0">Detalji o vozaču</h3>
+                </div>
+                <div class="card-body h-100">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="{{ driver.driver_image.url }}" alt="{{ driver.driver_image }}" class="w-100">
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-id-card"></i>
+                                    <span class="pl-3">{{ driver.get_full_name }}</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="pl-3">{{ driver.location_name }}</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-car"></i>
+                                    <span class="pl-3">{{ driver.car_set.first.get_full_name }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
 toggleActive("drivers");
