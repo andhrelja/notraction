@@ -1,9 +1,5 @@
 from django.db import models
 from django.shortcuts import reverse
-from django.conf import settings
-
-from pathlib import Path
-import json
 
 CAPACITY_CHOICES = (
     (0, 1000),
@@ -41,7 +37,7 @@ class Car(models.Model):
     
 
     def get_full_name(self):
-        full_name = "{model}, {year}".format(model=self.model, year=self.year)
+        full_name = "{make} {model}, {year}".format(make=self.model.manufacturer, model=self.model, year=self.year)
         return full_name.strip()
 
     def __str__(self):
@@ -83,24 +79,7 @@ class Model(models.Model):
         ordering = ['name']
         verbose_name = "Model automobila"
         verbose_name_plural = "Modeli automobila"
-
-    def load_data(self, reload=True):
-        if reload:
-            Model.objects.all().delete()
-        
-        dictionary = get_json_content('proizvodjaci_modeli.json')
-        for manufacturer in dictionary:
-            make_id = manufacturer['id'] + 1
-            make = Manufacturer.objects.create(id=make_id, name=manufacturer['name'])
-            for model in manufacturer['brands']:
-                model_id = model['id'] + 1
-                Model.objects.create(
-                    id=model_id,
-                    name=model['name'],
-                    manufacturer=make)
-            if settings.DEBUG:
-                print("[INFO] Proizvodjac {} s pripadajućim "
-                    "gradovima uspješno stvorena".format(make))                    
+   
 
     def __str__(self):
         return self.name
@@ -109,8 +88,3 @@ class Model(models.Model):
         return reverse("cars:list")
 
 
-def get_json_content(filename):
-    static_root = Path(settings.STATIC_ROOT).resolve()
-    with open(static_root / 'input_data' / filename, 'r') as f:
-        json_content = json.load(f)
-    return json_content

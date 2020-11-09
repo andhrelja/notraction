@@ -17,7 +17,7 @@
                 </li>                
                 {% elif brand == "Automobil" %}
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{% url 'drivers:detail' object.driver.pk %}">
                         <i class="fas fa-id-card"></i>
                         <span>Vozač</span>
                     </a>

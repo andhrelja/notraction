@@ -1,8 +1,6 @@
 from django.utils import timezone
 from django.db import models
 from django.shortcuts import reverse
-from django.conf import settings
-from cars.models import get_json_content
 from datetime import datetime
 
 
@@ -74,29 +72,6 @@ class County(models.Model):
     class Meta:
         verbose_name = "Županija"
         verbose_name_plural = "Županije"
-    
-
-    def load_data(self, reload=True):
-        if reload:
-            City.objects.all().delete()
-            County.objects.all().delete()
-        
-        dictionary = get_json_content('gradovi_opcine.json')
-        for zupanija in dictionary:
-            county = County.objects.create(
-                id=zupanija['id'], 
-                name=zupanija['naziv'])
-            for grad in zupanija['gradovi']:
-                City.objects.create(
-                    name=grad,
-                    county=county)
-            for opcina in zupanija['opcine']:
-                City.objects.create(
-                    name=opcina,
-                    county=county)
-            if settings.DEBUG:
-                print("[INFO] Županija {} s pripadajućim "
-                    "gradovima uspješno stvorena".format(county))
 
     def __str__(self):
         return self.name
@@ -115,7 +90,4 @@ class City(models.Model):
 
     def __str__(self):
         return self.name
-
-    def get_absolute_url(self):
-        return reverse("City_detail", kwargs={"pk": self.pk})
 

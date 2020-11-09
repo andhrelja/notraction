@@ -11,7 +11,8 @@ i.fab {
 }
 
 .card-link {
-    transition: 0.2s all;
+    transition: 0.1s all;
+    cursor: pointer;
 }
 
 .card-link:hover {

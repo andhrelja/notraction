@@ -10,14 +10,17 @@
     <div class="row">
     {% endif %}
     <div class="col-md-4 mb-3">
-        <div class="card card-link h-100" onclick="location.href='{% url 'drivers:detail' driver.pk %}'" style="cursor:pointer">
+        <div class="card card-link h-100" onclick="location.href='{% url 'drivers:detail' driver.pk %}'">
             <div class="card-header p-0">
                 <img width="100%" src="{{ driver.driver_image.url }}">
             </div>
             <div class="card-body h-100">
                 <h4 class="card-title">{{ driver.get_full_name }}</h4>
                 <small class="card-text">{{ driver.location_name }}</small>
-                <p class="card-text">{{ driver.car_set.first }}</p>
+                <p class="card-text">
+                    <i class="fas fa-car"></i>
+                    <span>{{ driver.car_set.first }}</span>
+                </p>
             </div>
         </div>
     </div>

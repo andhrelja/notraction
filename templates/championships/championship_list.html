@@ -9,10 +9,10 @@
     {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:3 %}
     <div class="row">
     {% endif %}
-    <div class="col-md-3 mb-3">
+    <div class="col-md-4 mb-3">
         <div class="card card-link h-100">
-            <div class="card-header">
-                <h3 class="h3 mb-0">{{ championship }}</h3>
+            <div class="card-header bg-primary">
+                <h3 class="h3 mb-0 text-light">{{ championship.name }}</h3>
             </div>
             <div class="card-body h-100">
                 <small class="card-text">{{ championship.start_date }} - {{ championship.end_date }}</small>

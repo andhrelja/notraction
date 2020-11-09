@@ -511,7 +511,20 @@
     {
         "id": 11,
         "name": "Citroen",
-        "brands": []
+        "brands": [
+            {
+                "id": 365,
+                "name": "AX"
+            },
+            {
+                "id": 366,
+                "name": "Saxo"
+            },
+            {
+                "id": 367,
+                "name": "Xsara"
+            }
+        ]
     },
     {
         "id": 12,
@@ -1472,7 +1485,36 @@
     {
         "id": 49,
         "name": "Peugeot",
-        "brands": []
+        "brands": [
+            {
+                "id": 368,
+                "name": "106"
+            },
+            {
+                "id": 369,
+                "name": "205"
+            },
+            {
+                "id": 370,
+                "name": "206"
+            },
+            {
+                "id": 371,
+                "name": "306"
+            },
+            {
+                "id": 372,
+                "name": "309"
+            },
+            {
+                "id": 373,
+                "name": "405"
+            },
+            {
+                "id": 374,
+                "name": "406"
+            }
+        ]
     },
     {
         "id": 50,
@@ -1568,7 +1610,20 @@
     {
         "id": 55,
         "name": "Renault",
-        "brands": []
+        "brands": [
+            {
+                "id": 362,
+                "name": "Captur"
+            },
+            {
+                "id": 363,
+                "name": "Clio"
+            },
+            {
+                "id": 364,
+                "name": "Megane"
+            }
+        ]
     },
     {
         "id": 56,
