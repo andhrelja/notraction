@@ -1,7 +1,40 @@
 {% extends 'base.html' %}
 
 {% block body %}
+{% include 'subnavbar_detail.html' with brand='Prvenstvo' object_name='prvenstvo' update_url='championships:update' %}
 {% include 'messages.html' %}
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card w-100">
+                <div class="card-header bg-primary">
+                    <h3 class="h3 card-title text-light mb-0">Detalji o prvenstvu</h3>
+                </div>
+                <div class="card-body h-100">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-id-card"></i>
+                                    <span class="pl-3">{{ championship.name }}</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="pl-3">{{ championship.level }}</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-car"></i>
+                                    <span class="pl-3">{{ driver.car_set.first.get_full_name }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
 toggleActive("championships");

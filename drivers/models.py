@@ -31,8 +31,8 @@ class Driver(models.Model):
         return self.get_full_name()
 
     def get_absolute_url(self):
-        return reverse("people:detail", kwargs={"pk": self.pk})
+        return reverse("drivers:detail", kwargs={"pk": self.pk})
 
     class Meta:
-        verbose_name = "Osoba"
-        verbose_name_plural = "Osobe"        
+        verbose_name = "Vozač"
+        verbose_name_plural = "Vozači"        

@@ -6,7 +6,7 @@ from drivers.models import Driver
 from championships.models import (
     Championship,
     Category,
-    CategoryDriverPosition)
+    CategoryDriverPosition, Discipline)
 from pathlib import Path
 import json
 
@@ -72,6 +72,7 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.SUCCESS('"<County:{}>" and dependencies created successfully'.format(county)))
             
     def load_data(self, content):
+        Discipline().create()
         for object in content:
             db_table_name = object['model']
             if db_table_name == 'cars.car':
@@ -101,12 +102,14 @@ class Command(BaseCommand):
         City.objects.all().delete()
         
         Driver.objects.all().delete()
+
         Championship.objects.all().delete()
+        Discipline.objects.all().delete()
         Category.objects.all().delete()
         CategoryDriverPosition.objects.all().delete()
 
     
 def get_json_from_static_file(filename):
     static_root = Path(settings.STATIC_ROOT).resolve()
-    with open(static_root / 'input_data' / filename, 'r') as f:
+    with open(static_root / 'input_data' / filename, 'r', encoding='utf8') as f:
         return json.load(f)

@@ -1,4 +1,5 @@
 from .models import Driver
+from .forms import DriverModelForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
@@ -20,11 +21,14 @@ class DriverDetailView(DetailView):
 
 class DriverCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Driver
+    form_class = DriverModelForm
     success_message = "Vozač uspješno stvoren"
 
 
 class DriverUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Driver
+    form_class = DriverModelForm
+    template_name_suffix = "_update_form"
     success_message = "Vozač uspješno ažuriran"
 
 

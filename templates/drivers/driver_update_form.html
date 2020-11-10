@@ -6,14 +6,14 @@
 <div class="container p-3">
     <div class="card m-auto border-secondary mb-3">
         <div class="card-header bg-primary p-3">
-            <h2 class="h2 text-light mb-0"><strong>Novi automobil</strong></h2>
+            <h2 class="h2 text-light mb-0"><strong>Uredi vozača</strong></h2>
         </div>
         <div class="card-body p-5">
             <form method="post" action="" enctype="multipart/form-data">
             {% csrf_token %}
                 {% include 'form_snippet_alt.html' %}
-                <input type="submit" class="btn btn-secondary" value="Spremi automobil">
-                <a href="{% url 'cars:list' %}" class="btn btn-outline-danger">Odustani</a>
+                <input type="submit" class="btn btn-secondary" value="Spremi vozača">
+                <a href="{% url 'drivers:detail' object.pk %}" class="btn btn-outline-danger">Odustani</a>
             </form>
         </div>
     </div>
@@ -21,7 +21,7 @@
 
 
 <script>
-toggleActive("cars");
+toggleActive("drivers");
 </script>
 
 {% endblock body %}

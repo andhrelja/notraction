@@ -22,7 +22,7 @@ YEAR_CHOICES = (
 class Car(models.Model):       
     
     # General
-    horse_power = models.IntegerField("Konjske snage", null=True, blank=True)
+    horse_power = models.IntegerField("Konjska snaga", null=True, blank=True)
     capacity    = models.IntegerField("Kubikaža", choices=CAPACITY_CHOICES, null=True)
     year        = models.IntegerField("Godina proizvodnje", choices=YEAR_CHOICES)
     description = models.TextField("Detalji", null=True, blank=True)
