@@ -9,18 +9,18 @@ class ChampionshipModelForm(forms.ModelForm):
         ordering = ['-start_date']
         fields = (
             'name',
-            'level',
+            'clubs_count',
+            'club_position',
             'start_date',
             'end_date',
             'city',
-            'discipline'
         )
 
         widgets = {
             'name'          : forms.TextInput(attrs={'class': "form-control"}),
-            'level'         : forms.TextInput(attrs={'class': "form-control"}),
-            'start_date'    : DateInput(attrs={'class': "custom-select"}),
+            'clubs_count'   : forms.NumberInput(attrs={'class': "form-control"}),
+            'club_position' : forms.NumberInput(attrs={'class': "form-control"}),
+            'start_date'    : DateInput(attrs={'class': "form-control"}),
             'end_date'      : DateInput(attrs={'class': "form-control"}),
             'city'          : forms.Select(attrs={'class': "custom-select"}),
-            'discipline'    : forms.Select(attrs={'class': "custom-select"}),
         }

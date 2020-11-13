@@ -3,11 +3,23 @@ from django.shortcuts import reverse
 
 
 class Driver(models.Model):
+    GENDER_CHOICES = (
+        ('M', 'Muško'),
+        ('Z', 'Žensko'),
+        ('O', 'Ostalo')
+    )
+
+    DISCIPLINE_CHOICES = (
+        (1, 'Brdo'),
+        (2, 'Formula Driver'),
+        (3, 'Drift'),
+    )
 
     # General
     first_name      = models.CharField("Ime", max_length=64)
     last_name       = models.CharField("Prezime", max_length=64)
     birth_date      = models.DateField("Datum rođenja")
+    gender          = models.CharField("Spol", max_length=1, default='M', choices=GENDER_CHOICES)
     driver_image    = models.ImageField("Slika", default='accounts/profile/default.jpg', upload_to='people/images/')
 
     # Contact
@@ -16,6 +28,7 @@ class Driver(models.Model):
 
     # Foreign keys
     city            = models.ForeignKey("events.City", verbose_name="Grad", on_delete=models.CASCADE)
+    discipline      = models.IntegerField("Disciplina", choices=DISCIPLINE_CHOICES, default=2)
     
 
     @property

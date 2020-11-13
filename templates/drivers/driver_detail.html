@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
-{% include 'subnavbar_detail.html' with brand='Vozač' object_name='vozača' update_url='drivers:update' %}
+{% include 'subnavbar_detail.html' with brand=driver.get_full_name object_name='vozača' update_url='drivers:update' %}
 {% include 'messages.html' %}
 
 <div class="container py-3">
@@ -13,24 +13,39 @@
                 </div>
                 <div class="card-body h-100">
                     <div class="row">
-                        <div class="col-md-6">
-                            <img src="{{ driver.driver_image.url }}" alt="{{ driver.driver_image }}" class="w-100">
+                        <div class="col-md-4">
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">IME</h5>
+                                <p class="card-text">{{ driver.first_name }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">PREZIME</h5>
+                                <p class="card-text">{{ driver.last_name }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">LOKACIJA</h5>
+                                <p class="card-text">{{ driver.location_name }}</p>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="fas fa-id-card"></i>
-                                    <span class="pl-3">{{ driver.get_full_name }}</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span class="pl-3">{{ driver.location_name }}</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="fas fa-car"></i>
-                                    <span class="pl-3">{{ driver.car_set.first.get_full_name }}</span>
-                                </li>
-                            </ul>
+                        <div class="col-md-4">
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">SPOL</h5>
+                                <p class="card-text">Muško</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">ROĐENDAN</h5>
+                                <p class="card-text">{{ driver.birth_date }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">VRSTA</h5>
+                                <p class="card-text">Formula Driver</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">SLIKA</h5>
+                                <img src="{{ driver.driver_image.url }}" alt="{{ driver.driver_image }}" class="w-100">
+                            </div>
                         </div>
                     </div>
                 </div>

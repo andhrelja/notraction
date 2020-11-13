@@ -20,3 +20,14 @@ i.fab {
     -moz-box-shadow: rgba(0,0,0,0.3) 0 2px 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
 }
+
+.detail-item-group {
+    padding: 3%;
+}
+
+.detail-item-group h5 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
