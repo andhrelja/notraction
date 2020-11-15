@@ -113,10 +113,13 @@ class SubCategory(models.Model):
         ordering = ['name']
         verbose_name = "Podkategorija"
         verbose_name_plural = "Podkategorije"
-    
+
     def results(self, championship):
         return DriverSubCategoryPosition.objects.filter(subcategory=self, championship=championship)
 
+    def top_results(self, championship):
+        return DriverSubCategoryPosition.objects.filter(subcategory=self, championship=championship, position__lte=3)
+    
     def __str__(self):
         return self.name
 

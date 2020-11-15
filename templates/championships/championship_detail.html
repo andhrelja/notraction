@@ -84,92 +84,31 @@
                         </div>
                         <div class="card-body">
                             {% for subcategory in category.subcategory_set.all %}
-                            {% if subcategory|results:championship  %}
+                            {% if subcategory|results:championship and subcategory|top_results:championship %}
                             {% if subcategory == "General" %}
-                                <th class="bg-primary text-light rounded-top" {% if user.is_authenticated and user.is_staff %}colspan="4"{% else %}colspan="3"{% endif %}>
-                                    <h5 class="h5 font-weight-bold mb-0">{{ category }}</h5>
-                                </th>
+                                <div class="card-title font-weight-bold">{{ category }}</div>
                             {% else %}
-                                <th class="bg-primary text-light rounded-top" {% if user.is_authenticated and user.is_staff %}colspan="4"{% else %}colspan="3"{% endif %}>
-                                    <h5 class="h5 font-weight-bold mb-0">{{ subcategory }}</h5>
-                                </th>
+                                <div class="card-title font-weight-bold">{{ subcategory }}</div>
                             {% endif %}
-
-
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Cras justo odio
-                                <span class="badge badge-primary badge-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Dapibus ac facilisis in
-                                <span class="badge badge-primary badge-pill">2</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Morbi leo risus
-                                <span class="badge badge-primary badge-pill">1</span>
-                            </li>
-                        </ul>
-
-
-
-
-
-
-
-
-
-
-                            <div class="table-responsive">
-                                <table class="table table-striped mb-5">
-                                    <thead>
-                                        <tr>
-
-                                        </tr>
-                                        <tr>
-                                            <th width="40px"></th>
-                                            <th >Plasman</th>
-                                            <th>Ime i prezime</th>
-                                            {% if user.is_authenticated and user.is_staff %}
-                                            <th></th>
-                                            {% endif %}
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    {% for result in subcategory|results:championship %}
-                                        <tr>
-                                            {% if result.position == 1 %}
-                                            <td class="text-center" width="40px"><i class="fas fa-medal" style="color:gold"></i></td>
-                                            {% elif result.position == 2 %}
-                                            <td class="text-center" width="40px"><i class="fas fa-medal" style="color:silver"></i></td>
-                                            {% elif result.position == 3 %}
-                                            <td class="text-center" width="40px"><i class="fas fa-medal" style="color:#ccb66f"></i></td>
-                                            {% else %}
-                                            <td class="text-center" width="40px"></td>
-                                            {% endif %}
-
-                                            <td >{{ result.position }}</td>
-                                            <td>{{ result.driver }}</td>
-
-                                            {% if user.is_authenticated and user.is_staff %}
-                                            <td class="text-right">
-                                                <div class="" style="flex-direction: row">
-                                                    <a class="btn btn-default" href="{% url 'championships:results-update' championship.id result.id %}">
-                                                        <i class="fas fa-pen text-primary"></i>
-                                                    </a>
-                                                    <a class="btn btn-default" href="#">
-                                                        <i class="fas fa-trash text-danger"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            {% endif %}
-                                        </tr>
-                                    {% endfor %}
-                                    </tbody>
-                                </table>
-                            </div>
-                            {% endif %}                            
+                            <ul class="list-group">
+                                {% for result in subcategory|results:championship %}
+                                {% if result.position <= 3 %}
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        {% if result.position == 1 %}
+                                        <i class="fas fa-medal" style="color:gold"></i>
+                                        {% elif result.position == 2 %}
+                                        <i class="fas fa-medal" style="color:silver"></i>
+                                        {% elif result.position == 3 %}
+                                        <i class="fas fa-medal" style="color:#ccb66f"></i>
+                                        {% endif %}
+                                        {{ result.driver }}
+                                        <span class="badge badge-dark badge-pill">{{ result.position }}</span>
+                                    </li>
+                                {% endif %}
+                                {% endfor %}
+                            {% endif %}
                             {% endfor %}
+                            </ul>
                         </div>
                     </div>
                     {% endfor %}
