@@ -20,7 +20,8 @@ class Driver(models.Model):
     last_name       = models.CharField("Prezime", max_length=64)
     birth_date      = models.DateField("Datum rođenja")
     gender          = models.CharField("Spol", max_length=1, default='M', choices=GENDER_CHOICES)
-    driver_image    = models.ImageField("Slika", default='accounts/profile/default.jpg', upload_to='people/images/')
+    driver_image    = models.ImageField( # , width_field='512', height_field='512'
+        "Slika", default='accounts/profile/default.jpg', upload_to='people/images/')
 
     # Contact
     email           = models.EmailField("Email")

@@ -1,0 +1,3894 @@
+[
+    {
+        "id": 1,
+        "county_id": 1,
+        "full_name": "Grad Dugo Selo",
+        "name": "Dugo Selo",
+        "city_type": 1
+    },
+    {
+        "id": 2,
+        "county_id": 1,
+        "full_name": "Grad Ivanić Grad",
+        "name": "Ivanić Grad",
+        "city_type": 1
+    },
+    {
+        "id": 3,
+        "county_id": 1,
+        "full_name": "Grad Jastrebarsko",
+        "name": "Jastrebarsko",
+        "city_type": 1
+    },
+    {
+        "id": 4,
+        "county_id": 1,
+        "full_name": "Grad Samobor",
+        "name": "Samobor",
+        "city_type": 1
+    },
+    {
+        "id": 5,
+        "county_id": 1,
+        "full_name": "Grad Sveta Nedelja",
+        "name": "Sveta Nedelja",
+        "city_type": 1
+    },
+    {
+        "id": 6,
+        "county_id": 1,
+        "full_name": "Grad Sveti Ivan Zelina",
+        "name": "Sveti Ivan Zelina",
+        "city_type": 1
+    },
+    {
+        "id": 7,
+        "county_id": 1,
+        "full_name": "Grad Velika Gorica",
+        "name": "Velika Gorica",
+        "city_type": 1
+    },
+    {
+        "id": 8,
+        "county_id": 1,
+        "full_name": "Grad Vrbovec",
+        "name": "Vrbovec",
+        "city_type": 1
+    },
+    {
+        "id": 9,
+        "county_id": 1,
+        "full_name": "Grad Zagreb",
+        "name": "Zagreb",
+        "city_type": 1
+    },
+    {
+        "id": 10,
+        "county_id": 1,
+        "full_name": "Grad Zaprešić",
+        "name": "Zaprešić",
+        "city_type": 1
+    },
+    {
+        "id": 11,
+        "county_id": 1,
+        "full_name": "Općina Bedenica",
+        "name": "Bedenica",
+        "city_type": 2
+    },
+    {
+        "id": 12,
+        "county_id": 1,
+        "full_name": "Općina Bistra",
+        "name": "Bistra",
+        "city_type": 2
+    },
+    {
+        "id": 13,
+        "county_id": 1,
+        "full_name": "Općina Brckovljani",
+        "name": "Brckovljani",
+        "city_type": 2
+    },
+    {
+        "id": 14,
+        "county_id": 1,
+        "full_name": "Općina Brdovec",
+        "name": "Brdovec",
+        "city_type": 2
+    },
+    {
+        "id": 15,
+        "county_id": 1,
+        "full_name": "Općina Dubrava",
+        "name": "Dubrava",
+        "city_type": 2
+    },
+    {
+        "id": 16,
+        "county_id": 1,
+        "full_name": "Općina Dubravica",
+        "name": "Dubravica",
+        "city_type": 2
+    },
+    {
+        "id": 17,
+        "county_id": 1,
+        "full_name": "Općina Farkaševac",
+        "name": "Farkaševac",
+        "city_type": 2
+    },
+    {
+        "id": 18,
+        "county_id": 1,
+        "full_name": "Općina Gradec",
+        "name": "Gradec",
+        "city_type": 2
+    },
+    {
+        "id": 19,
+        "county_id": 1,
+        "full_name": "Općina Jakovlje",
+        "name": "Jakovlje",
+        "city_type": 2
+    },
+    {
+        "id": 20,
+        "county_id": 1,
+        "full_name": "Općina Klinča Sela",
+        "name": "Klinča Sela",
+        "city_type": 2
+    },
+    {
+        "id": 21,
+        "county_id": 1,
+        "full_name": "Općina Kloštar Ivanić",
+        "name": "Kloštar Ivanić",
+        "city_type": 2
+    },
+    {
+        "id": 22,
+        "county_id": 1,
+        "full_name": "Općina Krašić",
+        "name": "Krašić",
+        "city_type": 2
+    },
+    {
+        "id": 23,
+        "county_id": 1,
+        "full_name": "Općina Kravarsko",
+        "name": "Kravarsko",
+        "city_type": 2
+    },
+    {
+        "id": 24,
+        "county_id": 1,
+        "full_name": "Općina Križ",
+        "name": "Križ",
+        "city_type": 2
+    },
+    {
+        "id": 25,
+        "county_id": 1,
+        "full_name": "Općina Luka",
+        "name": "Luka",
+        "city_type": 2
+    },
+    {
+        "id": 26,
+        "county_id": 1,
+        "full_name": "Općina Marija Gorica",
+        "name": "Marija Gorica",
+        "city_type": 2
+    },
+    {
+        "id": 27,
+        "county_id": 1,
+        "full_name": "Općina Orle",
+        "name": "Orle",
+        "city_type": 2
+    },
+    {
+        "id": 28,
+        "county_id": 1,
+        "full_name": "Općina Pisarovina",
+        "name": "Pisarovina",
+        "city_type": 2
+    },
+    {
+        "id": 29,
+        "county_id": 1,
+        "full_name": "Općina Pokupsko",
+        "name": "Pokupsko",
+        "city_type": 2
+    },
+    {
+        "id": 30,
+        "county_id": 1,
+        "full_name": "Općina Preseka",
+        "name": "Preseka",
+        "city_type": 2
+    },
+    {
+        "id": 31,
+        "county_id": 1,
+        "full_name": "Općina Pušća",
+        "name": "Pušća",
+        "city_type": 2
+    },
+    {
+        "id": 32,
+        "county_id": 1,
+        "full_name": "Općina Rakovec",
+        "name": "Rakovec",
+        "city_type": 2
+    },
+    {
+        "id": 33,
+        "county_id": 1,
+        "full_name": "Općina Rugvica",
+        "name": "Rugvica",
+        "city_type": 2
+    },
+    {
+        "id": 34,
+        "county_id": 1,
+        "full_name": "Općina Stupnik",
+        "name": "Stupnik",
+        "city_type": 2
+    },
+    {
+        "id": 35,
+        "county_id": 1,
+        "full_name": "Općina Žumberak - (sjedište Kostanjevac)",
+        "name": "Žumberak - (sjedište Kostanjevac)",
+        "city_type": 2
+    },
+    {
+        "id": 36,
+        "county_id": 2,
+        "full_name": "Grad Donja Stubica",
+        "name": "Donja Stubica",
+        "city_type": 1
+    },
+    {
+        "id": 37,
+        "county_id": 2,
+        "full_name": "Grad Klanjec",
+        "name": "Klanjec",
+        "city_type": 1
+    },
+    {
+        "id": 38,
+        "county_id": 2,
+        "full_name": "Grad Krapina",
+        "name": "Krapina",
+        "city_type": 1
+    },
+    {
+        "id": 39,
+        "county_id": 2,
+        "full_name": "Grad Oroslavje",
+        "name": "Oroslavje",
+        "city_type": 1
+    },
+    {
+        "id": 40,
+        "county_id": 2,
+        "full_name": "Grad Pregrada",
+        "name": "Pregrada",
+        "city_type": 1
+    },
+    {
+        "id": 41,
+        "county_id": 2,
+        "full_name": "Grad Zabok",
+        "name": "Zabok",
+        "city_type": 1
+    },
+    {
+        "id": 42,
+        "county_id": 2,
+        "full_name": "Grad Zlatar",
+        "name": "Zlatar",
+        "city_type": 1
+    },
+    {
+        "id": 43,
+        "county_id": 2,
+        "full_name": "Općina Bedekovčina",
+        "name": "Bedekovčina",
+        "city_type": 2
+    },
+    {
+        "id": 44,
+        "county_id": 2,
+        "full_name": "Općina Budinščina",
+        "name": "Budinščina",
+        "city_type": 2
+    },
+    {
+        "id": 45,
+        "county_id": 2,
+        "full_name": "Općina Desinić",
+        "name": "Desinić",
+        "city_type": 2
+    },
+    {
+        "id": 46,
+        "county_id": 2,
+        "full_name": "Općina Đurmanec",
+        "name": "Đurmanec",
+        "city_type": 2
+    },
+    {
+        "id": 47,
+        "county_id": 2,
+        "full_name": "Općina Gornja Stubica",
+        "name": "Gornja Stubica",
+        "city_type": 2
+    },
+    {
+        "id": 48,
+        "county_id": 2,
+        "full_name": "Općina Hrašćina",
+        "name": "Hrašćina",
+        "city_type": 2
+    },
+    {
+        "id": 49,
+        "county_id": 2,
+        "full_name": "Općina Hum na Sutli",
+        "name": "Hum na Sutli",
+        "city_type": 2
+    },
+    {
+        "id": 50,
+        "county_id": 2,
+        "full_name": "Općina Jesenje",
+        "name": "Jesenje",
+        "city_type": 2
+    },
+    {
+        "id": 51,
+        "county_id": 2,
+        "full_name": "Općina Konjščina",
+        "name": "Konjščina",
+        "city_type": 2
+    },
+    {
+        "id": 52,
+        "county_id": 2,
+        "full_name": "Općina Kraljevec na Sutli",
+        "name": "Kraljevec na Sutli",
+        "city_type": 2
+    },
+    {
+        "id": 53,
+        "county_id": 2,
+        "full_name": "Općina Krapinske Toplice",
+        "name": "Krapinske Toplice",
+        "city_type": 2
+    },
+    {
+        "id": 54,
+        "county_id": 2,
+        "full_name": "Općina Kumrovec",
+        "name": "Kumrovec",
+        "city_type": 2
+    },
+    {
+        "id": 55,
+        "county_id": 2,
+        "full_name": "Općina Lobor",
+        "name": "Lobor",
+        "city_type": 2
+    },
+    {
+        "id": 56,
+        "county_id": 2,
+        "full_name": "Općina Mače",
+        "name": "Mače",
+        "city_type": 2
+    },
+    {
+        "id": 57,
+        "county_id": 2,
+        "full_name": "Općina Marija Bistrica",
+        "name": "Marija Bistrica",
+        "city_type": 2
+    },
+    {
+        "id": 58,
+        "county_id": 2,
+        "full_name": "Općina Mihovljan",
+        "name": "Mihovljan",
+        "city_type": 2
+    },
+    {
+        "id": 59,
+        "county_id": 2,
+        "full_name": "Općina Novi Golubovec",
+        "name": "Novi Golubovec",
+        "city_type": 2
+    },
+    {
+        "id": 60,
+        "county_id": 2,
+        "full_name": "Općina Petrovsko",
+        "name": "Petrovsko",
+        "city_type": 2
+    },
+    {
+        "id": 61,
+        "county_id": 2,
+        "full_name": "Općina Radoboj",
+        "name": "Radoboj",
+        "city_type": 2
+    },
+    {
+        "id": 62,
+        "county_id": 2,
+        "full_name": "Općina Stubičke Toplice",
+        "name": "Stubičke Toplice",
+        "city_type": 2
+    },
+    {
+        "id": 63,
+        "county_id": 2,
+        "full_name": "Općina Sveti Križ Začretje",
+        "name": "Sveti Križ Začretje",
+        "city_type": 2
+    },
+    {
+        "id": 64,
+        "county_id": 2,
+        "full_name": "Općina Tuhelj",
+        "name": "Tuhelj",
+        "city_type": 2
+    },
+    {
+        "id": 65,
+        "county_id": 2,
+        "full_name": "Općina Veliko Trgovišće",
+        "name": "Veliko Trgovišće",
+        "city_type": 2
+    },
+    {
+        "id": 66,
+        "county_id": 2,
+        "full_name": "Općina Zagorska Sela",
+        "name": "Zagorska Sela",
+        "city_type": 2
+    },
+    {
+        "id": 67,
+        "county_id": 2,
+        "full_name": "Općina Zlatar Bistrica",
+        "name": "Zlatar Bistrica",
+        "city_type": 2
+    },
+    {
+        "id": 68,
+        "county_id": 3,
+        "full_name": "Grad Glina",
+        "name": "Glina",
+        "city_type": 1
+    },
+    {
+        "id": 69,
+        "county_id": 3,
+        "full_name": "Grad Hrvatska Kostajnica",
+        "name": "Hrvatska Kostajnica",
+        "city_type": 1
+    },
+    {
+        "id": 70,
+        "county_id": 3,
+        "full_name": "Grad Kutina",
+        "name": "Kutina",
+        "city_type": 1
+    },
+    {
+        "id": 71,
+        "county_id": 3,
+        "full_name": "Grad Novska",
+        "name": "Novska",
+        "city_type": 1
+    },
+    {
+        "id": 72,
+        "county_id": 3,
+        "full_name": "Grad Petrinja",
+        "name": "Petrinja",
+        "city_type": 1
+    },
+    {
+        "id": 73,
+        "county_id": 3,
+        "full_name": "Grad Popovača",
+        "name": "Popovača",
+        "city_type": 1
+    },
+    {
+        "id": 74,
+        "county_id": 3,
+        "full_name": "Grad Sisak",
+        "name": "Sisak",
+        "city_type": 1
+    },
+    {
+        "id": 75,
+        "county_id": 3,
+        "full_name": "Općina Donji Kukuruzari",
+        "name": "Donji Kukuruzari",
+        "city_type": 2
+    },
+    {
+        "id": 76,
+        "county_id": 3,
+        "full_name": "Općina Dvor",
+        "name": "Dvor",
+        "city_type": 2
+    },
+    {
+        "id": 77,
+        "county_id": 3,
+        "full_name": "Općina Gvozd",
+        "name": "Gvozd",
+        "city_type": 2
+    },
+    {
+        "id": 78,
+        "county_id": 3,
+        "full_name": "Općina Hrvatska Dubica",
+        "name": "Hrvatska Dubica",
+        "city_type": 2
+    },
+    {
+        "id": 79,
+        "county_id": 3,
+        "full_name": "Općina Jasenovac",
+        "name": "Jasenovac",
+        "city_type": 2
+    },
+    {
+        "id": 80,
+        "county_id": 3,
+        "full_name": "Općina Lekenik",
+        "name": "Lekenik",
+        "city_type": 2
+    },
+    {
+        "id": 81,
+        "county_id": 3,
+        "full_name": "Općina Lipovljani",
+        "name": "Lipovljani",
+        "city_type": 2
+    },
+    {
+        "id": 82,
+        "county_id": 3,
+        "full_name": "Općina Majur",
+        "name": "Majur",
+        "city_type": 2
+    },
+    {
+        "id": 83,
+        "county_id": 3,
+        "full_name": "Općina Martinska Ves",
+        "name": "Martinska Ves",
+        "city_type": 2
+    },
+    {
+        "id": 84,
+        "county_id": 3,
+        "full_name": "Općina Sunja",
+        "name": "Sunja",
+        "city_type": 2
+    },
+    {
+        "id": 85,
+        "county_id": 3,
+        "full_name": "Općina Topusko",
+        "name": "Topusko",
+        "city_type": 2
+    },
+    {
+        "id": 86,
+        "county_id": 3,
+        "full_name": "Općina Velika Ludina",
+        "name": "Velika Ludina",
+        "city_type": 2
+    },
+    {
+        "id": 87,
+        "county_id": 4,
+        "full_name": "Grad Duga Resa",
+        "name": "Duga Resa",
+        "city_type": 1
+    },
+    {
+        "id": 88,
+        "county_id": 4,
+        "full_name": "Grad Karlovac",
+        "name": "Karlovac",
+        "city_type": 1
+    },
+    {
+        "id": 89,
+        "county_id": 4,
+        "full_name": "Grad Ogulin",
+        "name": "Ogulin",
+        "city_type": 1
+    },
+    {
+        "id": 90,
+        "county_id": 4,
+        "full_name": "Grad Ozalj",
+        "name": "Ozalj",
+        "city_type": 1
+    },
+    {
+        "id": 91,
+        "county_id": 4,
+        "full_name": "Grad Slunj",
+        "name": "Slunj",
+        "city_type": 1
+    },
+    {
+        "id": 92,
+        "county_id": 4,
+        "full_name": "Općina Barilović",
+        "name": "Barilović",
+        "city_type": 2
+    },
+    {
+        "id": 93,
+        "county_id": 4,
+        "full_name": "Općina Bosiljevo",
+        "name": "Bosiljevo",
+        "city_type": 2
+    },
+    {
+        "id": 94,
+        "county_id": 4,
+        "full_name": "Općina Cetingrad",
+        "name": "Cetingrad",
+        "city_type": 2
+    },
+    {
+        "id": 95,
+        "county_id": 4,
+        "full_name": "Općina Draganić",
+        "name": "Draganić",
+        "city_type": 2
+    },
+    {
+        "id": 96,
+        "county_id": 4,
+        "full_name": "Općina Generalski Stol",
+        "name": "Generalski Stol",
+        "city_type": 2
+    },
+    {
+        "id": 97,
+        "county_id": 4,
+        "full_name": "Općina Josipdol",
+        "name": "Josipdol",
+        "city_type": 2
+    },
+    {
+        "id": 98,
+        "county_id": 4,
+        "full_name": "Općina Kamanje",
+        "name": "Kamanje",
+        "city_type": 2
+    },
+    {
+        "id": 99,
+        "county_id": 4,
+        "full_name": "Općina Krnjak",
+        "name": "Krnjak",
+        "city_type": 2
+    },
+    {
+        "id": 100,
+        "county_id": 4,
+        "full_name": "Općina Lasinja",
+        "name": "Lasinja",
+        "city_type": 2
+    },
+    {
+        "id": 101,
+        "county_id": 4,
+        "full_name": "Općina Netretić",
+        "name": "Netretić",
+        "city_type": 2
+    },
+    {
+        "id": 102,
+        "county_id": 4,
+        "full_name": "Općina Plaški",
+        "name": "Plaški",
+        "city_type": 2
+    },
+    {
+        "id": 103,
+        "county_id": 4,
+        "full_name": "Općina Rakovica",
+        "name": "Rakovica",
+        "city_type": 2
+    },
+    {
+        "id": 104,
+        "county_id": 4,
+        "full_name": "Općina Ribnik",
+        "name": "Ribnik",
+        "city_type": 2
+    },
+    {
+        "id": 105,
+        "county_id": 4,
+        "full_name": "Općina Saborsko",
+        "name": "Saborsko",
+        "city_type": 2
+    },
+    {
+        "id": 106,
+        "county_id": 4,
+        "full_name": "Općina Tounj",
+        "name": "Tounj",
+        "city_type": 2
+    },
+    {
+        "id": 107,
+        "county_id": 4,
+        "full_name": "Općina Vojnić",
+        "name": "Vojnić",
+        "city_type": 2
+    },
+    {
+        "id": 108,
+        "county_id": 4,
+        "full_name": "Općina Žakanje",
+        "name": "Žakanje",
+        "city_type": 2
+    },
+    {
+        "id": 109,
+        "county_id": 5,
+        "full_name": "Grad Ivanec",
+        "name": "Ivanec",
+        "city_type": 1
+    },
+    {
+        "id": 110,
+        "county_id": 5,
+        "full_name": "Grad Lepoglava",
+        "name": "Lepoglava",
+        "city_type": 1
+    },
+    {
+        "id": 111,
+        "county_id": 5,
+        "full_name": "Grad Ludbreg",
+        "name": "Ludbreg",
+        "city_type": 1
+    },
+    {
+        "id": 112,
+        "county_id": 5,
+        "full_name": "Grad Novi Marof",
+        "name": "Novi Marof",
+        "city_type": 1
+    },
+    {
+        "id": 113,
+        "county_id": 5,
+        "full_name": "Grad Varaždin",
+        "name": "Varaždin",
+        "city_type": 1
+    },
+    {
+        "id": 114,
+        "county_id": 5,
+        "full_name": "Grad Varaždinske Toplice",
+        "name": "Varaždinske Toplice",
+        "city_type": 1
+    },
+    {
+        "id": 115,
+        "county_id": 5,
+        "full_name": "Općina Bednja",
+        "name": "Bednja",
+        "city_type": 2
+    },
+    {
+        "id": 116,
+        "county_id": 5,
+        "full_name": "Općina Beretinec",
+        "name": "Beretinec",
+        "city_type": 2
+    },
+    {
+        "id": 117,
+        "county_id": 5,
+        "full_name": "Općina Breznica",
+        "name": "Breznica",
+        "city_type": 2
+    },
+    {
+        "id": 118,
+        "county_id": 5,
+        "full_name": "Općina Breznički Hum",
+        "name": "Breznički Hum",
+        "city_type": 2
+    },
+    {
+        "id": 119,
+        "county_id": 5,
+        "full_name": "Općina Cestica",
+        "name": "Cestica",
+        "city_type": 2
+    },
+    {
+        "id": 120,
+        "county_id": 5,
+        "full_name": "Općina Donja Voća",
+        "name": "Donja Voća",
+        "city_type": 2
+    },
+    {
+        "id": 121,
+        "county_id": 5,
+        "full_name": "Općina Gornji Kneginec",
+        "name": "Gornji Kneginec",
+        "city_type": 2
+    },
+    {
+        "id": 122,
+        "county_id": 5,
+        "full_name": "Općina Jalžabet",
+        "name": "Jalžabet",
+        "city_type": 2
+    },
+    {
+        "id": 123,
+        "county_id": 5,
+        "full_name": "Općina Klenovnik",
+        "name": "Klenovnik",
+        "city_type": 2
+    },
+    {
+        "id": 124,
+        "county_id": 5,
+        "full_name": "Općina Ljubešćica",
+        "name": "Ljubešćica",
+        "city_type": 2
+    },
+    {
+        "id": 125,
+        "county_id": 5,
+        "full_name": "Općina Mali Bukovec",
+        "name": "Mali Bukovec",
+        "city_type": 2
+    },
+    {
+        "id": 126,
+        "county_id": 5,
+        "full_name": "Općina Martijanec",
+        "name": "Martijanec",
+        "city_type": 2
+    },
+    {
+        "id": 127,
+        "county_id": 5,
+        "full_name": "Općina Maruševec",
+        "name": "Maruševec",
+        "city_type": 2
+    },
+    {
+        "id": 128,
+        "county_id": 5,
+        "full_name": "Općina Petrijanec",
+        "name": "Petrijanec",
+        "city_type": 2
+    },
+    {
+        "id": 129,
+        "county_id": 5,
+        "full_name": "Općina Sračinec",
+        "name": "Sračinec",
+        "city_type": 2
+    },
+    {
+        "id": 130,
+        "county_id": 5,
+        "full_name": "Općina Sveti Đurđ",
+        "name": "Sveti Đurđ",
+        "city_type": 2
+    },
+    {
+        "id": 131,
+        "county_id": 5,
+        "full_name": "Općina Sveti Ilija",
+        "name": "Sveti Ilija",
+        "city_type": 2
+    },
+    {
+        "id": 132,
+        "county_id": 5,
+        "full_name": "Općina Trnovec Bartolovečki",
+        "name": "Trnovec Bartolovečki",
+        "city_type": 2
+    },
+    {
+        "id": 133,
+        "county_id": 5,
+        "full_name": "Općina Veliki Bukovec",
+        "name": "Veliki Bukovec",
+        "city_type": 2
+    },
+    {
+        "id": 134,
+        "county_id": 5,
+        "full_name": "Općina Vidovec",
+        "name": "Vidovec",
+        "city_type": 2
+    },
+    {
+        "id": 135,
+        "county_id": 5,
+        "full_name": "Općina Vinica",
+        "name": "Vinica",
+        "city_type": 2
+    },
+    {
+        "id": 136,
+        "county_id": 5,
+        "full_name": "Općina Visoko",
+        "name": "Visoko",
+        "city_type": 2
+    },
+    {
+        "id": 137,
+        "county_id": 6,
+        "full_name": "Grad Đurđevac",
+        "name": "Đurđevac",
+        "city_type": 1
+    },
+    {
+        "id": 138,
+        "county_id": 6,
+        "full_name": "Grad Koprivnica",
+        "name": "Koprivnica",
+        "city_type": 1
+    },
+    {
+        "id": 139,
+        "county_id": 6,
+        "full_name": "Grad Križevci",
+        "name": "Križevci",
+        "city_type": 1
+    },
+    {
+        "id": 140,
+        "county_id": 6,
+        "full_name": "Općina Drnje",
+        "name": "Drnje",
+        "city_type": 2
+    },
+    {
+        "id": 141,
+        "county_id": 6,
+        "full_name": "Općina Đelekovec",
+        "name": "Đelekovec",
+        "city_type": 2
+    },
+    {
+        "id": 142,
+        "county_id": 6,
+        "full_name": "Općina Ferdinandovac",
+        "name": "Ferdinandovac",
+        "city_type": 2
+    },
+    {
+        "id": 143,
+        "county_id": 6,
+        "full_name": "Općina Gola",
+        "name": "Gola",
+        "city_type": 2
+    },
+    {
+        "id": 144,
+        "county_id": 6,
+        "full_name": "Općina Gornja Rijeka",
+        "name": "Gornja Rijeka",
+        "city_type": 2
+    },
+    {
+        "id": 145,
+        "county_id": 6,
+        "full_name": "Općina Hlebine",
+        "name": "Hlebine",
+        "city_type": 2
+    },
+    {
+        "id": 146,
+        "county_id": 6,
+        "full_name": "Općina Kalinovac",
+        "name": "Kalinovac",
+        "city_type": 2
+    },
+    {
+        "id": 147,
+        "county_id": 6,
+        "full_name": "Općina Kalnik",
+        "name": "Kalnik",
+        "city_type": 2
+    },
+    {
+        "id": 148,
+        "county_id": 6,
+        "full_name": "Općina Kloštar Podravski",
+        "name": "Kloštar Podravski",
+        "city_type": 2
+    },
+    {
+        "id": 149,
+        "county_id": 6,
+        "full_name": "Općina Koprivnički Bregi",
+        "name": "Koprivnički Bregi",
+        "city_type": 2
+    },
+    {
+        "id": 150,
+        "county_id": 6,
+        "full_name": "Općina Koprivnički Ivanec",
+        "name": "Koprivnički Ivanec",
+        "city_type": 2
+    },
+    {
+        "id": 151,
+        "county_id": 6,
+        "full_name": "Općina Legrad",
+        "name": "Legrad",
+        "city_type": 2
+    },
+    {
+        "id": 152,
+        "county_id": 6,
+        "full_name": "Općina Molve",
+        "name": "Molve",
+        "city_type": 2
+    },
+    {
+        "id": 153,
+        "county_id": 6,
+        "full_name": "Općina Novigrad Podravski",
+        "name": "Novigrad Podravski",
+        "city_type": 2
+    },
+    {
+        "id": 154,
+        "county_id": 6,
+        "full_name": "Općina Novo Virje",
+        "name": "Novo Virje",
+        "city_type": 2
+    },
+    {
+        "id": 155,
+        "county_id": 6,
+        "full_name": "Općina Peteranec",
+        "name": "Peteranec",
+        "city_type": 2
+    },
+    {
+        "id": 156,
+        "county_id": 6,
+        "full_name": "Općina Podravske Sesvete",
+        "name": "Podravske Sesvete",
+        "city_type": 2
+    },
+    {
+        "id": 157,
+        "county_id": 6,
+        "full_name": "Općina Rasinja",
+        "name": "Rasinja",
+        "city_type": 2
+    },
+    {
+        "id": 158,
+        "county_id": 6,
+        "full_name": "Općina Sokolovac",
+        "name": "Sokolovac",
+        "city_type": 2
+    },
+    {
+        "id": 159,
+        "county_id": 6,
+        "full_name": "Općina Sveti Ivan Žabno",
+        "name": "Sveti Ivan Žabno",
+        "city_type": 2
+    },
+    {
+        "id": 160,
+        "county_id": 6,
+        "full_name": "Općina Sveti Petar Orehovec",
+        "name": "Sveti Petar Orehovec",
+        "city_type": 2
+    },
+    {
+        "id": 161,
+        "county_id": 6,
+        "full_name": "Općina Virje",
+        "name": "Virje",
+        "city_type": 2
+    },
+    {
+        "id": 162,
+        "county_id": 7,
+        "full_name": "Grad Bjelovar",
+        "name": "Bjelovar",
+        "city_type": 1
+    },
+    {
+        "id": 163,
+        "county_id": 7,
+        "full_name": "Grad Čazma",
+        "name": "Čazma",
+        "city_type": 1
+    },
+    {
+        "id": 164,
+        "county_id": 7,
+        "full_name": "Grad Daruvar",
+        "name": "Daruvar",
+        "city_type": 1
+    },
+    {
+        "id": 165,
+        "county_id": 7,
+        "full_name": "Grad Garešnica",
+        "name": "Garešnica",
+        "city_type": 1
+    },
+    {
+        "id": 166,
+        "county_id": 7,
+        "full_name": "Grad Grubišno Polje",
+        "name": "Grubišno Polje",
+        "city_type": 1
+    },
+    {
+        "id": 167,
+        "county_id": 7,
+        "full_name": "Općina Berek",
+        "name": "Berek",
+        "city_type": 2
+    },
+    {
+        "id": 168,
+        "county_id": 7,
+        "full_name": "Općina Dežanovac",
+        "name": "Dežanovac",
+        "city_type": 2
+    },
+    {
+        "id": 169,
+        "county_id": 7,
+        "full_name": "Općina Đulovac",
+        "name": "Đulovac",
+        "city_type": 2
+    },
+    {
+        "id": 170,
+        "county_id": 7,
+        "full_name": "Općina Hercegovac",
+        "name": "Hercegovac",
+        "city_type": 2
+    },
+    {
+        "id": 171,
+        "county_id": 7,
+        "full_name": "Općina Ivanska",
+        "name": "Ivanska",
+        "city_type": 2
+    },
+    {
+        "id": 172,
+        "county_id": 7,
+        "full_name": "Općina Kapela",
+        "name": "Kapela",
+        "city_type": 2
+    },
+    {
+        "id": 173,
+        "county_id": 7,
+        "full_name": "Općina Končanica",
+        "name": "Končanica",
+        "city_type": 2
+    },
+    {
+        "id": 174,
+        "county_id": 7,
+        "full_name": "Općina Nova Rača",
+        "name": "Nova Rača",
+        "city_type": 2
+    },
+    {
+        "id": 175,
+        "county_id": 7,
+        "full_name": "Općina Rovišće",
+        "name": "Rovišće",
+        "city_type": 2
+    },
+    {
+        "id": 176,
+        "county_id": 7,
+        "full_name": "Općina Severin",
+        "name": "Severin",
+        "city_type": 2
+    },
+    {
+        "id": 177,
+        "county_id": 7,
+        "full_name": "Općina Sirač",
+        "name": "Sirač",
+        "city_type": 2
+    },
+    {
+        "id": 178,
+        "county_id": 7,
+        "full_name": "Općina Šandrovac",
+        "name": "Šandrovac",
+        "city_type": 2
+    },
+    {
+        "id": 179,
+        "county_id": 7,
+        "full_name": "Općina Štefanje",
+        "name": "Štefanje",
+        "city_type": 2
+    },
+    {
+        "id": 180,
+        "county_id": 7,
+        "full_name": "Općina Velika Pisanica",
+        "name": "Velika Pisanica",
+        "city_type": 2
+    },
+    {
+        "id": 181,
+        "county_id": 7,
+        "full_name": "Općina Velika Trnovitica",
+        "name": "Velika Trnovitica",
+        "city_type": 2
+    },
+    {
+        "id": 182,
+        "county_id": 7,
+        "full_name": "Općina Veliki Grđevac",
+        "name": "Veliki Grđevac",
+        "city_type": 2
+    },
+    {
+        "id": 183,
+        "county_id": 7,
+        "full_name": "Općina Veliko Trojstvo",
+        "name": "Veliko Trojstvo",
+        "city_type": 2
+    },
+    {
+        "id": 184,
+        "county_id": 7,
+        "full_name": "Općina Zrinski Topolovac",
+        "name": "Zrinski Topolovac",
+        "city_type": 2
+    },
+    {
+        "id": 185,
+        "county_id": 8,
+        "full_name": "Grad Bakar",
+        "name": "Bakar",
+        "city_type": 1
+    },
+    {
+        "id": 186,
+        "county_id": 8,
+        "full_name": "Grad Cres",
+        "name": "Cres",
+        "city_type": 1
+    },
+    {
+        "id": 187,
+        "county_id": 8,
+        "full_name": "Grad Crikvenica",
+        "name": "Crikvenica",
+        "city_type": 1
+    },
+    {
+        "id": 188,
+        "county_id": 8,
+        "full_name": "Grad Čabar",
+        "name": "Čabar",
+        "city_type": 1
+    },
+    {
+        "id": 189,
+        "county_id": 8,
+        "full_name": "Grad Delnice",
+        "name": "Delnice",
+        "city_type": 1
+    },
+    {
+        "id": 190,
+        "county_id": 8,
+        "full_name": "Grad Kastav",
+        "name": "Kastav",
+        "city_type": 1
+    },
+    {
+        "id": 191,
+        "county_id": 8,
+        "full_name": "Grad Kraljevica",
+        "name": "Kraljevica",
+        "city_type": 1
+    },
+    {
+        "id": 192,
+        "county_id": 8,
+        "full_name": "Grad Krk",
+        "name": "Krk",
+        "city_type": 1
+    },
+    {
+        "id": 193,
+        "county_id": 8,
+        "full_name": "Grad Mali Lošinj",
+        "name": "Mali Lošinj",
+        "city_type": 1
+    },
+    {
+        "id": 194,
+        "county_id": 8,
+        "full_name": "Grad Novi Vinodolski",
+        "name": "Novi Vinodolski",
+        "city_type": 1
+    },
+    {
+        "id": 195,
+        "county_id": 8,
+        "full_name": "Grad Opatija",
+        "name": "Opatija",
+        "city_type": 1
+    },
+    {
+        "id": 196,
+        "county_id": 8,
+        "full_name": "Grad Rab",
+        "name": "Rab",
+        "city_type": 1
+    },
+    {
+        "id": 197,
+        "county_id": 8,
+        "full_name": "Grad Rijeka",
+        "name": "Rijeka",
+        "city_type": 1
+    },
+    {
+        "id": 198,
+        "county_id": 8,
+        "full_name": "Grad Vrbovsko",
+        "name": "Vrbovsko",
+        "city_type": 1
+    },
+    {
+        "id": 199,
+        "county_id": 8,
+        "full_name": "Općina Baška",
+        "name": "Baška",
+        "city_type": 2
+    },
+    {
+        "id": 200,
+        "county_id": 8,
+        "full_name": "Općina Brod Moravice",
+        "name": "Brod Moravice",
+        "city_type": 2
+    },
+    {
+        "id": 201,
+        "county_id": 8,
+        "full_name": "Općina Čavle",
+        "name": "Čavle",
+        "city_type": 2
+    },
+    {
+        "id": 202,
+        "county_id": 8,
+        "full_name": "Općina Dobrinj",
+        "name": "Dobrinj",
+        "city_type": 2
+    },
+    {
+        "id": 203,
+        "county_id": 8,
+        "full_name": "Općina Fužine",
+        "name": "Fužine",
+        "city_type": 2
+    },
+    {
+        "id": 204,
+        "county_id": 8,
+        "full_name": "Općina Jelenje",
+        "name": "Jelenje",
+        "city_type": 2
+    },
+    {
+        "id": 205,
+        "county_id": 8,
+        "full_name": "Općina Klana",
+        "name": "Klana",
+        "city_type": 2
+    },
+    {
+        "id": 206,
+        "county_id": 8,
+        "full_name": "Općina Kostrena",
+        "name": "Kostrena",
+        "city_type": 2
+    },
+    {
+        "id": 207,
+        "county_id": 8,
+        "full_name": "Općina Lokve",
+        "name": "Lokve",
+        "city_type": 2
+    },
+    {
+        "id": 208,
+        "county_id": 8,
+        "full_name": "Općina Lopar",
+        "name": "Lopar",
+        "city_type": 2
+    },
+    {
+        "id": 209,
+        "county_id": 8,
+        "full_name": "Općina Lovran",
+        "name": "Lovran",
+        "city_type": 2
+    },
+    {
+        "id": 210,
+        "county_id": 8,
+        "full_name": "Općina Malinska-Dubašnica",
+        "name": "Malinska-Dubašnica",
+        "city_type": 2
+    },
+    {
+        "id": 211,
+        "county_id": 8,
+        "full_name": "Općina Matulji",
+        "name": "Matulji",
+        "city_type": 2
+    },
+    {
+        "id": 212,
+        "county_id": 8,
+        "full_name": "Općina Mošćenička Draga",
+        "name": "Mošćenička Draga",
+        "city_type": 2
+    },
+    {
+        "id": 213,
+        "county_id": 8,
+        "full_name": "Općina Mrkopalj",
+        "name": "Mrkopalj",
+        "city_type": 2
+    },
+    {
+        "id": 214,
+        "county_id": 8,
+        "full_name": "Općina Omišalj",
+        "name": "Omišalj",
+        "city_type": 2
+    },
+    {
+        "id": 215,
+        "county_id": 8,
+        "full_name": "Općina Punat",
+        "name": "Punat",
+        "city_type": 2
+    },
+    {
+        "id": 216,
+        "county_id": 8,
+        "full_name": "Općina Ravna Gora",
+        "name": "Ravna Gora",
+        "city_type": 2
+    },
+    {
+        "id": 217,
+        "county_id": 8,
+        "full_name": "Općina Skrad",
+        "name": "Skrad",
+        "city_type": 2
+    },
+    {
+        "id": 218,
+        "county_id": 8,
+        "full_name": "Općina Vinodolska općina - (sjedište Bribir)",
+        "name": "Vinodolska općina - (sjedište Bribir)",
+        "city_type": 2
+    },
+    {
+        "id": 219,
+        "county_id": 8,
+        "full_name": "Općina Viškovo",
+        "name": "Viškovo",
+        "city_type": 2
+    },
+    {
+        "id": 220,
+        "county_id": 8,
+        "full_name": "Općina Vrbnik",
+        "name": "Vrbnik",
+        "city_type": 2
+    },
+    {
+        "id": 221,
+        "county_id": 9,
+        "full_name": "Grad Gospić",
+        "name": "Gospić",
+        "city_type": 1
+    },
+    {
+        "id": 222,
+        "county_id": 9,
+        "full_name": "Grad Novalja",
+        "name": "Novalja",
+        "city_type": 1
+    },
+    {
+        "id": 223,
+        "county_id": 9,
+        "full_name": "Grad Otočac",
+        "name": "Otočac",
+        "city_type": 1
+    },
+    {
+        "id": 224,
+        "county_id": 9,
+        "full_name": "Grad Senj",
+        "name": "Senj",
+        "city_type": 1
+    },
+    {
+        "id": 225,
+        "county_id": 9,
+        "full_name": "Općina Brinje",
+        "name": "Brinje",
+        "city_type": 2
+    },
+    {
+        "id": 226,
+        "county_id": 9,
+        "full_name": "Općina Donji Lapac",
+        "name": "Donji Lapac",
+        "city_type": 2
+    },
+    {
+        "id": 227,
+        "county_id": 9,
+        "full_name": "Općina Karlobag",
+        "name": "Karlobag",
+        "city_type": 2
+    },
+    {
+        "id": 228,
+        "county_id": 9,
+        "full_name": "Općina Lovinac",
+        "name": "Lovinac",
+        "city_type": 2
+    },
+    {
+        "id": 229,
+        "county_id": 9,
+        "full_name": "Općina Perušić",
+        "name": "Perušić",
+        "city_type": 2
+    },
+    {
+        "id": 230,
+        "county_id": 9,
+        "full_name": "Općina Plitvička jezera - (sjedište Korenica)",
+        "name": "Plitvička jezera - (sjedište Korenica)",
+        "city_type": 2
+    },
+    {
+        "id": 231,
+        "county_id": 9,
+        "full_name": "Općina Udbina",
+        "name": "Udbina",
+        "city_type": 2
+    },
+    {
+        "id": 232,
+        "county_id": 9,
+        "full_name": "Općina Vrhovine",
+        "name": "Vrhovine",
+        "city_type": 2
+    },
+    {
+        "id": 233,
+        "county_id": 10,
+        "full_name": "Grad Orahovica",
+        "name": "Orahovica",
+        "city_type": 1
+    },
+    {
+        "id": 234,
+        "county_id": 10,
+        "full_name": "Grad Slatina",
+        "name": "Slatina",
+        "city_type": 1
+    },
+    {
+        "id": 235,
+        "county_id": 10,
+        "full_name": "Grad Virovitica",
+        "name": "Virovitica",
+        "city_type": 1
+    },
+    {
+        "id": 236,
+        "county_id": 10,
+        "full_name": "Općina Crnac",
+        "name": "Crnac",
+        "city_type": 2
+    },
+    {
+        "id": 237,
+        "county_id": 10,
+        "full_name": "Općina Čačinci",
+        "name": "Čačinci",
+        "city_type": 2
+    },
+    {
+        "id": 238,
+        "county_id": 10,
+        "full_name": "Općina Čađavica",
+        "name": "Čađavica",
+        "city_type": 2
+    },
+    {
+        "id": 239,
+        "county_id": 10,
+        "full_name": "Općina Gradina",
+        "name": "Gradina",
+        "city_type": 2
+    },
+    {
+        "id": 240,
+        "county_id": 10,
+        "full_name": "Općina Lukač",
+        "name": "Lukač",
+        "city_type": 2
+    },
+    {
+        "id": 241,
+        "county_id": 10,
+        "full_name": "Općina Mikleuš",
+        "name": "Mikleuš",
+        "city_type": 2
+    },
+    {
+        "id": 242,
+        "county_id": 10,
+        "full_name": "Općina Nova Bukovica",
+        "name": "Nova Bukovica",
+        "city_type": 2
+    },
+    {
+        "id": 243,
+        "county_id": 10,
+        "full_name": "Općina Pitomača",
+        "name": "Pitomača",
+        "city_type": 2
+    },
+    {
+        "id": 244,
+        "county_id": 10,
+        "full_name": "Općina Sopje",
+        "name": "Sopje",
+        "city_type": 2
+    },
+    {
+        "id": 245,
+        "county_id": 10,
+        "full_name": "Općina Suhopolje",
+        "name": "Suhopolje",
+        "city_type": 2
+    },
+    {
+        "id": 246,
+        "county_id": 10,
+        "full_name": "Općina Špišić Bukovica",
+        "name": "Špišić Bukovica",
+        "city_type": 2
+    },
+    {
+        "id": 247,
+        "county_id": 10,
+        "full_name": "Općina Voćin",
+        "name": "Voćin",
+        "city_type": 2
+    },
+    {
+        "id": 248,
+        "county_id": 10,
+        "full_name": "Općina Zdenci",
+        "name": "Zdenci",
+        "city_type": 2
+    },
+    {
+        "id": 249,
+        "county_id": 11,
+        "full_name": "Grad Kutjevo",
+        "name": "Kutjevo",
+        "city_type": 1
+    },
+    {
+        "id": 250,
+        "county_id": 11,
+        "full_name": "Grad Lipik",
+        "name": "Lipik",
+        "city_type": 1
+    },
+    {
+        "id": 251,
+        "county_id": 11,
+        "full_name": "Grad Pakrac",
+        "name": "Pakrac",
+        "city_type": 1
+    },
+    {
+        "id": 252,
+        "county_id": 11,
+        "full_name": "Grad Pleternica",
+        "name": "Pleternica",
+        "city_type": 1
+    },
+    {
+        "id": 253,
+        "county_id": 11,
+        "full_name": "Grad Požega",
+        "name": "Požega",
+        "city_type": 1
+    },
+    {
+        "id": 254,
+        "county_id": 11,
+        "full_name": "Općina Brestovac",
+        "name": "Brestovac",
+        "city_type": 2
+    },
+    {
+        "id": 255,
+        "county_id": 11,
+        "full_name": "Općina Čaglin",
+        "name": "Čaglin",
+        "city_type": 2
+    },
+    {
+        "id": 256,
+        "county_id": 11,
+        "full_name": "Općina Jakšić",
+        "name": "Jakšić",
+        "city_type": 2
+    },
+    {
+        "id": 257,
+        "county_id": 11,
+        "full_name": "Općina Kaptol",
+        "name": "Kaptol",
+        "city_type": 2
+    },
+    {
+        "id": 258,
+        "county_id": 11,
+        "full_name": "Općina Velika",
+        "name": "Velika",
+        "city_type": 2
+    },
+    {
+        "id": 259,
+        "county_id": 12,
+        "full_name": "Grad Nova Gradiška",
+        "name": "Nova Gradiška",
+        "city_type": 1
+    },
+    {
+        "id": 260,
+        "county_id": 12,
+        "full_name": "Grad Slavonski Brod",
+        "name": "Slavonski Brod",
+        "city_type": 1
+    },
+    {
+        "id": 261,
+        "county_id": 12,
+        "full_name": "Općina Bebrina",
+        "name": "Bebrina",
+        "city_type": 2
+    },
+    {
+        "id": 262,
+        "county_id": 12,
+        "full_name": "Općina Brodski Stupnik",
+        "name": "Brodski Stupnik",
+        "city_type": 2
+    },
+    {
+        "id": 263,
+        "county_id": 12,
+        "full_name": "Općina Bukovlje",
+        "name": "Bukovlje",
+        "city_type": 2
+    },
+    {
+        "id": 264,
+        "county_id": 12,
+        "full_name": "Općina Cernik",
+        "name": "Cernik",
+        "city_type": 2
+    },
+    {
+        "id": 265,
+        "county_id": 12,
+        "full_name": "Općina Davor",
+        "name": "Davor",
+        "city_type": 2
+    },
+    {
+        "id": 266,
+        "county_id": 12,
+        "full_name": "Općina Donji Andrijevci",
+        "name": "Donji Andrijevci",
+        "city_type": 2
+    },
+    {
+        "id": 267,
+        "county_id": 12,
+        "full_name": "Općina Dragalić",
+        "name": "Dragalić",
+        "city_type": 2
+    },
+    {
+        "id": 268,
+        "county_id": 12,
+        "full_name": "Općina Garčin",
+        "name": "Garčin",
+        "city_type": 2
+    },
+    {
+        "id": 269,
+        "county_id": 12,
+        "full_name": "Općina Gornja Vrba",
+        "name": "Gornja Vrba",
+        "city_type": 2
+    },
+    {
+        "id": 270,
+        "county_id": 12,
+        "full_name": "Općina Gornji Bogićevci",
+        "name": "Gornji Bogićevci",
+        "city_type": 2
+    },
+    {
+        "id": 271,
+        "county_id": 12,
+        "full_name": "Općina Gundinci",
+        "name": "Gundinci",
+        "city_type": 2
+    },
+    {
+        "id": 272,
+        "county_id": 12,
+        "full_name": "Općina Klakar",
+        "name": "Klakar",
+        "city_type": 2
+    },
+    {
+        "id": 273,
+        "county_id": 12,
+        "full_name": "Općina Nova Kapela",
+        "name": "Nova Kapela",
+        "city_type": 2
+    },
+    {
+        "id": 274,
+        "county_id": 12,
+        "full_name": "Općina Okučani",
+        "name": "Okučani",
+        "city_type": 2
+    },
+    {
+        "id": 275,
+        "county_id": 12,
+        "full_name": "Općina Oprisavci",
+        "name": "Oprisavci",
+        "city_type": 2
+    },
+    {
+        "id": 276,
+        "county_id": 12,
+        "full_name": "Općina Oriovac",
+        "name": "Oriovac",
+        "city_type": 2
+    },
+    {
+        "id": 277,
+        "county_id": 12,
+        "full_name": "Općina Podcrkavlje",
+        "name": "Podcrkavlje",
+        "city_type": 2
+    },
+    {
+        "id": 278,
+        "county_id": 12,
+        "full_name": "Općina Rešetari",
+        "name": "Rešetari",
+        "city_type": 2
+    },
+    {
+        "id": 279,
+        "county_id": 12,
+        "full_name": "Općina Sibinj",
+        "name": "Sibinj",
+        "city_type": 2
+    },
+    {
+        "id": 280,
+        "county_id": 12,
+        "full_name": "Općina Sikirevci",
+        "name": "Sikirevci",
+        "city_type": 2
+    },
+    {
+        "id": 281,
+        "county_id": 12,
+        "full_name": "Općina Slavonski Šamac",
+        "name": "Slavonski Šamac",
+        "city_type": 2
+    },
+    {
+        "id": 282,
+        "county_id": 12,
+        "full_name": "Općina Stara Gradiška",
+        "name": "Stara Gradiška",
+        "city_type": 2
+    },
+    {
+        "id": 283,
+        "county_id": 12,
+        "full_name": "Općina Staro Petrovo Selo",
+        "name": "Staro Petrovo Selo",
+        "city_type": 2
+    },
+    {
+        "id": 284,
+        "county_id": 12,
+        "full_name": "Općina Velika Kopanica",
+        "name": "Velika Kopanica",
+        "city_type": 2
+    },
+    {
+        "id": 285,
+        "county_id": 12,
+        "full_name": "Općina Vrbje",
+        "name": "Vrbje",
+        "city_type": 2
+    },
+    {
+        "id": 286,
+        "county_id": 12,
+        "full_name": "Općina Vrpolje",
+        "name": "Vrpolje",
+        "city_type": 2
+    },
+    {
+        "id": 287,
+        "county_id": 13,
+        "full_name": "Grad Benkovac",
+        "name": "Benkovac",
+        "city_type": 1
+    },
+    {
+        "id": 288,
+        "county_id": 13,
+        "full_name": "Grad Biograd na Moru",
+        "name": "Biograd na Moru",
+        "city_type": 1
+    },
+    {
+        "id": 289,
+        "county_id": 13,
+        "full_name": "Grad Nin",
+        "name": "Nin",
+        "city_type": 1
+    },
+    {
+        "id": 290,
+        "county_id": 13,
+        "full_name": "Grad Obrovac",
+        "name": "Obrovac",
+        "city_type": 1
+    },
+    {
+        "id": 291,
+        "county_id": 13,
+        "full_name": "Grad Pag",
+        "name": "Pag",
+        "city_type": 1
+    },
+    {
+        "id": 292,
+        "county_id": 13,
+        "full_name": "Grad Zadar",
+        "name": "Zadar",
+        "city_type": 1
+    },
+    {
+        "id": 293,
+        "county_id": 13,
+        "full_name": "Općina Bibinje",
+        "name": "Bibinje",
+        "city_type": 2
+    },
+    {
+        "id": 294,
+        "county_id": 13,
+        "full_name": "Općina Galovac",
+        "name": "Galovac",
+        "city_type": 2
+    },
+    {
+        "id": 295,
+        "county_id": 13,
+        "full_name": "Općina Gračac",
+        "name": "Gračac",
+        "city_type": 2
+    },
+    {
+        "id": 296,
+        "county_id": 13,
+        "full_name": "Općina Jasenice",
+        "name": "Jasenice",
+        "city_type": 2
+    },
+    {
+        "id": 297,
+        "county_id": 13,
+        "full_name": "Općina Kali",
+        "name": "Kali",
+        "city_type": 2
+    },
+    {
+        "id": 298,
+        "county_id": 13,
+        "full_name": "Općina Kolan",
+        "name": "Kolan",
+        "city_type": 2
+    },
+    {
+        "id": 299,
+        "county_id": 13,
+        "full_name": "Općina Kukljica",
+        "name": "Kukljica",
+        "city_type": 2
+    },
+    {
+        "id": 300,
+        "county_id": 13,
+        "full_name": "Općina Lišane Ostrovičke",
+        "name": "Lišane Ostrovičke",
+        "city_type": 2
+    },
+    {
+        "id": 301,
+        "county_id": 13,
+        "full_name": "Općina Novigrad",
+        "name": "Novigrad",
+        "city_type": 2
+    },
+    {
+        "id": 302,
+        "county_id": 13,
+        "full_name": "Općina Pakoštane",
+        "name": "Pakoštane",
+        "city_type": 2
+    },
+    {
+        "id": 303,
+        "county_id": 13,
+        "full_name": "Općina Pašman",
+        "name": "Pašman",
+        "city_type": 2
+    },
+    {
+        "id": 304,
+        "county_id": 13,
+        "full_name": "Općina Polača",
+        "name": "Polača",
+        "city_type": 2
+    },
+    {
+        "id": 305,
+        "county_id": 13,
+        "full_name": "Općina Poličnik",
+        "name": "Poličnik",
+        "city_type": 2
+    },
+    {
+        "id": 306,
+        "county_id": 13,
+        "full_name": "Općina Posedarje",
+        "name": "Posedarje",
+        "city_type": 2
+    },
+    {
+        "id": 307,
+        "county_id": 13,
+        "full_name": "Općina Povljana",
+        "name": "Povljana",
+        "city_type": 2
+    },
+    {
+        "id": 308,
+        "county_id": 13,
+        "full_name": "Općina Preko",
+        "name": "Preko",
+        "city_type": 2
+    },
+    {
+        "id": 309,
+        "county_id": 13,
+        "full_name": "Općina Privlaka",
+        "name": "Privlaka",
+        "city_type": 2
+    },
+    {
+        "id": 310,
+        "county_id": 13,
+        "full_name": "Općina Ražanac",
+        "name": "Ražanac",
+        "city_type": 2
+    },
+    {
+        "id": 311,
+        "county_id": 13,
+        "full_name": "Općina Sali",
+        "name": "Sali",
+        "city_type": 2
+    },
+    {
+        "id": 312,
+        "county_id": 13,
+        "full_name": "Općina Stankovci",
+        "name": "Stankovci",
+        "city_type": 2
+    },
+    {
+        "id": 313,
+        "county_id": 13,
+        "full_name": "Općina Starigrad",
+        "name": "Starigrad",
+        "city_type": 2
+    },
+    {
+        "id": 314,
+        "county_id": 13,
+        "full_name": "Općina Sukošan",
+        "name": "Sukošan",
+        "city_type": 2
+    },
+    {
+        "id": 315,
+        "county_id": 13,
+        "full_name": "Općina Sveti Filip i Jakov",
+        "name": "Sveti Filip i Jakov",
+        "city_type": 2
+    },
+    {
+        "id": 316,
+        "county_id": 13,
+        "full_name": "Općina Škabrnja",
+        "name": "Škabrnja",
+        "city_type": 2
+    },
+    {
+        "id": 317,
+        "county_id": 13,
+        "full_name": "Općina Tkon",
+        "name": "Tkon",
+        "city_type": 2
+    },
+    {
+        "id": 318,
+        "county_id": 13,
+        "full_name": "Općina Vir",
+        "name": "Vir",
+        "city_type": 2
+    },
+    {
+        "id": 319,
+        "county_id": 13,
+        "full_name": "Općina Vrsi",
+        "name": "Vrsi",
+        "city_type": 2
+    },
+    {
+        "id": 320,
+        "county_id": 13,
+        "full_name": "Općina Zemunik Donji",
+        "name": "Zemunik Donji",
+        "city_type": 2
+    },
+    {
+        "id": 321,
+        "county_id": 14,
+        "full_name": "Grad Beli Manastir",
+        "name": "Beli Manastir",
+        "city_type": 1
+    },
+    {
+        "id": 322,
+        "county_id": 14,
+        "full_name": "Grad Belišće",
+        "name": "Belišće",
+        "city_type": 1
+    },
+    {
+        "id": 323,
+        "county_id": 14,
+        "full_name": "Grad Donji Miholjac",
+        "name": "Donji Miholjac",
+        "city_type": 1
+    },
+    {
+        "id": 324,
+        "county_id": 14,
+        "full_name": "Grad Đakovo",
+        "name": "Đakovo",
+        "city_type": 1
+    },
+    {
+        "id": 325,
+        "county_id": 14,
+        "full_name": "Grad Našice",
+        "name": "Našice",
+        "city_type": 1
+    },
+    {
+        "id": 326,
+        "county_id": 14,
+        "full_name": "Grad Osijek",
+        "name": "Osijek",
+        "city_type": 1
+    },
+    {
+        "id": 327,
+        "county_id": 14,
+        "full_name": "Grad Valpovo",
+        "name": "Valpovo",
+        "city_type": 1
+    },
+    {
+        "id": 328,
+        "county_id": 14,
+        "full_name": "Općina Antunovac",
+        "name": "Antunovac",
+        "city_type": 2
+    },
+    {
+        "id": 329,
+        "county_id": 14,
+        "full_name": "Općina Bilje",
+        "name": "Bilje",
+        "city_type": 2
+    },
+    {
+        "id": 330,
+        "county_id": 14,
+        "full_name": "Općina Bizovac",
+        "name": "Bizovac",
+        "city_type": 2
+    },
+    {
+        "id": 331,
+        "county_id": 14,
+        "full_name": "Općina Čeminac",
+        "name": "Čeminac",
+        "city_type": 2
+    },
+    {
+        "id": 332,
+        "county_id": 14,
+        "full_name": "Općina Čepin",
+        "name": "Čepin",
+        "city_type": 2
+    },
+    {
+        "id": 333,
+        "county_id": 14,
+        "full_name": "Općina Darda",
+        "name": "Darda",
+        "city_type": 2
+    },
+    {
+        "id": 334,
+        "county_id": 14,
+        "full_name": "Općina Donja Motičina",
+        "name": "Donja Motičina",
+        "city_type": 2
+    },
+    {
+        "id": 335,
+        "county_id": 14,
+        "full_name": "Općina Draž",
+        "name": "Draž",
+        "city_type": 2
+    },
+    {
+        "id": 336,
+        "county_id": 14,
+        "full_name": "Općina Drenje",
+        "name": "Drenje",
+        "city_type": 2
+    },
+    {
+        "id": 337,
+        "county_id": 14,
+        "full_name": "Općina Đurđenovac",
+        "name": "Đurđenovac",
+        "city_type": 2
+    },
+    {
+        "id": 338,
+        "county_id": 14,
+        "full_name": "Općina Erdut",
+        "name": "Erdut",
+        "city_type": 2
+    },
+    {
+        "id": 339,
+        "county_id": 14,
+        "full_name": "Općina Ernestinovo",
+        "name": "Ernestinovo",
+        "city_type": 2
+    },
+    {
+        "id": 340,
+        "county_id": 14,
+        "full_name": "Općina Feričanci",
+        "name": "Feričanci",
+        "city_type": 2
+    },
+    {
+        "id": 341,
+        "county_id": 14,
+        "full_name": "Općina Gorjani",
+        "name": "Gorjani",
+        "city_type": 2
+    },
+    {
+        "id": 342,
+        "county_id": 14,
+        "full_name": "Općina Jagodnjak",
+        "name": "Jagodnjak",
+        "city_type": 2
+    },
+    {
+        "id": 343,
+        "county_id": 14,
+        "full_name": "Općina Kneževi Vinogradi",
+        "name": "Kneževi Vinogradi",
+        "city_type": 2
+    },
+    {
+        "id": 344,
+        "county_id": 14,
+        "full_name": "Općina Koška",
+        "name": "Koška",
+        "city_type": 2
+    },
+    {
+        "id": 345,
+        "county_id": 14,
+        "full_name": "Općina Levanjska Varoš",
+        "name": "Levanjska Varoš",
+        "city_type": 2
+    },
+    {
+        "id": 346,
+        "county_id": 14,
+        "full_name": "Općina Magadenovac",
+        "name": "Magadenovac",
+        "city_type": 2
+    },
+    {
+        "id": 347,
+        "county_id": 14,
+        "full_name": "Općina Marijanci",
+        "name": "Marijanci",
+        "city_type": 2
+    },
+    {
+        "id": 348,
+        "county_id": 14,
+        "full_name": "Općina Petlovac",
+        "name": "Petlovac",
+        "city_type": 2
+    },
+    {
+        "id": 349,
+        "county_id": 14,
+        "full_name": "Općina Petrijevci",
+        "name": "Petrijevci",
+        "city_type": 2
+    },
+    {
+        "id": 350,
+        "county_id": 14,
+        "full_name": "Općina Podgorač",
+        "name": "Podgorač",
+        "city_type": 2
+    },
+    {
+        "id": 351,
+        "county_id": 14,
+        "full_name": "Općina Podravska Moslavina",
+        "name": "Podravska Moslavina",
+        "city_type": 2
+    },
+    {
+        "id": 352,
+        "county_id": 14,
+        "full_name": "Općina Popovac",
+        "name": "Popovac",
+        "city_type": 2
+    },
+    {
+        "id": 353,
+        "county_id": 14,
+        "full_name": "Općina Punitovci",
+        "name": "Punitovci",
+        "city_type": 2
+    },
+    {
+        "id": 354,
+        "county_id": 14,
+        "full_name": "Općina Satnica Đakovačka",
+        "name": "Satnica Đakovačka",
+        "city_type": 2
+    },
+    {
+        "id": 355,
+        "county_id": 14,
+        "full_name": "Općina Semeljci",
+        "name": "Semeljci",
+        "city_type": 2
+    },
+    {
+        "id": 356,
+        "county_id": 14,
+        "full_name": "Općina Strizivojna",
+        "name": "Strizivojna",
+        "city_type": 2
+    },
+    {
+        "id": 357,
+        "county_id": 14,
+        "full_name": "Općina Šodolovci",
+        "name": "Šodolovci",
+        "city_type": 2
+    },
+    {
+        "id": 358,
+        "county_id": 14,
+        "full_name": "Općina Trnava",
+        "name": "Trnava",
+        "city_type": 2
+    },
+    {
+        "id": 359,
+        "county_id": 14,
+        "full_name": "Općina Viljevo",
+        "name": "Viljevo",
+        "city_type": 2
+    },
+    {
+        "id": 360,
+        "county_id": 14,
+        "full_name": "Općina Viškovci",
+        "name": "Viškovci",
+        "city_type": 2
+    },
+    {
+        "id": 361,
+        "county_id": 14,
+        "full_name": "Općina Vladislavci",
+        "name": "Vladislavci",
+        "city_type": 2
+    },
+    {
+        "id": 362,
+        "county_id": 14,
+        "full_name": "Općina Vuka",
+        "name": "Vuka",
+        "city_type": 2
+    },
+    {
+        "id": 363,
+        "county_id": 15,
+        "full_name": "Grad Drniš",
+        "name": "Drniš",
+        "city_type": 1
+    },
+    {
+        "id": 364,
+        "county_id": 15,
+        "full_name": "Grad Knin",
+        "name": "Knin",
+        "city_type": 1
+    },
+    {
+        "id": 365,
+        "county_id": 15,
+        "full_name": "Grad Skradin",
+        "name": "Skradin",
+        "city_type": 1
+    },
+    {
+        "id": 366,
+        "county_id": 15,
+        "full_name": "Grad Šibenik",
+        "name": "Šibenik",
+        "city_type": 1
+    },
+    {
+        "id": 367,
+        "county_id": 15,
+        "full_name": "Grad Vodice",
+        "name": "Vodice",
+        "city_type": 1
+    },
+    {
+        "id": 368,
+        "county_id": 15,
+        "full_name": "Općina Bilice",
+        "name": "Bilice",
+        "city_type": 2
+    },
+    {
+        "id": 369,
+        "county_id": 15,
+        "full_name": "Općina Biskupija",
+        "name": "Biskupija",
+        "city_type": 2
+    },
+    {
+        "id": 370,
+        "county_id": 15,
+        "full_name": "Općina Civljane",
+        "name": "Civljane",
+        "city_type": 2
+    },
+    {
+        "id": 371,
+        "county_id": 15,
+        "full_name": "Općina Ervenik",
+        "name": "Ervenik",
+        "city_type": 2
+    },
+    {
+        "id": 372,
+        "county_id": 15,
+        "full_name": "Općina Kijevo",
+        "name": "Kijevo",
+        "city_type": 2
+    },
+    {
+        "id": 373,
+        "county_id": 15,
+        "full_name": "Općina Kistanje",
+        "name": "Kistanje",
+        "city_type": 2
+    },
+    {
+        "id": 374,
+        "county_id": 15,
+        "full_name": "Općina Murter-Kornati",
+        "name": "Murter-Kornati",
+        "city_type": 2
+    },
+    {
+        "id": 375,
+        "county_id": 15,
+        "full_name": "Općina Pirovac",
+        "name": "Pirovac",
+        "city_type": 2
+    },
+    {
+        "id": 376,
+        "county_id": 15,
+        "full_name": "Općina Primošten",
+        "name": "Primošten",
+        "city_type": 2
+    },
+    {
+        "id": 377,
+        "county_id": 15,
+        "full_name": "Općina Promina - (sjedište Oklaj)",
+        "name": "Promina - (sjedište Oklaj)",
+        "city_type": 2
+    },
+    {
+        "id": 378,
+        "county_id": 15,
+        "full_name": "Općina Rogoznica",
+        "name": "Rogoznica",
+        "city_type": 2
+    },
+    {
+        "id": 379,
+        "county_id": 15,
+        "full_name": "Općina Ružić - (sjedište Gradac)",
+        "name": "Ružić - (sjedište Gradac)",
+        "city_type": 2
+    },
+    {
+        "id": 380,
+        "county_id": 15,
+        "full_name": "Općina Tisno",
+        "name": "Tisno",
+        "city_type": 2
+    },
+    {
+        "id": 381,
+        "county_id": 15,
+        "full_name": "Općina Tribunj",
+        "name": "Tribunj",
+        "city_type": 2
+    },
+    {
+        "id": 382,
+        "county_id": 15,
+        "full_name": "Općina Unešić",
+        "name": "Unešić",
+        "city_type": 2
+    },
+    {
+        "id": 383,
+        "county_id": 16,
+        "full_name": "Grad Ilok",
+        "name": "Ilok",
+        "city_type": 1
+    },
+    {
+        "id": 384,
+        "county_id": 16,
+        "full_name": "Grad Otok",
+        "name": "Otok",
+        "city_type": 1
+    },
+    {
+        "id": 385,
+        "county_id": 16,
+        "full_name": "Grad Vinkovci",
+        "name": "Vinkovci",
+        "city_type": 1
+    },
+    {
+        "id": 386,
+        "county_id": 16,
+        "full_name": "Grad Vukovar",
+        "name": "Vukovar",
+        "city_type": 1
+    },
+    {
+        "id": 387,
+        "county_id": 16,
+        "full_name": "Grad Županja",
+        "name": "Županja",
+        "city_type": 1
+    },
+    {
+        "id": 388,
+        "county_id": 16,
+        "full_name": "Općina Andrijaševci",
+        "name": "Andrijaševci",
+        "city_type": 2
+    },
+    {
+        "id": 389,
+        "county_id": 16,
+        "full_name": "Općina Babina Greda",
+        "name": "Babina Greda",
+        "city_type": 2
+    },
+    {
+        "id": 390,
+        "county_id": 16,
+        "full_name": "Općina Bogdanovci",
+        "name": "Bogdanovci",
+        "city_type": 2
+    },
+    {
+        "id": 391,
+        "county_id": 16,
+        "full_name": "Općina Borovo",
+        "name": "Borovo",
+        "city_type": 2
+    },
+    {
+        "id": 392,
+        "county_id": 16,
+        "full_name": "Općina Bošnjaci",
+        "name": "Bošnjaci",
+        "city_type": 2
+    },
+    {
+        "id": 393,
+        "county_id": 16,
+        "full_name": "Općina Cerna",
+        "name": "Cerna",
+        "city_type": 2
+    },
+    {
+        "id": 394,
+        "county_id": 16,
+        "full_name": "Općina Drenovci",
+        "name": "Drenovci",
+        "city_type": 2
+    },
+    {
+        "id": 395,
+        "county_id": 16,
+        "full_name": "Općina Gradište",
+        "name": "Gradište",
+        "city_type": 2
+    },
+    {
+        "id": 396,
+        "county_id": 16,
+        "full_name": "Općina Gunja",
+        "name": "Gunja",
+        "city_type": 2
+    },
+    {
+        "id": 397,
+        "county_id": 16,
+        "full_name": "Općina Ivankovo",
+        "name": "Ivankovo",
+        "city_type": 2
+    },
+    {
+        "id": 398,
+        "county_id": 16,
+        "full_name": "Općina Jarmina",
+        "name": "Jarmina",
+        "city_type": 2
+    },
+    {
+        "id": 399,
+        "county_id": 16,
+        "full_name": "Općina Lovas",
+        "name": "Lovas",
+        "city_type": 2
+    },
+    {
+        "id": 400,
+        "county_id": 16,
+        "full_name": "Općina Markušica",
+        "name": "Markušica",
+        "city_type": 2
+    },
+    {
+        "id": 401,
+        "county_id": 16,
+        "full_name": "Općina Negoslavci",
+        "name": "Negoslavci",
+        "city_type": 2
+    },
+    {
+        "id": 402,
+        "county_id": 16,
+        "full_name": "Općina Nijemci",
+        "name": "Nijemci",
+        "city_type": 2
+    },
+    {
+        "id": 403,
+        "county_id": 16,
+        "full_name": "Općina Nuštar",
+        "name": "Nuštar",
+        "city_type": 2
+    },
+    {
+        "id": 404,
+        "county_id": 16,
+        "full_name": "Općina Privlaka",
+        "name": "Privlaka",
+        "city_type": 2
+    },
+    {
+        "id": 405,
+        "county_id": 16,
+        "full_name": "Općina Stari Jankovci",
+        "name": "Stari Jankovci",
+        "city_type": 2
+    },
+    {
+        "id": 406,
+        "county_id": 16,
+        "full_name": "Općina Stari Mikanovci",
+        "name": "Stari Mikanovci",
+        "city_type": 2
+    },
+    {
+        "id": 407,
+        "county_id": 16,
+        "full_name": "Općina Štitar",
+        "name": "Štitar",
+        "city_type": 2
+    },
+    {
+        "id": 408,
+        "county_id": 16,
+        "full_name": "Općina Tompojevci",
+        "name": "Tompojevci",
+        "city_type": 2
+    },
+    {
+        "id": 409,
+        "county_id": 16,
+        "full_name": "Općina Tordinci",
+        "name": "Tordinci",
+        "city_type": 2
+    },
+    {
+        "id": 410,
+        "county_id": 16,
+        "full_name": "Općina Tovarnik",
+        "name": "Tovarnik",
+        "city_type": 2
+    },
+    {
+        "id": 411,
+        "county_id": 16,
+        "full_name": "Općina Trpinja",
+        "name": "Trpinja",
+        "city_type": 2
+    },
+    {
+        "id": 412,
+        "county_id": 16,
+        "full_name": "Općina Vođinci",
+        "name": "Vođinci",
+        "city_type": 2
+    },
+    {
+        "id": 413,
+        "county_id": 16,
+        "full_name": "Općina Vrbanja",
+        "name": "Vrbanja",
+        "city_type": 2
+    },
+    {
+        "id": 414,
+        "county_id": 17,
+        "full_name": "Grad Hvar",
+        "name": "Hvar",
+        "city_type": 1
+    },
+    {
+        "id": 415,
+        "county_id": 17,
+        "full_name": "Grad Imotski",
+        "name": "Imotski",
+        "city_type": 1
+    },
+    {
+        "id": 416,
+        "county_id": 17,
+        "full_name": "Grad Kaštela",
+        "name": "Kaštela",
+        "city_type": 1
+    },
+    {
+        "id": 417,
+        "county_id": 17,
+        "full_name": "Grad Komiža",
+        "name": "Komiža",
+        "city_type": 1
+    },
+    {
+        "id": 418,
+        "county_id": 17,
+        "full_name": "Grad Makarska",
+        "name": "Makarska",
+        "city_type": 1
+    },
+    {
+        "id": 419,
+        "county_id": 17,
+        "full_name": "Grad Omiš",
+        "name": "Omiš",
+        "city_type": 1
+    },
+    {
+        "id": 420,
+        "county_id": 17,
+        "full_name": "Grad Sinj",
+        "name": "Sinj",
+        "city_type": 1
+    },
+    {
+        "id": 421,
+        "county_id": 17,
+        "full_name": "Grad Solin",
+        "name": "Solin",
+        "city_type": 1
+    },
+    {
+        "id": 422,
+        "county_id": 17,
+        "full_name": "Grad Split",
+        "name": "Split",
+        "city_type": 1
+    },
+    {
+        "id": 423,
+        "county_id": 17,
+        "full_name": "Grad Stari Grad",
+        "name": "Stari Grad",
+        "city_type": 1
+    },
+    {
+        "id": 424,
+        "county_id": 17,
+        "full_name": "Grad Supetar",
+        "name": "Supetar",
+        "city_type": 1
+    },
+    {
+        "id": 425,
+        "county_id": 17,
+        "full_name": "Grad Trilj",
+        "name": "Trilj",
+        "city_type": 1
+    },
+    {
+        "id": 426,
+        "county_id": 17,
+        "full_name": "Grad Trogir",
+        "name": "Trogir",
+        "city_type": 1
+    },
+    {
+        "id": 427,
+        "county_id": 17,
+        "full_name": "Grad Vis",
+        "name": "Vis",
+        "city_type": 1
+    },
+    {
+        "id": 428,
+        "county_id": 17,
+        "full_name": "Grad Vrgorac",
+        "name": "Vrgorac",
+        "city_type": 1
+    },
+    {
+        "id": 429,
+        "county_id": 17,
+        "full_name": "Grad Vrlika",
+        "name": "Vrlika",
+        "city_type": 1
+    },
+    {
+        "id": 430,
+        "county_id": 17,
+        "full_name": "Općina Baška Voda",
+        "name": "Baška Voda",
+        "city_type": 2
+    },
+    {
+        "id": 431,
+        "county_id": 17,
+        "full_name": "Općina Bol",
+        "name": "Bol",
+        "city_type": 2
+    },
+    {
+        "id": 432,
+        "county_id": 17,
+        "full_name": "Općina Brela",
+        "name": "Brela",
+        "city_type": 2
+    },
+    {
+        "id": 433,
+        "county_id": 17,
+        "full_name": "Općina Cista Provo",
+        "name": "Cista Provo",
+        "city_type": 2
+    },
+    {
+        "id": 434,
+        "county_id": 17,
+        "full_name": "Općina Dicmo - (sjedište Kraj)",
+        "name": "Dicmo - (sjedište Kraj)",
+        "city_type": 2
+    },
+    {
+        "id": 435,
+        "county_id": 17,
+        "full_name": "Općina Dugi Rat",
+        "name": "Dugi Rat",
+        "city_type": 2
+    },
+    {
+        "id": 436,
+        "county_id": 17,
+        "full_name": "Općina Dugopolje",
+        "name": "Dugopolje",
+        "city_type": 2
+    },
+    {
+        "id": 437,
+        "county_id": 17,
+        "full_name": "Općina Gradac",
+        "name": "Gradac",
+        "city_type": 2
+    },
+    {
+        "id": 438,
+        "county_id": 17,
+        "full_name": "Općina Hrvace",
+        "name": "Hrvace",
+        "city_type": 2
+    },
+    {
+        "id": 439,
+        "county_id": 17,
+        "full_name": "Općina Jelsa",
+        "name": "Jelsa",
+        "city_type": 2
+    },
+    {
+        "id": 440,
+        "county_id": 17,
+        "full_name": "Općina Klis",
+        "name": "Klis",
+        "city_type": 2
+    },
+    {
+        "id": 441,
+        "county_id": 17,
+        "full_name": "Općina Lećevica",
+        "name": "Lećevica",
+        "city_type": 2
+    },
+    {
+        "id": 442,
+        "county_id": 17,
+        "full_name": "Općina Lokvičići",
+        "name": "Lokvičići",
+        "city_type": 2
+    },
+    {
+        "id": 443,
+        "county_id": 17,
+        "full_name": "Općina Lovreć",
+        "name": "Lovreć",
+        "city_type": 2
+    },
+    {
+        "id": 444,
+        "county_id": 17,
+        "full_name": "Općina Marina",
+        "name": "Marina",
+        "city_type": 2
+    },
+    {
+        "id": 445,
+        "county_id": 17,
+        "full_name": "Općina Milna",
+        "name": "Milna",
+        "city_type": 2
+    },
+    {
+        "id": 446,
+        "county_id": 17,
+        "full_name": "Općina Muć",
+        "name": "Muć",
+        "city_type": 2
+    },
+    {
+        "id": 447,
+        "county_id": 17,
+        "full_name": "Općina Nerežišća",
+        "name": "Nerežišća",
+        "city_type": 2
+    },
+    {
+        "id": 448,
+        "county_id": 17,
+        "full_name": "Općina Okrug - (sjedište Okrug Gornji)",
+        "name": "Okrug - (sjedište Okrug Gornji)",
+        "city_type": 2
+    },
+    {
+        "id": 449,
+        "county_id": 17,
+        "full_name": "Općina Otok",
+        "name": "Otok",
+        "city_type": 2
+    },
+    {
+        "id": 450,
+        "county_id": 17,
+        "full_name": "Općina Podbablje - (sjedište Drum)",
+        "name": "Podbablje - (sjedište Drum)",
+        "city_type": 2
+    },
+    {
+        "id": 451,
+        "county_id": 17,
+        "full_name": "Općina Podgora",
+        "name": "Podgora",
+        "city_type": 2
+    },
+    {
+        "id": 452,
+        "county_id": 17,
+        "full_name": "Općina Podstrana",
+        "name": "Podstrana",
+        "city_type": 2
+    },
+    {
+        "id": 453,
+        "county_id": 17,
+        "full_name": "Općina Postira",
+        "name": "Postira",
+        "city_type": 2
+    },
+    {
+        "id": 454,
+        "county_id": 17,
+        "full_name": "Općina Prgomet",
+        "name": "Prgomet",
+        "city_type": 2
+    },
+    {
+        "id": 455,
+        "county_id": 17,
+        "full_name": "Općina Primorski Dolac",
+        "name": "Primorski Dolac",
+        "city_type": 2
+    },
+    {
+        "id": 456,
+        "county_id": 17,
+        "full_name": "Općina Proložac",
+        "name": "Proložac",
+        "city_type": 2
+    },
+    {
+        "id": 457,
+        "county_id": 17,
+        "full_name": "Općina Pučišća",
+        "name": "Pučišća",
+        "city_type": 2
+    },
+    {
+        "id": 458,
+        "county_id": 17,
+        "full_name": "Općina Runovići",
+        "name": "Runovići",
+        "city_type": 2
+    },
+    {
+        "id": 459,
+        "county_id": 17,
+        "full_name": "Općina Seget - (sjedište Seget Donji)",
+        "name": "Seget - (sjedište Seget Donji)",
+        "city_type": 2
+    },
+    {
+        "id": 460,
+        "county_id": 17,
+        "full_name": "Općina Selca",
+        "name": "Selca",
+        "city_type": 2
+    },
+    {
+        "id": 461,
+        "county_id": 17,
+        "full_name": "Općina Sućuraj",
+        "name": "Sućuraj",
+        "city_type": 2
+    },
+    {
+        "id": 462,
+        "county_id": 17,
+        "full_name": "Općina Sutivan",
+        "name": "Sutivan",
+        "city_type": 2
+    },
+    {
+        "id": 463,
+        "county_id": 17,
+        "full_name": "Općina Šestanovac",
+        "name": "Šestanovac",
+        "city_type": 2
+    },
+    {
+        "id": 464,
+        "county_id": 17,
+        "full_name": "Općina Šolta - (sjedište Grohote)",
+        "name": "Šolta - (sjedište Grohote)",
+        "city_type": 2
+    },
+    {
+        "id": 465,
+        "county_id": 17,
+        "full_name": "Općina Tučepi",
+        "name": "Tučepi",
+        "city_type": 2
+    },
+    {
+        "id": 466,
+        "county_id": 17,
+        "full_name": "Općina Zadvarje",
+        "name": "Zadvarje",
+        "city_type": 2
+    },
+    {
+        "id": 467,
+        "county_id": 17,
+        "full_name": "Općina Zagvozd",
+        "name": "Zagvozd",
+        "city_type": 2
+    },
+    {
+        "id": 468,
+        "county_id": 17,
+        "full_name": "Općina Zmijavci",
+        "name": "Zmijavci",
+        "city_type": 2
+    },
+    {
+        "id": 469,
+        "county_id": 18,
+        "full_name": "Grad Buje",
+        "name": "Buje",
+        "city_type": 1
+    },
+    {
+        "id": 470,
+        "county_id": 18,
+        "full_name": "Grad Buzet",
+        "name": "Buzet",
+        "city_type": 1
+    },
+    {
+        "id": 471,
+        "county_id": 18,
+        "full_name": "Grad Labin",
+        "name": "Labin",
+        "city_type": 1
+    },
+    {
+        "id": 472,
+        "county_id": 18,
+        "full_name": "Grad Novigrad",
+        "name": "Novigrad",
+        "city_type": 1
+    },
+    {
+        "id": 473,
+        "county_id": 18,
+        "full_name": "Grad Pazin",
+        "name": "Pazin",
+        "city_type": 1
+    },
+    {
+        "id": 474,
+        "county_id": 18,
+        "full_name": "Grad Poreč",
+        "name": "Poreč",
+        "city_type": 1
+    },
+    {
+        "id": 475,
+        "county_id": 18,
+        "full_name": "Grad Pula",
+        "name": "Pula",
+        "city_type": 1
+    },
+    {
+        "id": 476,
+        "county_id": 18,
+        "full_name": "Grad Rovinj",
+        "name": "Rovinj",
+        "city_type": 1
+    },
+    {
+        "id": 477,
+        "county_id": 18,
+        "full_name": "Grad Umag",
+        "name": "Umag",
+        "city_type": 1
+    },
+    {
+        "id": 478,
+        "county_id": 18,
+        "full_name": "Grad Vodnjan",
+        "name": "Vodnjan",
+        "city_type": 1
+    },
+    {
+        "id": 479,
+        "county_id": 18,
+        "full_name": "Općina Bale",
+        "name": "Bale",
+        "city_type": 2
+    },
+    {
+        "id": 480,
+        "county_id": 18,
+        "full_name": "Općina Barban",
+        "name": "Barban",
+        "city_type": 2
+    },
+    {
+        "id": 481,
+        "county_id": 18,
+        "full_name": "Općina Brtonigla",
+        "name": "Brtonigla",
+        "city_type": 2
+    },
+    {
+        "id": 482,
+        "county_id": 18,
+        "full_name": "Općina Cerovlje",
+        "name": "Cerovlje",
+        "city_type": 2
+    },
+    {
+        "id": 483,
+        "county_id": 18,
+        "full_name": "Općina Fažana",
+        "name": "Fažana",
+        "city_type": 2
+    },
+    {
+        "id": 484,
+        "county_id": 18,
+        "full_name": "Općina Funtana",
+        "name": "Funtana",
+        "city_type": 2
+    },
+    {
+        "id": 485,
+        "county_id": 18,
+        "full_name": "Općina Gračišće",
+        "name": "Gračišće",
+        "city_type": 2
+    },
+    {
+        "id": 486,
+        "county_id": 18,
+        "full_name": "Općina Grožnjan",
+        "name": "Grožnjan",
+        "city_type": 2
+    },
+    {
+        "id": 487,
+        "county_id": 18,
+        "full_name": "Općina Kanfanar",
+        "name": "Kanfanar",
+        "city_type": 2
+    },
+    {
+        "id": 488,
+        "county_id": 18,
+        "full_name": "Općina Karojba",
+        "name": "Karojba",
+        "city_type": 2
+    },
+    {
+        "id": 489,
+        "county_id": 18,
+        "full_name": "Općina Kaštelir-Labinci",
+        "name": "Kaštelir-Labinci",
+        "city_type": 2
+    },
+    {
+        "id": 490,
+        "county_id": 18,
+        "full_name": "Općina Kršan",
+        "name": "Kršan",
+        "city_type": 2
+    },
+    {
+        "id": 491,
+        "county_id": 18,
+        "full_name": "Općina Lanišće",
+        "name": "Lanišće",
+        "city_type": 2
+    },
+    {
+        "id": 492,
+        "county_id": 18,
+        "full_name": "Općina Ližnjan",
+        "name": "Ližnjan",
+        "city_type": 2
+    },
+    {
+        "id": 493,
+        "county_id": 18,
+        "full_name": "Općina Lupoglav",
+        "name": "Lupoglav",
+        "city_type": 2
+    },
+    {
+        "id": 494,
+        "county_id": 18,
+        "full_name": "Općina Marčana",
+        "name": "Marčana",
+        "city_type": 2
+    },
+    {
+        "id": 495,
+        "county_id": 18,
+        "full_name": "Općina Medulin",
+        "name": "Medulin",
+        "city_type": 2
+    },
+    {
+        "id": 496,
+        "county_id": 18,
+        "full_name": "Općina Motovun",
+        "name": "Motovun",
+        "city_type": 2
+    },
+    {
+        "id": 497,
+        "county_id": 18,
+        "full_name": "Općina Oprtalj",
+        "name": "Oprtalj",
+        "city_type": 2
+    },
+    {
+        "id": 498,
+        "county_id": 18,
+        "full_name": "Općina Pićan",
+        "name": "Pićan",
+        "city_type": 2
+    },
+    {
+        "id": 499,
+        "county_id": 18,
+        "full_name": "Općina Raša",
+        "name": "Raša",
+        "city_type": 2
+    },
+    {
+        "id": 500,
+        "county_id": 18,
+        "full_name": "Općina Sveta Nedelja",
+        "name": "Sveta Nedelja",
+        "city_type": 2
+    },
+    {
+        "id": 501,
+        "county_id": 18,
+        "full_name": "Općina Sveti Lovreč",
+        "name": "Sveti Lovreč",
+        "city_type": 2
+    },
+    {
+        "id": 502,
+        "county_id": 18,
+        "full_name": "Općina Sveti Petar u Šumi",
+        "name": "Sveti Petar u Šumi",
+        "city_type": 2
+    },
+    {
+        "id": 503,
+        "county_id": 18,
+        "full_name": "Općina Svetvinčenat",
+        "name": "Svetvinčenat",
+        "city_type": 2
+    },
+    {
+        "id": 504,
+        "county_id": 18,
+        "full_name": "Općina Tar-Vabriga",
+        "name": "Tar-Vabriga",
+        "city_type": 2
+    },
+    {
+        "id": 505,
+        "county_id": 18,
+        "full_name": "Općina Tinjan",
+        "name": "Tinjan",
+        "city_type": 2
+    },
+    {
+        "id": 506,
+        "county_id": 18,
+        "full_name": "Općina Višnjan",
+        "name": "Višnjan",
+        "city_type": 2
+    },
+    {
+        "id": 507,
+        "county_id": 18,
+        "full_name": "Općina Vižinada",
+        "name": "Vižinada",
+        "city_type": 2
+    },
+    {
+        "id": 508,
+        "county_id": 18,
+        "full_name": "Općina Vrsar",
+        "name": "Vrsar",
+        "city_type": 2
+    },
+    {
+        "id": 509,
+        "county_id": 18,
+        "full_name": "Općina Žminj",
+        "name": "Žminj",
+        "city_type": 2
+    },
+    {
+        "id": 510,
+        "county_id": 19,
+        "full_name": "Grad Dubrovnik",
+        "name": "Dubrovnik",
+        "city_type": 1
+    },
+    {
+        "id": 511,
+        "county_id": 19,
+        "full_name": "Grad Korčula",
+        "name": "Korčula",
+        "city_type": 1
+    },
+    {
+        "id": 512,
+        "county_id": 19,
+        "full_name": "Grad Metković",
+        "name": "Metković",
+        "city_type": 1
+    },
+    {
+        "id": 513,
+        "county_id": 19,
+        "full_name": "Grad Opuzen",
+        "name": "Opuzen",
+        "city_type": 1
+    },
+    {
+        "id": 514,
+        "county_id": 19,
+        "full_name": "Grad Ploče",
+        "name": "Ploče",
+        "city_type": 1
+    },
+    {
+        "id": 515,
+        "county_id": 19,
+        "full_name": "Općina Blato",
+        "name": "Blato",
+        "city_type": 2
+    },
+    {
+        "id": 516,
+        "county_id": 19,
+        "full_name": "Općina Dubrovačko primorje - (sjedište Slano)",
+        "name": "Dubrovačko primorje - (sjedište Slano)",
+        "city_type": 2
+    },
+    {
+        "id": 517,
+        "county_id": 19,
+        "full_name": "Općina Janjina",
+        "name": "Janjina",
+        "city_type": 2
+    },
+    {
+        "id": 518,
+        "county_id": 19,
+        "full_name": "Općina Konavle - (sjedište Cavtat)",
+        "name": "Konavle - (sjedište Cavtat)",
+        "city_type": 2
+    },
+    {
+        "id": 519,
+        "county_id": 19,
+        "full_name": "Općina Kula Norinska",
+        "name": "Kula Norinska",
+        "city_type": 2
+    },
+    {
+        "id": 520,
+        "county_id": 19,
+        "full_name": "Općina Lastovo",
+        "name": "Lastovo",
+        "city_type": 2
+    },
+    {
+        "id": 521,
+        "county_id": 19,
+        "full_name": "Općina Lumbarda",
+        "name": "Lumbarda",
+        "city_type": 2
+    },
+    {
+        "id": 522,
+        "county_id": 19,
+        "full_name": "Općina Mljet - (sjedište Babino Polje)",
+        "name": "Mljet - (sjedište Babino Polje)",
+        "city_type": 2
+    },
+    {
+        "id": 523,
+        "county_id": 19,
+        "full_name": "Općina Orebić",
+        "name": "Orebić",
+        "city_type": 2
+    },
+    {
+        "id": 524,
+        "county_id": 19,
+        "full_name": "Općina Pojezerje - (sjedište Otrić-Seoci)",
+        "name": "Pojezerje - (sjedište Otrić-Seoci)",
+        "city_type": 2
+    },
+    {
+        "id": 525,
+        "county_id": 19,
+        "full_name": "Općina Slivno - (sjedište Vlaka)",
+        "name": "Slivno - (sjedište Vlaka)",
+        "city_type": 2
+    },
+    {
+        "id": 526,
+        "county_id": 19,
+        "full_name": "Općina Smokvica",
+        "name": "Smokvica",
+        "city_type": 2
+    },
+    {
+        "id": 527,
+        "county_id": 19,
+        "full_name": "Općina Ston",
+        "name": "Ston",
+        "city_type": 2
+    },
+    {
+        "id": 528,
+        "county_id": 19,
+        "full_name": "Općina Trpanj",
+        "name": "Trpanj",
+        "city_type": 2
+    },
+    {
+        "id": 529,
+        "county_id": 19,
+        "full_name": "Općina Vela Luka",
+        "name": "Vela Luka",
+        "city_type": 2
+    },
+    {
+        "id": 530,
+        "county_id": 19,
+        "full_name": "Općina Zažablje - (sjedište Mlinište)",
+        "name": "Zažablje - (sjedište Mlinište)",
+        "city_type": 2
+    },
+    {
+        "id": 531,
+        "county_id": 19,
+        "full_name": "Općina Župa dubrovačka - (sjedište Srebreno)",
+        "name": "Župa dubrovačka - (sjedište Srebreno)",
+        "city_type": 2
+    },
+    {
+        "id": 532,
+        "county_id": 20,
+        "full_name": "Grad Čakovec",
+        "name": "Čakovec",
+        "city_type": 1
+    },
+    {
+        "id": 533,
+        "county_id": 20,
+        "full_name": "Grad Mursko Središće",
+        "name": "Mursko Središće",
+        "city_type": 1
+    },
+    {
+        "id": 534,
+        "county_id": 20,
+        "full_name": "Grad Prelog",
+        "name": "Prelog",
+        "city_type": 1
+    },
+    {
+        "id": 535,
+        "county_id": 20,
+        "full_name": "Općina Belica",
+        "name": "Belica",
+        "city_type": 2
+    },
+    {
+        "id": 536,
+        "county_id": 20,
+        "full_name": "Općina Dekanovec",
+        "name": "Dekanovec",
+        "city_type": 2
+    },
+    {
+        "id": 537,
+        "county_id": 20,
+        "full_name": "Općina Domašinec",
+        "name": "Domašinec",
+        "city_type": 2
+    },
+    {
+        "id": 538,
+        "county_id": 20,
+        "full_name": "Općina Donja Dubrava",
+        "name": "Donja Dubrava",
+        "city_type": 2
+    },
+    {
+        "id": 539,
+        "county_id": 20,
+        "full_name": "Općina Donji Kraljevec",
+        "name": "Donji Kraljevec",
+        "city_type": 2
+    },
+    {
+        "id": 540,
+        "county_id": 20,
+        "full_name": "Općina Donji Vidovec",
+        "name": "Donji Vidovec",
+        "city_type": 2
+    },
+    {
+        "id": 541,
+        "county_id": 20,
+        "full_name": "Općina Goričan",
+        "name": "Goričan",
+        "city_type": 2
+    },
+    {
+        "id": 542,
+        "county_id": 20,
+        "full_name": "Općina Gornji Mihaljevec",
+        "name": "Gornji Mihaljevec",
+        "city_type": 2
+    },
+    {
+        "id": 543,
+        "county_id": 20,
+        "full_name": "Općina Kotoriba",
+        "name": "Kotoriba",
+        "city_type": 2
+    },
+    {
+        "id": 544,
+        "county_id": 20,
+        "full_name": "Općina Mala Subotica",
+        "name": "Mala Subotica",
+        "city_type": 2
+    },
+    {
+        "id": 545,
+        "county_id": 20,
+        "full_name": "Općina Nedelišće",
+        "name": "Nedelišće",
+        "city_type": 2
+    },
+    {
+        "id": 546,
+        "county_id": 20,
+        "full_name": "Općina Orehovica",
+        "name": "Orehovica",
+        "city_type": 2
+    },
+    {
+        "id": 547,
+        "county_id": 20,
+        "full_name": "Općina Podturen",
+        "name": "Podturen",
+        "city_type": 2
+    },
+    {
+        "id": 548,
+        "county_id": 20,
+        "full_name": "Općina Pribislavec",
+        "name": "Pribislavec",
+        "city_type": 2
+    },
+    {
+        "id": 549,
+        "county_id": 20,
+        "full_name": "Općina Selnica",
+        "name": "Selnica",
+        "city_type": 2
+    },
+    {
+        "id": 550,
+        "county_id": 20,
+        "full_name": "Općina Strahoninec",
+        "name": "Strahoninec",
+        "city_type": 2
+    },
+    {
+        "id": 551,
+        "county_id": 20,
+        "full_name": "Općina Sveta Marija",
+        "name": "Sveta Marija",
+        "city_type": 2
+    },
+    {
+        "id": 552,
+        "county_id": 20,
+        "full_name": "Općina Sveti Juraj na Bregu - (sjedište Lopatinec)",
+        "name": "Sveti Juraj na Bregu - (sjedište Lopatinec)",
+        "city_type": 2
+    },
+    {
+        "id": 553,
+        "county_id": 20,
+        "full_name": "Općina Sveti Martin na Muri",
+        "name": "Sveti Martin na Muri",
+        "city_type": 2
+    },
+    {
+        "id": 554,
+        "county_id": 20,
+        "full_name": "Općina Šenkovec",
+        "name": "Šenkovec",
+        "city_type": 2
+    },
+    {
+        "id": 555,
+        "county_id": 20,
+        "full_name": "Općina Štrigova",
+        "name": "Štrigova",
+        "city_type": 2
+    },
+    {
+        "id": 556,
+        "county_id": 20,
+        "full_name": "Općina Vratišinec",
+        "name": "Vratišinec",
+        "city_type": 2
+    }
+]

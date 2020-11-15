@@ -1,10 +1,16 @@
 from django import forms
+from django.db.models.aggregates import Max
 from .models import Driver
 from events.forms import DateInput
+from PIL import Image
 
 
 class DriverModelForm(forms.ModelForm):
-    
+    x = forms.FloatField(widget=forms.HiddenInput())
+    y = forms.FloatField(widget=forms.HiddenInput())
+    width = forms.FloatField(widget=forms.HiddenInput())
+    height = forms.FloatField(widget=forms.HiddenInput())
+
     class Meta:
         model = Driver
         fields = (
@@ -26,3 +32,4 @@ class DriverModelForm(forms.ModelForm):
             'phone'         : forms.TextInput(attrs={'class': 'form-control'}),
             'city'          : forms.Select(attrs={'class': 'custom-select'}),
         }
+    

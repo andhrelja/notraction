@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
 {% block body %}
-{% include 'subnavbar_detail.html' with brand=driver.get_full_name object_name='vozača' update_url='drivers:update' %}
+{% include 'subnavbar_detail.html' with title=driver.get_full_name object_name='vozača' update_url='drivers:update' %}
 {% include 'messages.html' %}
+
 
 <div class="container py-3">
     <div class="row">
@@ -13,7 +14,19 @@
                 </div>
                 <div class="card-body h-100">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-12 text-center">
+                            <img src="{{ driver.driver_image.url }}" class="driver-image-rounded w-50">
+                        </div>
+                    </div>
+                    <div class="row m-4">
+                        <div class="col-md-12 text-center">
+                            <h3 class="h3 font-weight-bold">{{ driver.get_full_name }}</h3>
+                            <h4 class="h4">{{ driver.get_discipline_display }}</h4>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 mb-3">
+                        <div class="col ml-5">
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">IME</h5>
                                 <p class="card-text">{{ driver.first_name }}</p>
@@ -27,24 +40,18 @@
                                 <p class="card-text">{{ driver.location_name }}</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col ml-5">
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">SPOL</h5>
-                                <p class="card-text">Muško</p>
+                                <p class="card-text">{{ driver.gender }}</p>
                             </div>
                             <div class="detail-item-group">
-                                <h5 class="h5 mb-1">ROĐENDAN</h5>
-                                <p class="card-text">{{ driver.birth_date }}</p>
+                                <h5 class="h5 mb-1">AUTOMOBIL</h5>
+                                <p class="card-text">{{ driver.car.get_full_name }}</p>
                             </div>
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">VRSTA</h5>
-                                <p class="card-text">Formula Driver</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">SLIKA</h5>
-                                <img src="{{ driver.driver_image.url }}" alt="{{ driver.driver_image }}" class="w-100">
+                                <p class="card-text">{{ driver.discipline }}</p>
                             </div>
                         </div>
                     </div>
@@ -53,6 +60,7 @@
         </div>
     </div>
 </div>
+
 
 <script>
 toggleActive("drivers");

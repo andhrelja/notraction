@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Zagrebačka županija"
+    },
+    {
+        "id": 2,
+        "name": "Krapinsko-zagorska županija"
+    },
+    {
+        "id": 3,
+        "name": "Sisačko-moslavačka županija"
+    },
+    {
+        "id": 4,
+        "name": "Karlovačka županija"
+    },
+    {
+        "id": 5,
+        "name": "Varaždinska županija"
+    },
+    {
+        "id": 6,
+        "name": "Koprivničko-križevačka županija"
+    },
+    {
+        "id": 7,
+        "name": "Bjelovarsko-bilogorska županija"
+    },
+    {
+        "id": 8,
+        "name": "Primorsko-goranska županija"
+    },
+    {
+        "id": 9,
+        "name": "Ličko-senjska županija"
+    },
+    {
+        "id": 10,
+        "name": "Virovitičko-podravska županija"
+    },
+    {
+        "id": 11,
+        "name": "Požeško-slavonska županija"
+    },
+    {
+        "id": 12,
+        "name": "Brodsko-posavska županija"
+    },
+    {
+        "id": 13,
+        "name": "Zadarska županija"
+    },
+    {
+        "id": 14,
+        "name": "Osječko-baranjska županija"
+    },
+    {
+        "id": 15,
+        "name": "Šibensko-kninska županija"
+    },
+    {
+        "id": 16,
+        "name": "Vukovarsko-srijemska županija"
+    },
+    {
+        "id": 17,
+        "name": "Splitsko-dalmatinska županija"
+    },
+    {
+        "id": 18,
+        "name": "Istarska županija"
+    },
+    {
+        "id": 19,
+        "name": "Dubrovačko-neretvanska županija"
+    },
+    {
+        "id": 20,
+        "name": "Međimurska županija"
+    }
+]

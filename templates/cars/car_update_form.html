@@ -12,7 +12,7 @@
             <form method="post" action="" enctype="multipart/form-data">
             {% csrf_token %}
                 {% include 'form_snippet_alt.html' %}
-                <input type="submit" class="btn btn-secondary" value="Spremi automobil">
+                <input type="submit" class="btn btn-secondary" value="Spremi promjene">
                 <a href="{% url 'cars:detail' object.pk %}" class="btn btn-outline-danger">Odustani</a>
             </form>
         </div>

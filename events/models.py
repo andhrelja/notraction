@@ -66,8 +66,8 @@ class Event(models.Model):
 class County(models.Model):
 
     # General
-    id = models.IntegerField("ID", primary_key=True)
-    name = models.CharField("Naziv", max_length=64)
+    id      = models.IntegerField("ID", primary_key=True)
+    name    = models.CharField("Naziv", max_length=64)
 
     class Meta:
         verbose_name = "Županija"
@@ -78,10 +78,18 @@ class County(models.Model):
 
 
 class City(models.Model):
+    TYPE_CHOICES = (
+        (1, 'Grad'),
+        (2, 'Općina'),
+    )
 
     # General
-    name = models.CharField("Naziv", max_length=64)
-    county = models.ForeignKey("events.County", verbose_name="Županija", on_delete=models.CASCADE)
+    name        = models.CharField("Naziv", max_length=64)
+    full_name   = models.CharField("Puni naziv", max_length=128)
+    city_type   = models.IntegerField("Tip mjesta", choices=TYPE_CHOICES)
+
+    # Foreign keys
+    county      = models.ForeignKey("events.County", verbose_name="Županija", on_delete=models.CASCADE)
 
 
     class Meta:
@@ -89,5 +97,5 @@ class City(models.Model):
         verbose_name_plural = "Gradovi"
 
     def __str__(self):
-        return self.name
+        return self.full_name
 

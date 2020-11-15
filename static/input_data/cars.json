@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "driver_id": 1,
+        "gallery": null,
+        "model_id": 536,
+        "image": "cars/images/Amira_Bradaric.jpg",
+        "capacity": 1,
+        "horse_power": 85,
+        "year": 2001
+    },
+    {
+        "id": 2,
+        "driver_id": 2,
+        "gallery": null,
+        "model_id": 597,
+        "image": "cars/images/Igor_Varesko.jpg",
+        "capacity": 2,
+        "horse_power": 90,
+        "year": 2004
+    },
+    {
+        "id": 3,
+        "driver_id": 3,
+        "gallery": null,
+        "model_id": 75,
+        "image": "cars/images/Ivan_Viskovic.jpg",
+        "capacity": 3,
+        "horse_power": 115,
+        "year": 1998
+    },
+    {
+        "id": 4,
+        "driver_id": 4,
+        "gallery": null,
+        "model_id": 597,
+        "image": "cars/images/Leon_Dubroja.jpg",
+        "capacity": 2,
+        "horse_power": 80,
+        "year": 2002
+    },
+    {
+        "id": 5,
+        "driver_id": 5,
+        "gallery": null,
+        "model_id": 261,
+        "image": "cars/images/Matija_Brkljacic.jpg",
+        "capacity": 2,
+        "horse_power": 103,
+        "year": 2006
+    },
+    {
+        "id": 6,
+        "driver_id": 6,
+        "gallery": null,
+        "model_id": 75,
+        "image": "cars/images/Rade_Kosanovic.jpg",
+        "capacity": 4,
+        "horse_power": 134,
+        "year": 1998
+    },
+    {
+        "id": 7,
+        "driver_id": 7,
+        "gallery": null,
+        "model_id": 75,
+        "image": "cars/images/Roberto_Randic.jpg",
+        "capacity": 3,
+        "horse_power": 120,
+        "year": 1997
+    },
+    {
+        "id": 8,
+        "driver_id": 8,
+        "gallery": null,
+        "model_id": 261,
+        "image": "cars/images/Sasa_Radola.jpg",
+        "capacity": 3,
+        "horse_power": 130,
+        "year": 2009
+    },
+    {
+        "id": 9,
+        "driver_id": 9,
+        "gallery": null,
+        "model_id": 159,
+        "image": "cars/images/Toni_Cukon.jpg",
+        "capacity": 1,
+        "horse_power": 80,
+        "year": 2002
+    },
+    {
+        "id": 10,
+        "driver_id": 10,
+        "gallery": null,
+        "model_id": 75,
+        "image": "cars/images/Tony_Viskovic.jpg",
+        "capacity": 3,
+        "horse_power": 110,
+        "year": 1999
+    },
+    {
+        "id": 11,
+        "driver_id": 11,
+        "gallery": null,
+        "model_id": 536,
+        "image": "cars/images/Vedran_Divkovic.jpg",
+        "capacity": 2,
+        "horse_power": 110,
+        "year": 2001
+    },
+    {
+        "id": 12,
+        "driver_id": 12,
+        "gallery": null,
+        "model_id": 769,
+        "image": "cars/images/Alen_Celega.jpg",
+        "capacity": 4,
+        "horse_power": 130,
+        "year": 1982
+    },
+    {
+        "id": 13,
+        "driver_id": 13,
+        "gallery": null,
+        "model_id": 536,
+        "image": "cars/images/Marina_Lisica.jpg",
+        "capacity": 3,
+        "horse_power": 95,
+        "year": 2003
+    },
+    {
+        "id": 14,
+        "driver_id": 14,
+        "gallery": null,
+        "model_id": 536,
+        "image": "cars/images/Igor_Lisica.jpg",
+        "capacity": 3,
+        "horse_power": 95,
+        "year": 2001
+    }
+]

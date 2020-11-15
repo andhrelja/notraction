@@ -1,10 +1,39 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block body %}
 {% include 'messages.html' %}
 
+<div class="container p-3">
+    <div class="card m-auto border-secondary mb-3">
+        <div class="card-header bg-primary p-3">
+            <h2 class="h2 text-light mb-0"><strong>Novo prvenstvo</strong></h2>
+        </div>
+        <div class="card-body p-5">
+            <form method="post" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+                {% include 'form_snippet_xl.html' %}
+                <input type="submit" class="btn btn-secondary" value="Spremi prvenstvo">
+                <a href="{% url 'championships:list' %}" class="btn btn-outline-danger">Odustani</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/toggleCities.js' %}"></script>
 <script>
 toggleActive("championships");
+
+let counties = {};
+let cities = {};
+
+fetch("{% static 'input_data/events_county.json' %}")
+    .then((county_data) => county_data.json())
+    .then((json_data) => counties = json_data)
+    .then(() => fetch("{% static 'input_data/events_city.json' %}")
+        .then((city_data) => city_data.json())
+        .then((json_data) => cities = json_data));
+
 </script>
 
 {% endblock body %}

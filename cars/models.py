@@ -1,5 +1,12 @@
+from django.conf import settings
 from django.db import models
 from django.shortcuts import reverse
+from django.templatetags.static import static
+from pathlib import Path
+from PIL import Image
+from io import BytesIO
+import requests
+import os
 
 CAPACITY_CHOICES = (
     (0, 1000),
@@ -19,33 +26,38 @@ YEAR_CHOICES = (
 )
 
 
-class Car(models.Model):       
-    
+class Car(models.Model):
+
     # General
     horse_power = models.IntegerField("Konjska snaga", null=True, blank=True)
-    capacity    = models.IntegerField("Kubikaža", choices=CAPACITY_CHOICES, null=True)
-    year        = models.IntegerField("Godina proizvodnje", choices=YEAR_CHOICES)
+    capacity = models.IntegerField(
+        "Kubikaža", choices=CAPACITY_CHOICES, null=True)
+    year = models.IntegerField("Godina proizvodnje", choices=YEAR_CHOICES)
     description = models.TextField("Detalji", null=True, blank=True)
 
     # Foreign keys
-    driver      = models.ForeignKey("drivers.Driver", verbose_name="Vozač", on_delete=models.CASCADE)
-    model       = models.ForeignKey("cars.Model", verbose_name="Model", on_delete=models.CASCADE)
+    driver = models.OneToOneField(
+        "drivers.Driver", verbose_name="Vozač", on_delete=models.CASCADE)
+    model = models.ForeignKey(
+        "cars.Model", verbose_name="Model", on_delete=models.CASCADE)
 
     # Images
-    image       = models.ImageField("Slika", upload_to='cars/images/', blank=False, null=True)
-    gallery     = models.ForeignKey("gallery.Gallery", null=True, blank=True, verbose_name="Galerija", on_delete=models.CASCADE)
-    
+    image = models.ImageField(
+        "Slika", upload_to='cars/images/', blank=False, null=True)
+    gallery = models.ForeignKey("gallery.Gallery", null=True,
+                                blank=True, verbose_name="Galerija", on_delete=models.CASCADE)
 
     def get_full_name(self):
-        full_name = "{make} {model}, {year}".format(make=self.model.manufacturer, model=self.model, year=self.year)
+        full_name = "{make} {model}, {year}".format(
+            make=self.model.manufacturer, model=self.model, year=self.year)
         return full_name.strip()
+    
+    def get_short_name(self):
+        short_name = "{model}, {year}".format(model=self.model, year=self.year)
 
     def __str__(self):
-        return "{manufacturer} {model}, {year}".format(
-            manufacturer=self.model.manufacturer, 
-            model=self.model, 
-            year=self.year)
-    
+        return self.get_full_name()
+
     def get_absolute_url(self):
         return reverse("cars:detail", kwargs={"pk": self.pk})
 
@@ -57,11 +69,41 @@ class Car(models.Model):
 class Manufacturer(models.Model):
 
     # General
-    name    = models.CharField("Naziv", max_length=128)
+    name = models.CharField("Naziv", max_length=128)
+    image_url = models.CharField("Logo URL", max_length=2000)
 
     class Meta:
         verbose_name = "Proizvođač"
         verbose_name_plural = "Proizvođači"
+
+    @property
+    def image_thumbnail_url(self):
+        file_name = os.path.split(self.image_url)[1]
+        img_path = settings.BASE_DIR / 'static/images/manufacturer_logos' / file_name
+
+        try:
+            open(img_path)
+        except FileNotFoundError:
+            response = requests.get(self.image_url)
+            buff = BytesIO(response.content)       
+
+            img = Image.open(buff)            
+            img = img.convert("RGBA")
+            img = img.reduce(12)
+            
+            img_array = img.getdata()
+            new_img_array = []
+            for item in img_array:
+                if item[0] == 255 and item[1] == 255 and item[2] == 255:
+                    new_img_array.append((255, 255, 255, 0))
+                else:
+                    new_img_array.append(item)
+
+            img.putdata(new_img_array)
+            with open(img_path, 'wb') as f:
+                img.save(f, "PNG")
+
+        return static('images/manufacturer_logos/' + file_name)
 
     def __str__(self):
         return self.name
@@ -70,21 +112,20 @@ class Manufacturer(models.Model):
 class Model(models.Model):
 
     # General
-    name    = models.CharField("Naziv", max_length=50)
+    name = models.CharField("Naziv", max_length=50)
 
     # Foreign keys
-    manufacturer = models.ForeignKey("cars.Manufacturer", verbose_name="Proizvođač", on_delete=models.CASCADE)
+    manufacturer = models.ForeignKey(
+        "cars.Manufacturer", verbose_name="Proizvođač", on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['name']
         verbose_name = "Model automobila"
         verbose_name_plural = "Modeli automobila"
-   
+
 
     def __str__(self):
         return self.name
 
     def get_absolute_url(self):
         return reverse("cars:list")
-
-

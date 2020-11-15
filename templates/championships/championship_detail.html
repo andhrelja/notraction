@@ -1,35 +1,178 @@
 {% extends 'base.html' %}
 
+{% load championship_extras %}
+
 {% block body %}
-{% include 'subnavbar_detail.html' with brand='Prvenstvo' object_name='prvenstvo' update_url='championships:update' %}
+{% include 'subnavbar_detail.html' with title=championship.name object_name='prvenstvo' update_url='championships:update' %}
 {% include 'messages.html' %}
+
 
 <div class="container py-3">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8">
             <div class="card w-100">
                 <div class="card-header bg-primary">
                     <h3 class="h3 card-title text-light mb-0">Detalji o prvenstvu</h3>
                 </div>
-                <div class="card-body h-100">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="fas fa-id-card"></i>
-                                    <span class="pl-3">{{ championship.name }}</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span class="pl-3">{{ championship.level }}</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="fas fa-car"></i>
-                                    <span class="pl-3">{{ driver.car_set.first.get_full_name }}</span>
-                                </li>
-                            </ul>
+                <div class="card-body card-detail h-100">
+                    <div class="row mb-3">
+                    {% if championship.image %}
+                        <div class="col-md-12 text-center">
+                            <img src="{{ championship.image.url }}" alt="{{ championship.image }}" style="max-height: 400px">
+                        </div>                    
+                    {% endif %}
+                        <div class="col-md-12 mt-3 mb-3 text-center">
+                            <h3 class="h3 font-weight-bold">{{ championship.name }}</h3>
+                            <h4 class="h4 font-weight-bold">{{ championship.championship_type.organizer }}</h4>
                         </div>
                     </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col ml-5">
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">ORGANIZATOR</h5>
+                                <p class="card-text">{{ championship.organizer }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">LOKACIJA</h5>
+                                <p class="card-text">{{ championship.location_name }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">TIP PRVENSTVA</h5>
+                                <p class="card-text">{{ championship.championship_type }}</p>
+                            </div>
+                        </div>
+                        <div class="col ml-5">
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">DATUM POČETKA</h5>
+                                <p class="card-text">{{ championship.start_date }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">DATUM ZAVRŠETKA</h5>
+                                <p class="card-text">{{ championship.end_date }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">UKUPAN REZULTAT KLUBA</h5>
+                                <p class="card-text">{{ championship.club_position }} / {{ championship.club_count }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% if championship.description %}
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <div class="card border-secondary mb-3">
+                                <div class="card-header">Opis prvenstva</div>
+                                <div class="card-body">
+                                    <p class="card-text">{{ championship.description|safe }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card w-100">
+                <div class="card-header bg-primary">
+                    <h3 class="h3 card-title text-light mb-0">Najbolji plasmani</h3>
+                </div>
+                <div class="card-body card-detail h-100">
+                    {% for category in championship.championship_type.category_set.all %}
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="h4 font-weight-bold card-title">{{ category }}</h4>
+                        </div>
+                        <div class="card-body">
+                            {% for subcategory in category.subcategory_set.all %}
+                            {% if subcategory|results:championship  %}
+                            {% if subcategory == "General" %}
+                                <th class="bg-primary text-light rounded-top" {% if user.is_authenticated and user.is_staff %}colspan="4"{% else %}colspan="3"{% endif %}>
+                                    <h5 class="h5 font-weight-bold mb-0">{{ category }}</h5>
+                                </th>
+                            {% else %}
+                                <th class="bg-primary text-light rounded-top" {% if user.is_authenticated and user.is_staff %}colspan="4"{% else %}colspan="3"{% endif %}>
+                                    <h5 class="h5 font-weight-bold mb-0">{{ subcategory }}</h5>
+                                </th>
+                            {% endif %}
+
+
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Cras justo odio
+                                <span class="badge badge-primary badge-pill">14</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dapibus ac facilisis in
+                                <span class="badge badge-primary badge-pill">2</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Morbi leo risus
+                                <span class="badge badge-primary badge-pill">1</span>
+                            </li>
+                        </ul>
+
+
+
+
+
+
+
+
+
+
+                            <div class="table-responsive">
+                                <table class="table table-striped mb-5">
+                                    <thead>
+                                        <tr>
+
+                                        </tr>
+                                        <tr>
+                                            <th width="40px"></th>
+                                            <th >Plasman</th>
+                                            <th>Ime i prezime</th>
+                                            {% if user.is_authenticated and user.is_staff %}
+                                            <th></th>
+                                            {% endif %}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for result in subcategory|results:championship %}
+                                        <tr>
+                                            {% if result.position == 1 %}
+                                            <td class="text-center" width="40px"><i class="fas fa-medal" style="color:gold"></i></td>
+                                            {% elif result.position == 2 %}
+                                            <td class="text-center" width="40px"><i class="fas fa-medal" style="color:silver"></i></td>
+                                            {% elif result.position == 3 %}
+                                            <td class="text-center" width="40px"><i class="fas fa-medal" style="color:#ccb66f"></i></td>
+                                            {% else %}
+                                            <td class="text-center" width="40px"></td>
+                                            {% endif %}
+
+                                            <td >{{ result.position }}</td>
+                                            <td>{{ result.driver }}</td>
+
+                                            {% if user.is_authenticated and user.is_staff %}
+                                            <td class="text-right">
+                                                <div class="" style="flex-direction: row">
+                                                    <a class="btn btn-default" href="{% url 'championships:results-update' championship.id result.id %}">
+                                                        <i class="fas fa-pen text-primary"></i>
+                                                    </a>
+                                                    <a class="btn btn-default" href="#">
+                                                        <i class="fas fa-trash text-danger"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            {% endif %}
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {% endif %}                            
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
