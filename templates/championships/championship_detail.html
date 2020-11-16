@@ -9,7 +9,7 @@
 
 <div class="container py-3">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-lg-8 mb-3">
             <div class="card w-100">
                 <div class="card-header bg-primary">
                     <h3 class="h3 card-title text-light mb-0">Detalji o prvenstvu</h3>
@@ -18,7 +18,7 @@
                     <div class="row mb-3">
                     {% if championship.image %}
                         <div class="col-md-12 text-center">
-                            <img src="{{ championship.image.url }}" alt="{{ championship.image }}" style="max-height: 400px">
+                            <img src="{{ championship.image.url }}" alt="{{ championship.image }}" class="w-100 m-2" style="max-height: 400px">
                         </div>                    
                     {% endif %}
                         <div class="col-md-12 mt-3 mb-3 text-center">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="row mt-3 mb-3">
-                        <div class="col ml-5">
+                        <div class="col m-3">
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">ORGANIZATOR</h5>
                                 <p class="card-text">{{ championship.organizer }}</p>
@@ -41,7 +41,7 @@
                                 <p class="card-text">{{ championship.championship_type }}</p>
                             </div>
                         </div>
-                        <div class="col ml-5">
+                        <div class="col m-3">
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">DATUM POČETKA</h5>
                                 <p class="card-text">{{ championship.start_date }}</p>
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 mb-3">
             <div class="card w-100">
                 <div class="card-header bg-primary">
                     <h3 class="h3 card-title text-light mb-0">Najbolji plasmani</h3>
