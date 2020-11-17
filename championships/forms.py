@@ -27,12 +27,12 @@ class ChampionshipModelForm(forms.ModelForm):
             'organizer',
             'championship_type',
             'club_count',
-            'club_position',
-            'location',
+            'club_position',            
             'start_date',
             'end_date',
             'county',
             'city',
+            'location',
         )
 
         widgets = {
@@ -87,7 +87,9 @@ class DriverSubCategoryPositionForm(forms.ModelForm):
         self.championship = self.initial['championship']
         
         self.fields['category'].queryset = self.championship.championship_type.category_set.all()
-        self.fields['subcategory'].queryset = SubCategory.objects.filter(category__in=self.championship.championship_type.category_set.all())
+        self.fields['subcategory'].queryset = SubCategory.objects.filter(active=True, category__in=self.championship.championship_type.category_set.all())
+        if self.fields['subcategory'].queryset.count() == 1:
+            self.fields['subcategory'].initial = self.fields['subcategory'].queryset.first()
         
         self.fields['category'].initial = self.fields['category'].queryset.first()
         self.fields['championship'].initial = self.championship

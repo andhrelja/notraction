@@ -7248,6 +7248,595 @@
         }
     },
     {
+        "model": "championships.championship",
+        "pk": 2,
+        "fields": {
+            "name": "Croatian Drift Challenge",
+            "club_count": null,
+            "club_position": null,
+            "description": "",
+            "location": "Mičevec",
+            "image": "champtionships/images/Cdc-2020-rd1-9manja.jpg",
+            "start_date": "2020-09-06",
+            "end_date": "2020-09-06",
+            "city": 9,
+            "organizer": 1,
+            "gallery": null,
+            "championship_type": 1
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 3,
+        "fields": {
+            "name": "11. Nagrada grada Skradina",
+            "club_count": 34,
+            "club_position": 13,
+            "description": null,
+            "location": "Skradin",
+            "image": "champtionships/images/11_skradin.jpeg",
+            "start_date": "2017-05-13",
+            "end_date": "2017-05-14",
+            "city": 365,
+            "organizer": 1,
+            "gallery": null,
+            "championship_type": 2
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 6,
+        "fields": {
+            "name": "Formula Driver",
+            "club_count": 34,
+            "club_position": 13,
+            "description": null,
+            "location": "Pula",
+            "image": "champtionships/images/formula-driver_lDjgAuO.png",
+            "start_date": "2017-01-01",
+            "end_date": "2017-12-31",
+            "city": 475,
+            "organizer": 4,
+            "gallery": null,
+            "championship_type": 3
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 7,
+        "fields": {
+            "name": "Croatian Drift Challenge",
+            "club_count": 30,
+            "club_position": 8,
+            "description": null,
+            "location": "Mičevec",
+            "image": "champtionships/images/Cdc_2018_rd3_Large.jpg",
+            "start_date": "2018-05-13",
+            "end_date": "2018-05-13",
+            "city": 9,
+            "organizer": 1,
+            "gallery": null,
+            "championship_type": 1
+        }
+    },
+    {
+        "model": "championships.championship",
+        "pk": 8,
+        "fields": {
+            "name": "Formula Driver",
+            "club_count": 30,
+            "club_position": 8,
+            "description": null,
+            "location": "Pula",
+            "image": "champtionships/images/formula-driver_lwVTSvO.png",
+            "start_date": "2018-01-01",
+            "end_date": "2018-12-31",
+            "city": 475,
+            "organizer": 4,
+            "gallery": null,
+            "championship_type": 3
+        }
+    },
+    {
+        "model": "championships.championshiptype",
+        "pk": 1,
+        "fields": {
+            "name": "Prvenstvo Hrvatske"
+        }
+    },
+    {
+        "model": "championships.championshiptype",
+        "pk": 2,
+        "fields": {
+            "name": "Centralno Europska Zona"
+        }
+    },
+    {
+        "model": "championships.championshiptype",
+        "pk": 3,
+        "fields": {
+            "name": "Formula Driver"
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 2,
+        "fields": {
+            "name": 3,
+            "championship_type": 1
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 3,
+        "fields": {
+            "name": 1,
+            "championship_type": 2
+        }
+    },
+    {
+        "model": "championships.category",
+        "pk": 4,
+        "fields": {
+            "name": 2,
+            "championship_type": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 1,
+        "fields": {
+            "name": "Kategorija I",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 2,
+        "fields": {
+            "name": "Kategorija II",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 3,
+        "fields": {
+            "name": "Klasa 1 - N/1400",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 4,
+        "fields": {
+            "name": "Klasa 2 - N/1600",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 5,
+        "fields": {
+            "name": "Klasa 3 - N/2000",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 6,
+        "fields": {
+            "name": "Klasa 4 - N/2000+",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 7,
+        "fields": {
+            "name": "Klasa 6 - A/1400",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 8,
+        "fields": {
+            "name": "Klasa 7 - A/1600",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 9,
+        "fields": {
+            "name": "Klasa 8 - A/2000",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 10,
+        "fields": {
+            "name": "Klasa 11- E1/1400 moto",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 11,
+        "fields": {
+            "name": "Klasa 14  - E1/1400",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 12,
+        "fields": {
+            "name": "Klasa 15 - E1/1600",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 13,
+        "fields": {
+            "name": "Klasa 16 - E1/2000",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 14,
+        "fields": {
+            "name": "Klasa 17 - E1/2500",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 15,
+        "fields": {
+            "name": "Klasa 19 - C,CN,C3,D,E/2000",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 16,
+        "fields": {
+            "name": "Klasa 20 - C,CN,C3,D,E/3000",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 17,
+        "fields": {
+            "name": "Klasa 23 - E1,GT,WRC/6500",
+            "category": 3
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 18,
+        "fields": {
+            "name": "Vozačice",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 19,
+        "fields": {
+            "name": "Juniori",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 20,
+        "fields": {
+            "name": "Klasa 1",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 21,
+        "fields": {
+            "name": "Klasa 2",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 22,
+        "fields": {
+            "name": "Klasa 3",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 23,
+        "fields": {
+            "name": "Klasa 4",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 24,
+        "fields": {
+            "name": "Klasa 5",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 25,
+        "fields": {
+            "name": "Klasa 6",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 26,
+        "fields": {
+            "name": "Klasa 7",
+            "category": 4
+        }
+    },
+    {
+        "model": "championships.subcategory",
+        "pk": 27,
+        "fields": {
+            "name": "General",
+            "category": 2
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 8,
+        "fields": {
+            "position": 1,
+            "subcategory": 1,
+            "driver": 8,
+            "championship": 3
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 9,
+        "fields": {
+            "position": 25,
+            "subcategory": 24,
+            "driver": 3,
+            "championship": 6
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 10,
+        "fields": {
+            "position": 3,
+            "subcategory": 27,
+            "driver": 3,
+            "championship": 7
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 11,
+        "fields": {
+            "position": 5,
+            "subcategory": 27,
+            "driver": 7,
+            "championship": 7
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 12,
+        "fields": {
+            "position": 6,
+            "subcategory": 27,
+            "driver": 6,
+            "championship": 7
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 13,
+        "fields": {
+            "position": 8,
+            "subcategory": 27,
+            "driver": 10,
+            "championship": 7
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 14,
+        "fields": {
+            "position": 1,
+            "subcategory": 19,
+            "driver": 9,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 15,
+        "fields": {
+            "position": 3,
+            "subcategory": 19,
+            "driver": 5,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 16,
+        "fields": {
+            "position": 5,
+            "subcategory": 19,
+            "driver": 10,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 17,
+        "fields": {
+            "position": 3,
+            "subcategory": 18,
+            "driver": 13,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 18,
+        "fields": {
+            "position": 4,
+            "subcategory": 18,
+            "driver": 1,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 19,
+        "fields": {
+            "position": 5,
+            "subcategory": 21,
+            "driver": 9,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 20,
+        "fields": {
+            "position": 14,
+            "subcategory": 21,
+            "driver": 3,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 21,
+        "fields": {
+            "position": 16,
+            "subcategory": 21,
+            "driver": 10,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 22,
+        "fields": {
+            "position": 10,
+            "subcategory": 22,
+            "driver": 2,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 23,
+        "fields": {
+            "position": 6,
+            "subcategory": 23,
+            "driver": 11,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 24,
+        "fields": {
+            "position": 8,
+            "subcategory": 23,
+            "driver": 14,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 25,
+        "fields": {
+            "position": 16,
+            "subcategory": 23,
+            "driver": 13,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 26,
+        "fields": {
+            "position": 17,
+            "subcategory": 23,
+            "driver": 8,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 27,
+        "fields": {
+            "position": 6,
+            "subcategory": 24,
+            "driver": 12,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.driversubcategoryposition",
+        "pk": 28,
+        "fields": {
+            "position": 5,
+            "subcategory": 24,
+            "driver": 5,
+            "championship": 8
+        }
+    },
+    {
+        "model": "championships.organizer",
+        "pk": 1,
+        "fields": {
+            "name": "drift.hr"
+        }
+    },
+    {
+        "model": "championships.organizer",
+        "pk": 2,
+        "fields": {
+            "name": "FIA"
+        }
+    },
+    {
+        "model": "championships.organizer",
+        "pk": 3,
+        "fields": {
+            "name": "HAKS"
+        }
+    },
+    {
+        "model": "championships.organizer",
+        "pk": 4,
+        "fields": {
+            "name": "Global"
+        }
+    },
+    {
         "model": "drivers.driver",
         "pk": 1,
         "fields": {
@@ -13293,6 +13882,708 @@
             "full_name": "Općina Vratišinec",
             "city_type": 2,
             "county": 20
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2020-11-13T20:45:14.978Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "object_id": "1",
+            "object_repr": "admin",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2020-11-13T20:45:17.819Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "accounts",
+                "profile"
+            ],
+            "object_id": "1",
+            "object_repr": "Administrator",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2020-11-14T20:21:54.074Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "championship"
+            ],
+            "object_id": "1",
+            "object_repr": "CDC (Prvenstvo Hrvatske)",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2020-11-14T20:26:22.548Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "organizer"
+            ],
+            "object_id": "1",
+            "object_repr": "drift.hr",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2020-11-14T20:26:42.016Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "championshiptype"
+            ],
+            "object_id": "1",
+            "object_repr": "Prvenstvo Hrvatske",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2020-11-14T20:30:05.668Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "championship"
+            ],
+            "object_id": "2",
+            "object_repr": "Croatian Drift Challenge",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2020-11-15T10:17:14.721Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "category"
+            ],
+            "object_id": "2",
+            "object_repr": "Drift",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2020-11-15T10:19:12.387Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "category"
+            ],
+            "object_id": "2",
+            "object_repr": "Drift",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2020-11-15T10:19:32.257Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "category"
+            ],
+            "object_id": "3",
+            "object_repr": "Brdo",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2020-11-15T10:23:23.639Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "1",
+            "object_repr": "Kategorija I",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2020-11-15T10:23:35.964Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "2",
+            "object_repr": "Kategorija II",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2020-11-15T10:23:48.914Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "3",
+            "object_repr": "Klasa 1 - N/1400",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2020-11-15T10:24:07.852Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "4",
+            "object_repr": "Klasa 2 - N/1600",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2020-11-15T10:24:23.465Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "5",
+            "object_repr": "Klasa 3 - N/2000",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2020-11-15T10:24:38.526Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "6",
+            "object_repr": "Klasa 4 - N/2000+",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2020-11-15T10:24:46.195Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "7",
+            "object_repr": "Klasa 6 - A/1400",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2020-11-15T10:24:55.426Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "8",
+            "object_repr": "Klasa 7 - A/1600",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2020-11-15T10:25:06.933Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "9",
+            "object_repr": "Klasa 8 - A/2000",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2020-11-15T10:25:18.352Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "10",
+            "object_repr": "Klasa 11- E1/1400 moto",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2020-11-15T10:25:31.224Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "11",
+            "object_repr": "Klasa 14  - E1/1400",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2020-11-15T10:25:44.471Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "12",
+            "object_repr": "Klasa 15 - E1/1600",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2020-11-15T10:25:52.616Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "13",
+            "object_repr": "Klasa 16 - E1/2000",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2020-11-15T10:26:00.639Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "14",
+            "object_repr": "Klasa 17 - E1/2500",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2020-11-15T10:26:09.155Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "15",
+            "object_repr": "Klasa 19 - C,CN,C3,D,E/2000",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2020-11-15T10:26:24.545Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "16",
+            "object_repr": "Klasa 20 - C,CN,C3,D,E/3000",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2020-11-15T10:26:36.304Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "17",
+            "object_repr": "Klasa 23 - E1,GT,WRC/6500",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2020-11-15T10:28:57.163Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "organizer"
+            ],
+            "object_id": "3",
+            "object_repr": "HAKS",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2020-11-15T10:28:58.510Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "championshiptype"
+            ],
+            "object_id": "3",
+            "object_repr": "Formula Driver",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2020-11-15T10:29:24.646Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "category"
+            ],
+            "object_id": "4",
+            "object_repr": "Formula Driver",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2020-11-15T10:29:27.050Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "18",
+            "object_repr": "Vozačice",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2020-11-15T10:29:33.190Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "19",
+            "object_repr": "Juniori",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2020-11-15T10:29:39.825Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "20",
+            "object_repr": "Klasa 1",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2020-11-15T10:29:46.994Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "21",
+            "object_repr": "Klasa 2",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2020-11-15T10:29:53.598Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "22",
+            "object_repr": "Klasa 3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2020-11-15T10:30:00.772Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "23",
+            "object_repr": "Klasa 4",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2020-11-15T10:30:07.344Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "24",
+            "object_repr": "Klasa 5",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2020-11-15T10:30:16.327Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "25",
+            "object_repr": "Klasa 6",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2020-11-15T10:30:24.434Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "26",
+            "object_repr": "Klasa 7",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2020-11-15T10:31:36.383Z",
+            "user": [
+                "admin"
+            ],
+            "content_type": [
+                "championships",
+                "subcategory"
+            ],
+            "object_id": "27",
+            "object_repr": "General",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
         }
     },
     {

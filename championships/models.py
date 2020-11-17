@@ -23,9 +23,9 @@ class Championship(models.Model):
 
     # Foreign keys
     city        = models.ForeignKey(
-        "events.City", on_delete=models.CASCADE)
+        "events.City", verbose_name="Grad", on_delete=models.CASCADE)
     organizer   = models.ForeignKey(
-        "championships.Organizer", on_delete=models.CASCADE)
+        "championships.Organizer", verbose_name="Organizator", on_delete=models.CASCADE)
     gallery     = models.ForeignKey(
         "gallery.Gallery", null=True, blank=True, on_delete=models.SET_NULL)
     championship_type = models.ForeignKey(
@@ -51,6 +51,9 @@ class Championship(models.Model):
 
     def get_absolute_url(self):
         return reverse("championships:detail", kwargs={"pk": self.pk})
+    
+    def get_results_url(self):
+        return reverse("championships:results-list", kwargs={"pk": self.pk})
 
 
 class ChampionshipType(models.Model):
@@ -106,6 +109,9 @@ class SubCategory(models.Model):
     # General
     name = models.CharField(
         "Naziv kategorije", default="General", max_length=64)
+    active = models.BooleanField("Aktivna podkategorija", default=True)
+
+    # Foreign keys
     category = models.ForeignKey(
         "championships.Category", on_delete=models.CASCADE)
 
@@ -139,8 +145,8 @@ class DriverSubCategoryPosition(models.Model):
 
     class Meta:
         ordering = ['position']
-        unique_together = ['subcategory', 'driver']
-        index_together = ['subcategory', 'driver']
+        unique_together = ['championship', 'subcategory', 'driver']
+        index_together = ['championship', 'subcategory', 'driver']
         verbose_name = "Pozicija natjecatelja"
         verbose_name_plural = "Pozicije natjecatelja"
 

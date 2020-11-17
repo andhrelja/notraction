@@ -18,7 +18,7 @@
                     <div class="row mb-3">
                     {% if championship.image %}
                         <div class="col-md-12 text-center">
-                            <img src="{{ championship.image.url }}" alt="{{ championship.image }}" class="w-100 m-2" style="max-height: 400px">
+                            <img src="{{ championship.image.url }}" alt="{{ championship.image }}" class="m-2" style="max-height: 400px; max-width: 100%">
                         </div>                    
                     {% endif %}
                         <div class="col-md-12 mt-3 mb-3 text-center">
@@ -79,9 +79,6 @@
                 <div class="card-body card-detail h-100">
                     {% for category in championship.championship_type.category_set.all %}
                     <div class="card">
-                        <div class="card-header">
-                            <h4 class="h4 font-weight-bold card-title">{{ category }}</h4>
-                        </div>
                         <div class="card-body">
                             {% for subcategory in category.subcategory_set.all %}
                             {% if subcategory|results:championship and subcategory|top_results:championship %}
@@ -90,25 +87,28 @@
                             {% else %}
                                 <div class="card-title font-weight-bold">{{ subcategory }}</div>
                             {% endif %}
-                            <ul class="list-group">
+                            <ul class="list-group mb-2">
                                 {% for result in subcategory|results:championship %}
                                 {% if result.position <= 3 %}
                                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        {% if result.position == 1 %}
-                                        <i class="fas fa-medal" style="color:gold"></i>
-                                        {% elif result.position == 2 %}
-                                        <i class="fas fa-medal" style="color:silver"></i>
-                                        {% elif result.position == 3 %}
-                                        <i class="fas fa-medal" style="color:#ccb66f"></i>
-                                        {% endif %}
-                                        {{ result.driver }}
+                                        <div>
+                                            {% if result.position == 1 %}
+                                            <i class="fas fa-medal" style="color:gold"></i>
+                                            {% elif result.position == 2 %}
+                                            <i class="fas fa-medal" style="color:silver"></i>
+                                            {% elif result.position == 3 %}
+                                            <i class="fas fa-medal" style="color:#ccb66f"></i>
+                                            {% endif %}
+                                            <span class="pl-3">{{ result.driver }}</span>
+                                        </div>
                                         <span class="badge badge-dark badge-pill">{{ result.position }}</span>
                                     </li>
                                 {% endif %}
                                 {% endfor %}
+                            </ul>
                             {% endif %}
                             {% endfor %}
-                            </ul>
+                            
                         </div>
                     </div>
                     {% endfor %}

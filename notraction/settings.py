@@ -76,14 +76,14 @@ WSGI_APPLICATION = 'notraction.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'local': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'notraction',
         'USER': 'andrea',
         'PASSWORD': 'user',
         'HOST': 'localhost'
     },
-    'default': {
+    'heroku': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd5jdj2mi1cg15l',
         'USER': 'joulgxmgcxsegm',

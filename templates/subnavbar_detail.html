@@ -51,6 +51,12 @@
                         <span>Prvenstvo</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'championships:results-create' object.id %}">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span>Dodaj rezultat</span>
+                    </a>
+                </li>
                 {% endif %}
                 {% if user.is_authenticated %}
                 {% if object_name == "rezultat" %}
