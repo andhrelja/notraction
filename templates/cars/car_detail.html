@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
-{% include 'subnavbar_detail.html' with title=car.get_full_name object_name='automobil' update_url='cars:update' %}
+{% include 'partials/subnavbar_detail.html' with title=car.get_full_name object_name='automobil' update_url='cars:update' %}
 {% include 'messages.html' %}
 
 <div class="container py-3">

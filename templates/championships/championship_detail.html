@@ -3,7 +3,7 @@
 {% load championship_extras %}
 
 {% block body %}
-{% include 'subnavbar_detail.html' with title=championship.name object_name='prvenstvo' update_url='championships:update' %}
+{% include 'partials/subnavbar_detail.html' with title=championship.name object_name='prvenstvo' update_url='championships:update' %}
 {% include 'messages.html' %}
 
 

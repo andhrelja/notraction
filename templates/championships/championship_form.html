@@ -12,7 +12,7 @@
         <div class="card-body p-5">
             <form method="post" action="" enctype="multipart/form-data">
             {% csrf_token %}
-                {% include 'form_snippet_xl.html' %}
+                {% include 'partials/form_snippet_xl.html' %}
                 <input type="submit" class="btn btn-secondary" value="Spremi prvenstvo">
                 <a href="{% url 'championships:list' %}" class="btn btn-outline-danger">Odustani</a>
             </form>
