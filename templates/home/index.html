@@ -1,7 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block body %}
 {% include 'messages.html' %}
 
+<div class="container-fluid p-0">
+    <img src="{% static 'images/notraction_landing_cropped.jpg' %}" alt="notraction_landing_cropped.jpg" class="w-100">
+</div>
+
+{% include 'subnavbar_list.html' with brand='Naši automobili' object_name='automobila' create_url='' landing=True %}
+<div class="container">
+    <div class="row justify-content-center">
+    {% for manufacturer in car_manufacturers %}
+        <div class="col-md-3 m-2 card-link img-thumbnail text-center" onclick="location.href=''">
+            <img class="" src="{{ manufacturer.image_thumbnail_url }}" alt="{{ manufacturer.image_url }}" style="max-height: 100px">
+        </div>
+    {% endfor %}
+    </div>
+</div>
 
 {% endblock body %}

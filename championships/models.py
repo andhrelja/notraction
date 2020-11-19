@@ -126,6 +126,9 @@ class SubCategory(models.Model):
     def top_results(self, championship):
         return DriverSubCategoryPosition.objects.filter(subcategory=self, championship=championship, position__lte=3)
     
+    def driver_results(self, driver):
+        return DriverSubCategoryPosition.objects.filter(subcategory=self, driver=driver)
+    
     def __str__(self):
         return self.name
 

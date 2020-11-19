@@ -4,14 +4,12 @@ let countySelect = document.getElementById('id_county');
 
 
 function findLabel(for_id) {
-    
+
     var labels = document.getElementsByTagName('label');
-    
-    for(let label of labels) {
-        if (label.htmlFor == for_id) {
-            
+
+    for (let label of labels) {
+        if (label.htmlFor == for_id)
             return label;
-        }
     }
 }
 
@@ -41,11 +39,11 @@ function appendSelectCities(selectList, selectedCountyId) {
     selectList.disabled = true;
 
     if (selectedCountyId !== null) {
-        for(city of cities) {
+        for (city of cities) {
             if (city.county_id == selectedCountyId) {
                 let option = document.createElement('option');
                 option.value = city.id;
-                
+
                 option.innerHTML = city.full_name;
                 selectList.appendChild(option);
             }

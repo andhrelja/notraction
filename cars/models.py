@@ -55,6 +55,8 @@ class Car(models.Model):
     def get_short_name(self):
         short_name = "{model}, {year}".format(model=self.model, year=self.year)
 
+    # TODO: Crop driver image to a square
+
     def __str__(self):
         return self.get_full_name()
 

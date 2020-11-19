@@ -17,7 +17,7 @@ class DriverListView(ListView):
 
 class DriverDetailView(DetailView):
     model = Driver
-
+    
 
 class DriverCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Driver

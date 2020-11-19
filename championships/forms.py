@@ -7,11 +7,12 @@ from .models import (
 )
 from events.models import County
 from events.forms import DateInput
+from drivers.models import Driver
 
 
 class ChampionshipModelForm(forms.ModelForm):
     county              = forms.ModelChoiceField(label="Županija", queryset=County.objects.all(),
-        widget=forms.Select(attrs={'class': 'custom-select', 'onchange': 'toggleCities()'}))    
+        widget=forms.Select(attrs={'class': 'custom-select', 'onchange': 'toggleCities()'}))
     organizer           = forms.CharField(label="Organizator", max_length=64, required=True,
         widget=forms.TextInput(attrs={'class': 'form-control'}))
     championship_type   = forms.CharField(label="Tip prvenstva", max_length=128, required=True,
@@ -65,7 +66,8 @@ class ChampionshipModelForm(forms.ModelForm):
     
 class DriverSubCategoryPositionForm(forms.ModelForm):
     category     = forms.ModelChoiceField(label="Kategorija", queryset=Category.objects.all(), widget=forms.Select(attrs={'class': 'custom-select'}))
-    
+    # TODO: Add Countries
+
     class Meta:
         model = DriverSubCategoryPosition
         fields = (
@@ -85,9 +87,11 @@ class DriverSubCategoryPositionForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(DriverSubCategoryPositionForm, self).__init__(*args, **kwargs)
         self.championship = self.initial['championship']
+        categories = self.championship.championship_type.category_set.all()
         
-        self.fields['category'].queryset = self.championship.championship_type.category_set.all()
-        self.fields['subcategory'].queryset = SubCategory.objects.filter(active=True, category__in=self.championship.championship_type.category_set.all())
+        self.fields['category'].queryset = categories
+        self.fields['driver'].queryset = Driver.objects.filter(disciplines__in=categories)
+        self.fields['subcategory'].queryset = SubCategory.objects.filter(active=True, category__in=categories)
         if self.fields['subcategory'].queryset.count() == 1:
             self.fields['subcategory'].initial = self.fields['subcategory'].queryset.first()
         

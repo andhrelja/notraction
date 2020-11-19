@@ -11,6 +11,9 @@ class TimeInput(forms.widgets.TimeInput):
 
 
 class EventModelForm(forms.ModelForm):
+    
+    # TODO: Add Countries
+    # TODO: Add Counties
 
     class Meta:
         model = Event

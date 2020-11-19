@@ -1,5 +1,7 @@
+import championships
 from django.db import models
 from django.shortcuts import reverse
+from championships.models import DriverSubCategoryPosition
 
 
 class Driver(models.Model):
@@ -7,12 +9,6 @@ class Driver(models.Model):
         ('M', 'Muško'),
         ('Z', 'Žensko'),
         ('O', 'Ostalo')
-    )
-
-    DISCIPLINE_CHOICES = (
-        (1, 'Brdo'),
-        (2, 'Formula Driver'),
-        (3, 'Drift'),
     )
 
     # General
@@ -29,13 +25,19 @@ class Driver(models.Model):
 
     # Foreign keys
     city            = models.ForeignKey("events.City", verbose_name="Grad", on_delete=models.CASCADE)
-    discipline      = models.IntegerField("Disciplina", choices=DISCIPLINE_CHOICES, default=2)
+    categories      = models.ManyToManyField("championships.Category", verbose_name="Discipline natjecanja")
     
 
     @property
     def location_name(self):
         location_name = "{city}, {county}".format(city=self.city, county=self.city.county)
         return location_name.strip()
+    
+    @property
+    def championships(self):
+        subcategory_positions = self.driversubcategoryposition_set.all()
+        return set([result.championship for result in subcategory_positions.select_related('championship')])
+
 
     def get_full_name(self):
         full_name = '{first} {last}'.format(first=self.first_name, last=self.last_name)

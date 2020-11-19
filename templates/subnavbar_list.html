@@ -1,5 +1,6 @@
     <!-- Sub horizontal navigation -->
     <nav class="navbar navbar-expand-sm navbar-light border-bottom" style="background-color: #e6e6e6">
+        {% if not landing %}
         <a class="navbar-brand" href="{% url 'home:index' %}">
             <h3 class="h3 mb-0">{{ brand }}</h3>
         </a>
@@ -30,5 +31,25 @@
                 {% endif %}
             </ul>
         </div>
+        {% else %}
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home:index' %}">
+                <h3 class="h3 mb-0">{{ brand }}</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".subnavbar">
+                <i class="fas fa-caret-down fa-lg"></i>
+            </button>
+            <div class="navbar-collapse collapse w-100 order-3 subnavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-list"></i>
+                            <span>Popis svih {{ object_name }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {% endif %}
     </nav>
     <!-- End of sub horizontal navigation -->

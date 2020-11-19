@@ -6,7 +6,7 @@ class Profile(models.Model):
 
     # General
     user          = models.OneToOneField("auth.User", verbose_name="Korisnik", on_delete=models.CASCADE)
-    profile_image = models.ImageField("Slika", upload_to='accounts/images/', default="accounts/images/default.jpg", max_length=255)
+    profile_image = models.ImageField("Slika", upload_to='accounts/images/', default="accounts/images/default.jpg", blank=True, max_length=255)
 
     class Meta:
         verbose_name = 'Profil'

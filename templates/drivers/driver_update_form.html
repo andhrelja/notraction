@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block body %}
 {% include 'messages.html' %}
@@ -11,7 +12,7 @@
         <div class="card-body p-5">
             <form method="post" action="" enctype="multipart/form-data">
             {% csrf_token %}
-                {% include 'form_snippet_alt.html' %}
+                {% include 'form_snippet_md.html' %}
                 <input type="submit" class="btn btn-secondary" value="Spremi vozača">
                 <a href="{% url 'drivers:detail' object.pk %}" class="btn btn-outline-danger">Odustani</a>
             </form>
@@ -20,8 +21,20 @@
 </div>
 
 
+<script src="{% static 'js/toggleCities.js' %}"></script>
 <script>
 toggleActive("drivers");
+
+let counties = {};
+let cities = {};
+
+fetch("{% static 'input_data/events_county.json' %}")
+    .then((county_data) => county_data.json())
+    .then((json_data) => counties = json_data)
+    .then(() => fetch("{% static 'input_data/events_city.json' %}")
+        .then((city_data) => city_data.json())
+        .then((json_data) => cities = json_data));
+
 </script>
 
 {% endblock body %}

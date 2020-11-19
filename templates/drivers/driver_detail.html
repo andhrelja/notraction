@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load championship_extras %}
+
 
 {% block body %}
 {% include 'subnavbar_detail.html' with title=driver.get_full_name object_name='vozača' update_url='drivers:update' %}
@@ -43,18 +45,109 @@
                         <div class="col m-3">
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">SPOL</h5>
-                                <p class="card-text">{{ driver.gender }}</p>
+                                <p class="card-text">{{ driver.get_gender_display }}</p>
                             </div>
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">AUTOMOBIL</h5>
                                 <p class="card-text">{{ driver.car.get_full_name }}</p>
                             </div>
                             <div class="detail-item-group">
-                                <h5 class="h5 mb-1">VRSTA</h5>
-                                <p class="card-text">{{ driver.discipline }}</p>
+                                <h5 class="h5 mb-1">TIP NATJECANJA</h5>
+                                {% for discipline in driver.categories.all %}
+                                <p class="card-text">{{ discipline }}</p>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 mb-3">
+        <div class="col-md-12">
+            <div class="card w-100">
+                <div class="card-header bg-primary">
+                    <h3 class="h3 card-title text-light mb-0">Rezultati</h3>
+                </div>
+                <div class="card-body card-detail h-100">
+                {% for championship in driver.championships %}
+                    <div class="card mb-3">
+                        <div class="card-header card-link" onclick="location.href='{{ championship.get_results_url }}'" style="border-left: 6px solid">
+                            <h3 class="h3 font-weight-bold card-title">{{ championship }}, {{ championship.end_date|date:"Y" }}</h3>
+                        </div>
+                        <div class="card-body">
+                        {% for category in championship|driver_categories:driver %}
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="h4 font-weight-bold card-title">{{ category }}</h4>
+                                </div>
+                                <div class="card-body">
+                                    {% for subcategory in category.subcategory_set.all %}
+
+                                    {% with subcategory|driver_results:driver as driver_results %}
+                                    {% if driver_results|driver_championship_results:championship %}
+                                    <div class="table-responsive">
+                                        <table class="table table-striped mb-4">
+                                            <thead>
+                                                <tr>
+                                                {% if subcategory.name != "General" %}
+                                                    <th class="bg-primary text-light rounded-top" {% if user.is_authenticated and user.is_staff %}colspan="4"{% else %}colspan="3"{% endif %}>
+                                                        <h5 class="h5 font-weight-bold mb-0">{{ subcategory }}</h5>
+                                                    </th>
+                                                {% endif %}
+                                                </tr>
+                                                <tr>
+                                                    <th width="40px"></th>
+                                                    <th >Plasman</th>
+                                                    <th>Ime i prezime</th>
+                                                    {% if user.is_authenticated and user.is_staff %}
+                                                    <th></th>
+                                                    {% endif %}
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for result in driver_results|driver_championship_results:championship %}
+                                                <tr>
+                                                    {% if result.position == 1 %}
+                                                    <td class="text-center" width="40px"><i class="fas fa-medal" style="color:gold"></i></td>
+                                                    {% elif result.position == 2 %}
+                                                    <td class="text-center" width="40px"><i class="fas fa-medal" style="color:silver"></i></td>
+                                                    {% elif result.position == 3 %}
+                                                    <td class="text-center" width="40px"><i class="fas fa-medal" style="color:#ccb66f"></i></td>
+                                                    {% else %}
+                                                    <td class="text-center" width="40px"></td>
+                                                    {% endif %}
+
+                                                    <td>{{ result.position }}</td>
+                                                    <td>{{ result.driver }}</td>
+
+                                                    {% if user.is_authenticated and user.is_staff %}
+                                                    <td class="text-right">
+                                                        <div class="" style="flex-direction: row">
+                                                            <a class="btn btn-default" href="{% url 'championships:results-update' championship_pk=championship.id pk=result.id %}">
+                                                                <i class="fas fa-pen text-primary"></i>
+                                                            </a>
+                                                            <a class="btn btn-default" href="#">
+                                                                <i class="fas fa-trash text-danger"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    {% endif %}
+                                                </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    {% endif %}
+                                    {% endwith %}
+
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
                 </div>
             </div>
         </div>
