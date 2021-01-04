@@ -1,0 +1,56 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 mainnavbar">
+        <ul class="navbar-nav mr-auto">
+            <li id="cars" class="nav-item">
+                <a class="nav-link" href="{% url 'cars:list' %}">Automobili</a>
+            </li>
+            <li id="drivers" class="nav-item">
+                <a class="nav-link" href="{% url 'drivers:list' %}">Vozači</a>
+            </li>
+            <li id="events" class="nav-item">
+                <a class="nav-link" href="{% url 'events:list' %}">Događaji</a>
+            </li>
+            <li id="championships" class="nav-item">
+                <a class="nav-link" href="{% url 'championships:list' %}">Prvenstva</a>
+            </li>
+            <li id="about" class="nav-item">
+                <a class="nav-link" href="{% url 'home:about' %}">O nama</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="{% url 'home:index' %}">
+            <img src="{% static 'images/notraction_logo.png' %}" alt="notraction_logo.png" height="30px">
+        </a>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 mainnavbar">
+        <ul class="navbar-nav ml-auto">
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'accounts:detail' user.profile.pk %}">
+                    <i class="fas fa-user-circle"></i>
+                    <span>{{ user.get_full_name }}</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Odjava</span>
+                </a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'accounts:login' %}">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Prijava</span>
+                </a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".mainnavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>

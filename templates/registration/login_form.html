@@ -6,7 +6,7 @@
         <div class="card-body p-5">
             <form method="post" action="{% url 'accounts:login' %}">
             {% csrf_token %}
-                {% include 'form_snippet.html' %}
+                {% include 'partials/form_snippet.html' %}
                 <input type="submit" class="btn btn-secondary" value="Prijavi se">
                 <br><br>
                 <p>Još nemaš profil? <a class="btn btn-danger ml-2" href="{% url 'accounts:create' %}">Registracija</a>

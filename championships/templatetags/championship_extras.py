@@ -14,9 +14,10 @@ def top_results(subcategory, championship):
 def driver_results(subcategory, driver):
     return subcategory.driver_results(driver)
 
+
 @register.filter
-def driver_championship_results(driver_results, championship):
-    return driver_results.filter(championship=championship)
+def driver_championship_results(subcategory, championship):
+    return subcategory.filter(championship=championship)
 
 @register.filter
 def driver_categories(championship, driver):

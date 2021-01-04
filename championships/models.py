@@ -15,7 +15,7 @@ class Championship(models.Model):
         "Pozicija kluba", null=True, blank=True)
     description = models.TextField("Opis", null=True, blank=True)
     location    = models.CharField("Lokacija", max_length=96)
-    image       = models.ImageField("Slika", null=True, upload_to='champtionships/images/')
+    image       = models.ImageField("Slika", null=True, blank=True, upload_to='champtionships/images/')
 
     # Date & Time
     start_date  = models.DateField("Datum početka")
@@ -96,7 +96,6 @@ class Category(models.Model):
         "championships.ChampionshipType", on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['name']
         verbose_name = "Kategorija"
         verbose_name_plural = "Kategorije"
 
@@ -116,7 +115,6 @@ class SubCategory(models.Model):
         "championships.Category", on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['name']
         verbose_name = "Podkategorija"
         verbose_name_plural = "Podkategorije"
 

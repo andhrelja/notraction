@@ -16,46 +16,42 @@
                 </div>
                 <div class="card-body h-100">
                     <div class="row">
-                        <div class="col-md-12 text-center">
-                            <img src="{{ driver.driver_image.url }}" class="img-thumbnail rounded-circle w-50">
+                        <div class="col-md-6 text-center pl-3 pb-3">
+                            <img src="{{ driver.driver_image.url }}" class="img-thumbnail">
                         </div>
-                    </div>
-                    <div class="row m-4">
-                        <div class="col-md-12 text-center">
+                        <div class="col-md-6 text-left">
                             <h3 class="h3 font-weight-bold">{{ driver.get_full_name }}</h3>
                             <h4 class="h4">{{ driver.get_discipline_display }}</h4>
-                        </div>
-                    </div>
+                            <div class="row mt-3 mb-3">
+                                <div class="col m-3">
+                                    <div class="detail-item-group">
+                                        <h5 class="h5 mb-1">IME</h5>
+                                        <p class="card-text">{{ driver.first_name }}</p>
+                                    </div>
+                                    <div class="detail-item-group">
+                                        <h5 class="h5 mb-1">PREZIME</h5>
+                                        <p class="card-text">{{ driver.last_name }}</p>
+                                    </div>
+                                    <div class="detail-item-group">
+                                        <h5 class="h5 mb-1">LOKACIJA</h5>
+                                        <p class="card-text">{{ driver.location_name }}</p>
+                                    </div>
+                                </div>
+                                <div class="col m-3">
+                                    <div class="detail-item-group">
+                                        <h5 class="h5 mb-1">SPOL</h5>
+                                        <p class="card-text">{{ driver.get_gender_display }}</p>
+                                    </div>
+                                    <div class="detail-item-group">
+                                        <h5 class="h5 mb-1">AUTOMOBIL</h5>
+                                        <p class="card-text">{{ driver.car.get_full_name }}</p>
+                                    </div>
+                                    <div class="detail-item-group">
+                                        <h5 class="h5 mb-1">TIP NATJECANJA</h5>
+                                        <p class="card-text">{{ driver.get_categories_display }}</p>
 
-                    <div class="row mt-3 mb-3">
-                        <div class="col m-3">
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">IME</h5>
-                                <p class="card-text">{{ driver.first_name }}</p>
-                            </div>
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">PREZIME</h5>
-                                <p class="card-text">{{ driver.last_name }}</p>
-                            </div>
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">LOKACIJA</h5>
-                                <p class="card-text">{{ driver.location_name }}</p>
-                            </div>
-                        </div>
-                        <div class="col m-3">
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">SPOL</h5>
-                                <p class="card-text">{{ driver.get_gender_display }}</p>
-                            </div>
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">AUTOMOBIL</h5>
-                                <p class="card-text">{{ driver.car.get_full_name }}</p>
-                            </div>
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">TIP NATJECANJA</h5>
-                                {% for discipline in driver.categories.all %}
-                                <p class="card-text">{{ discipline }}</p>
-                                {% endfor %}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,7 +75,7 @@
                         {% for category in championship|driver_categories:driver %}
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="h4 font-weight-bold card-title">{{ category }}</h4>
+                                    <h4 class="h4 font-weight-bold">{{ category }}</h4>
                                 </div>
                                 <div class="card-body">
                                     {% for subcategory in category.subcategory_set.all %}

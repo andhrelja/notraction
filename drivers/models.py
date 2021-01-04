@@ -38,6 +38,10 @@ class Driver(models.Model):
         subcategory_positions = self.driversubcategoryposition_set.all()
         return set([result.championship for result in subcategory_positions.select_related('championship')])
 
+    @property
+    def get_categories_display(self):
+        categories = (cat.get_name_display() for cat in self.categories.all())
+        return ", ".join(categories)
 
     def get_full_name(self):
         full_name = '{first} {last}'.format(first=self.first_name, last=self.last_name)

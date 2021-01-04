@@ -90,12 +90,13 @@ class DriverSubCategoryPositionForm(forms.ModelForm):
         categories = self.championship.championship_type.category_set.all()
         
         self.fields['category'].queryset = categories
-        self.fields['driver'].queryset = Driver.objects.filter(disciplines__in=categories)
+        self.fields['driver'].queryset = Driver.objects.all()
         self.fields['subcategory'].queryset = SubCategory.objects.filter(active=True, category__in=categories)
         if self.fields['subcategory'].queryset.count() == 1:
             self.fields['subcategory'].initial = self.fields['subcategory'].queryset.first()
         
         self.fields['category'].initial = self.fields['category'].queryset.first()
+        self.fields['driver'].initial = self.fields['driver'].queryset.first()
         self.fields['championship'].initial = self.championship
 
 
