@@ -1,1 +1,1 @@
-web: gunicorn notraction.wsgi
+web: cd src/ && gunicorn notraction.wsgi
