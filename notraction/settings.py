@@ -1,16 +1,20 @@
 from pathlib import Path
 from django.contrib.messages import constants as messages
+from dotenv import load_dotenv
 import django_heroku
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+dotenv_path = BASE_DIR / '.env'
+load_dotenv(dotenv_path)
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'gy28do$=c!$q2ozerf2lgk4-y3vvg(2^oqcwyzgrslr0bf%34k'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = ['localhost', 'notraction.herokuapp.com']
 
@@ -85,11 +89,11 @@ DATABASES = {
     },
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5jdj2mi1cg15l',
-        'USER': 'joulgxmgcxsegm',
-        'PASSWORD': '2aa99c7c9f47cfacc6d74fbf38aa03bb5209ada29ca56e309f448cdb57a0f088',
-        'HOST': 'ec2-54-247-94-127.eu-west-1.compute.amazonaws.com'
-    }
+        'NAME': os.getenv('NAME'),
+        'USER': os.getenv('DBUSER'),
+        'PASSWORD': os.getenv('PASSWORD'),
+        'HOST': os.getenv('HOST'),
+    },
 }
 
 
