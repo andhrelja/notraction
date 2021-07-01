@@ -9,8 +9,6 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('drivers', '0001_initial'),
-        ('gallery', '0001_initial'),
         ('events', '0001_initial'),
     ]
 
@@ -76,7 +74,6 @@ class Migration(migrations.Migration):
                 ('end_date', models.DateField(verbose_name='Datum završetka')),
                 ('championship_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='championships.championshiptype')),
                 ('city', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='events.city')),
-                ('gallery', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='gallery.gallery')),
                 ('organizer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='championships.organizer')),
             ],
             options={
@@ -89,22 +86,5 @@ class Migration(migrations.Migration):
             model_name='category',
             name='championship_type',
             field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='championships.championshiptype'),
-        ),
-        migrations.CreateModel(
-            name='DriverSubCategoryPosition',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('position', models.IntegerField(null=True, verbose_name='Mjesto')),
-                ('championship', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='championships.championship')),
-                ('driver', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='drivers.driver', verbose_name='Vozač')),
-                ('subcategory', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='championships.subcategory', verbose_name='Podkategorija')),
-            ],
-            options={
-                'verbose_name': 'Pozicija natjecatelja',
-                'verbose_name_plural': 'Pozicije natjecatelja',
-                'ordering': ['position'],
-                'unique_together': {('subcategory', 'driver')},
-                'index_together': {('subcategory', 'driver')},
-            },
         ),
     ]

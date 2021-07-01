@@ -6,15 +6,10 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('championships', '0003_auto_20201116_1735'),
         ('drivers', '0001_initial'),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='driver',
-            name='discipline',
-        ),
         migrations.AddField(
             model_name='driver',
             name='discipline',

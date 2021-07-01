@@ -38,12 +38,13 @@ INSTALLED_APPS = [
 
     # Apps
     'home.apps.HomeConfig',
+    'gallery.apps.GalleryConfig',
     'accounts.apps.AccountsConfig',
+    'drivers.apps.DriversConfig',
     'cars.apps.CarsConfig',
     'championships.apps.ChampionshipsConfig',
-    'drivers.apps.DriversConfig',
     'events.apps.EventsConfig',
-    'gallery.apps.GalleryConfig',
+    
 ]
 
 MIDDLEWARE = [

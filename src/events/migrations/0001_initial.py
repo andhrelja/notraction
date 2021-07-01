@@ -51,7 +51,6 @@ class Migration(migrations.Migration):
                 ('end_time', models.TimeField(verbose_name='Vrijeme završetka')),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='author', to=settings.AUTH_USER_MODEL, verbose_name='Autor')),
                 ('city', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='events.city', verbose_name='Grad')),
-                ('album', models.ManyToManyField(to='gallery.gallery', verbose_name='Galerija')),
             ],
             options={
                 'verbose_name': 'Događaj',

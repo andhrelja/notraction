@@ -6,7 +6,6 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('championships', '0003_auto_20201116_1735'),
         ('drivers', '0002_auto_20201118_0900'),
     ]
 

@@ -2,7 +2,6 @@ from django.conf import settings
 from django.db import models
 from django.shortcuts import reverse
 from django.templatetags.static import static
-from pathlib import Path
 from PIL import Image
 from io import BytesIO
 import requests
@@ -44,8 +43,7 @@ class Car(models.Model):
     # Images
     image = models.ImageField(
         "Slika", upload_to='cars/images/', blank=False, null=True)
-    gallery = models.ForeignKey("gallery.Gallery", null=True,
-                                blank=True, verbose_name="Galerija", on_delete=models.CASCADE)
+    album = models.ManyToManyField("gallery.Gallery", verbose_name="Galerija")
 
     def get_full_name(self):
         full_name = "{make} {model}, {year}".format(

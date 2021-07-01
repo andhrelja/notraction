@@ -32,4 +32,21 @@ class Migration(migrations.Migration):
                 'verbose_name_plural': 'Vozači',
             },
         ),
+        migrations.CreateModel(
+            name='DriverSubCategoryPosition',
+            fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('position', models.IntegerField(null=True, verbose_name='Mjesto')),
+                ('championship', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='championships.championship')),
+                ('driver', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='drivers.driver', verbose_name='Vozač')),
+                ('subcategory', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='championships.subcategory', verbose_name='Podkategorija')),
+            ],
+            options={
+                'verbose_name': 'Pozicija natjecatelja',
+                'verbose_name_plural': 'Pozicije natjecatelja',
+                'ordering': ['position'],
+                'unique_together': {('subcategory', 'driver')},
+                'index_together': {('subcategory', 'driver')},
+            },
+        ),
     ]
