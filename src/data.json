@@ -7886,7 +7886,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 8,
     "fields": {
         "position": 17,
@@ -7896,7 +7896,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 9,
     "fields": {
         "position": 25,
@@ -7906,7 +7906,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 10,
     "fields": {
         "position": 3,
@@ -7916,7 +7916,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 11,
     "fields": {
         "position": 5,
@@ -7926,7 +7926,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 12,
     "fields": {
         "position": 6,
@@ -7936,7 +7936,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 13,
     "fields": {
         "position": 8,
@@ -7946,7 +7946,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 14,
     "fields": {
         "position": 1,
@@ -7956,7 +7956,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 15,
     "fields": {
         "position": 3,
@@ -7966,7 +7966,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 16,
     "fields": {
         "position": 5,
@@ -7976,7 +7976,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 17,
     "fields": {
         "position": 3,
@@ -7986,7 +7986,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 18,
     "fields": {
         "position": 4,
@@ -7996,7 +7996,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 19,
     "fields": {
         "position": 5,
@@ -8006,7 +8006,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 20,
     "fields": {
         "position": 14,
@@ -8016,7 +8016,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 21,
     "fields": {
         "position": 16,
@@ -8026,7 +8026,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 22,
     "fields": {
         "position": 10,
@@ -8036,7 +8036,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 23,
     "fields": {
         "position": 6,
@@ -8046,7 +8046,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 24,
     "fields": {
         "position": 8,
@@ -8056,7 +8056,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 25,
     "fields": {
         "position": 16,
@@ -8066,7 +8066,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 26,
     "fields": {
         "position": 17,
@@ -8076,7 +8076,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 27,
     "fields": {
         "position": 6,
@@ -8086,7 +8086,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 28,
     "fields": {
         "position": 5,
@@ -8096,7 +8096,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 29,
     "fields": {
         "position": 4,
@@ -8106,7 +8106,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 30,
     "fields": {
         "position": 9,
@@ -8116,7 +8116,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 31,
     "fields": {
         "position": 11,
@@ -8126,7 +8126,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 32,
     "fields": {
         "position": 13,
@@ -8136,7 +8136,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 33,
     "fields": {
         "position": 1,
@@ -8146,7 +8146,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 34,
     "fields": {
         "position": 23,
@@ -8156,7 +8156,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 35,
     "fields": {
         "position": 4,
@@ -8166,7 +8166,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 36,
     "fields": {
         "position": 6,
@@ -8176,7 +8176,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 37,
     "fields": {
         "position": 1,
@@ -8186,7 +8186,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 38,
     "fields": {
         "position": 3,
@@ -8196,7 +8196,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 39,
     "fields": {
         "position": 1,
@@ -8206,7 +8206,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 40,
     "fields": {
         "position": 2,
@@ -8216,7 +8216,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 41,
     "fields": {
         "position": 3,
@@ -8226,7 +8226,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 42,
     "fields": {
         "position": 3,
@@ -8236,7 +8236,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 43,
     "fields": {
         "position": 1,
@@ -8246,7 +8246,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 44,
     "fields": {
         "position": 2,
@@ -8256,7 +8256,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 45,
     "fields": {
         "position": 2,
@@ -8266,7 +8266,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 46,
     "fields": {
         "position": 3,
@@ -8276,7 +8276,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 47,
     "fields": {
         "position": 3,
@@ -8286,7 +8286,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 48,
     "fields": {
         "position": 3,
@@ -8296,7 +8296,7 @@
     }
 },
 {
-    "model": "championships.driversubcategoryposition",
+    "model": "drivers.driversubcategoryposition",
     "pk": 49,
     "fields": {
         "position": 2,

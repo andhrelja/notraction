@@ -1,7 +1,7 @@
 from django.db import models
-from django.forms.fields import ImageField
 from django.shortcuts import reverse
 from django.conf import settings
+from drivers.models import DriverSubCategoryPosition
 
 
 # Create your models here.
@@ -26,8 +26,7 @@ class Championship(models.Model):
         "events.City", verbose_name="Grad", on_delete=models.CASCADE)
     organizer   = models.ForeignKey(
         "championships.Organizer", verbose_name="Organizator", on_delete=models.CASCADE)
-    gallery     = models.ForeignKey(
-        "gallery.Gallery", null=True, blank=True, on_delete=models.SET_NULL)
+    album       = models.ManyToManyField("gallery.Gallery", verbose_name="Album")
     championship_type = models.ForeignKey(
         "championships.ChampionshipType", on_delete=models.CASCADE)
 
@@ -129,28 +128,6 @@ class SubCategory(models.Model):
     
     def __str__(self):
         return self.name
-
-
-class DriverSubCategoryPosition(models.Model):
-
-    # Rank
-    position = models.IntegerField("Mjesto", null=True)
-
-    # Foreign keys
-    subcategory = models.ForeignKey(
-        "championships.SubCategory", verbose_name="Podkategorija", on_delete=models.CASCADE)
-    driver = models.ForeignKey(
-        "drivers.Driver", verbose_name="Vozač", on_delete=models.CASCADE)
-    championship = models.ForeignKey(
-        "championships.Championship", on_delete=models.CASCADE)
-
-    class Meta:
-        ordering = ['position']
-        unique_together = ['championship', 'subcategory', 'driver']
-        index_together = ['championship', 'subcategory', 'driver']
-        verbose_name = "Pozicija natjecatelja"
-        verbose_name_plural = "Pozicije natjecatelja"
-
 
 class Organizer(models.Model):
 

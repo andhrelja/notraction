@@ -1,7 +1,6 @@
 import championships
 from django.db import models
 from django.shortcuts import reverse
-from championships.models import DriverSubCategoryPosition
 
 
 class Driver(models.Model):
@@ -56,3 +55,25 @@ class Driver(models.Model):
     class Meta:
         verbose_name = "Vozač"
         verbose_name_plural = "Vozači"        
+
+
+class DriverSubCategoryPosition(models.Model):
+
+    # Rank
+    position = models.IntegerField("Mjesto", null=True)
+
+    # Foreign keys
+    subcategory = models.ForeignKey(
+        "championships.SubCategory", verbose_name="Podkategorija", on_delete=models.CASCADE)
+    driver = models.ForeignKey(
+        "drivers.Driver", verbose_name="Vozač", on_delete=models.CASCADE)
+    championship = models.ForeignKey(
+        "championships.Championship", on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['position']
+        unique_together = ['championship', 'subcategory', 'driver']
+        index_together = ['championship', 'subcategory', 'driver']
+        verbose_name = "Pozicija natjecatelja"
+        verbose_name_plural = "Pozicije natjecatelja"
+

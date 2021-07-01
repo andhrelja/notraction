@@ -5,7 +5,23 @@
 {% include 'messages.html' %}
 
 <div class="container-fluid p-0">
-    <img src="{% static 'images/notraction_landing_cropped.jpg' %}" alt="notraction_landing_cropped.jpg" class="w-100">
+    
+    <div class="index-landing" style="">
+        <img id="index-landing-background" 
+            src="{% static 'images/notraction_landing_cropped.jpg' %}" 
+            alt="notraction_landing_cropped.jpg" 
+            class="w-100"
+            style=""
+            >
+        <!--<div class="logo-img">--<
+        <img id="mainnavbar-logo" 
+            src="{% static 'images/notraction_logo.png' %}" 
+            alt="notraction_logo.png" 
+            style="height:30px">
+        <!--</div>-->
+
+    </div>
+    
 </div>
 
 {% include 'partials/subnavbar_home.html' with brand='Najnoviji rezultati' object_name='rezultata' list_url='championships:list' landing=True %}

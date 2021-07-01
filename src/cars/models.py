@@ -36,7 +36,7 @@ class Car(models.Model):
     description = models.TextField("Detalji", null=True, blank=True)
 
     # Foreign keys
-    driver = models.OneToOneField(
+    driver = models.ForeignKey(
         "drivers.Driver", verbose_name="Vozač", on_delete=models.CASCADE)
     model = models.ForeignKey(
         "cars.Model", verbose_name="Model", on_delete=models.CASCADE)

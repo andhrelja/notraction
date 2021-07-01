@@ -21,7 +21,7 @@ class Event(models.Model):
     # Foreign keys
     city        = models.ForeignKey("events.City", verbose_name="Grad", on_delete=models.CASCADE)
     author      = models.ForeignKey("auth.User", verbose_name="Autor", related_name="author", on_delete=models.CASCADE)
-    gallery     = models.ForeignKey("gallery.Gallery", verbose_name="Galerija", null=True, blank=True, on_delete=models.SET_NULL)
+    album       = models.ManyToManyField("gallery.Gallery", verbose_name="Galerija")
 
     class Meta:
         verbose_name = "Događaj"

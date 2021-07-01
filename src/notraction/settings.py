@@ -10,11 +10,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 dotenv_path = BASE_DIR / '.env'
 load_dotenv(dotenv_path)
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 ALLOWED_HOSTS = ['localhost', 'notraction.herokuapp.com']
 
@@ -36,13 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Apps
+    'home.apps.HomeConfig',
     'accounts.apps.AccountsConfig',
     'cars.apps.CarsConfig',
     'championships.apps.ChampionshipsConfig',
     'drivers.apps.DriversConfig',
     'events.apps.EventsConfig',
     'gallery.apps.GalleryConfig',
-    'home.apps.HomeConfig',
 ]
 
 MIDDLEWARE = [
@@ -80,14 +81,14 @@ WSGI_APPLICATION = 'notraction.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'local': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'notraction',
-        'USER': 'andrea',
+        'USER': 'postgres',
         'PASSWORD': 'user',
         'HOST': 'localhost'
     },
-    'default': {
+    'heroku': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('NAME'),
         'USER': os.getenv('DBUSER'),

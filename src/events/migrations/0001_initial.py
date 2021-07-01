@@ -11,7 +11,6 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('gallery', '0001_initial'),
     ]
 
     operations = [
@@ -52,7 +51,7 @@ class Migration(migrations.Migration):
                 ('end_time', models.TimeField(verbose_name='Vrijeme završetka')),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='author', to=settings.AUTH_USER_MODEL, verbose_name='Autor')),
                 ('city', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='events.city', verbose_name='Grad')),
-                ('gallery', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='gallery.gallery', verbose_name='Galerija')),
+                ('album', models.ManyToManyField(to='gallery.gallery', verbose_name='Galerija')),
             ],
             options={
                 'verbose_name': 'Događaj',

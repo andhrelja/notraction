@@ -8,6 +8,17 @@ i.fab {
     margin-bottom: 3%;
 }
 
+
+.nav-link {
+    font-size: large;
+}
+
+.nav-item {
+    font-size: large;
+}
+
+
+
 .card-link {
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
     -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;

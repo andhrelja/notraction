@@ -1,5 +1,18 @@
 {% load static %}
 
+<style>
+
+.nav-link {
+    font-size: large;
+}
+
+.nav-item {
+    font-size: large;
+}
+
+</style>
+
+
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 mainnavbar">
         <ul class="navbar-nav mr-auto">
@@ -22,7 +35,7 @@
     </div>
     <div class="mx-auto order-0">
         <a class="navbar-brand mx-auto" href="{% url 'home:index' %}">
-            <img src="{% static 'images/notraction_logo.png' %}" alt="notraction_logo.png" height="30px">
+            <img id="mainnavbar-logo" src="{% static 'images/notraction_logo.png' %}" alt="notraction_logo.png" height="30px">
         </a>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 mainnavbar">
