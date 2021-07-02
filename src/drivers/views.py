@@ -22,7 +22,7 @@ class DriverDetailView(DetailView):
 class DriverCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Driver
     form_class = DriverModelForm
-    success_message = "Vozač uspješno stvoren"
+    success_message = "Vozač uspješno spremljen"
 
 
 class DriverUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):

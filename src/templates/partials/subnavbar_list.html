@@ -3,30 +3,37 @@
         <div class="navbar-brand">
             <h3 class="h3 mb-0">{{ brand }}</h3>
         </div>
+        {% if forloop.counter %}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".subnavbar-{{ forloop.counter }}">
+            <i class="fas fa-caret-down fa-lg"></i>
+        </button>
+
+        <div class="navbar-collapse collapse w-100 order-3 subnavbar-{{ forloop.counter }}">
+        {% else %}
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".subnavbar">
             <i class="fas fa-caret-down fa-lg"></i>
         </button>
+
         <div class="navbar-collapse collapse w-100 order-3 subnavbar">
+        {% endif %}
+        
+        
             <ul class="navbar-nav ml-auto">
+                {% if user.is_authenticated and create_url and url_params %}
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-filter"></i>
-                        <span>Prikaz po</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-sort-amount-down-alt"></i>
-                        <span>Sortiraj po</span>
-                    </a>
-                </li>
-                {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url create_url %}">
+                    <a class="nav-link txt-success" href="{% url create_url url_params %}">
                         <i class="fas fa-calendar-plus"></i>
-                        <span>Dodaj {{ object_name }}</span>
+                        <span>Novi {{ object_name }}</span>
                     </a>
                 </li>
+                {% elif user.is_authenticated and create_url and not url_params %}
+                <li class="nav-item">
+                    <a class="nav-link txt-success" href="{% url create_url %}">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span>Novi {{ object_name }}</span>
+                    </a>
+                </li>
+                {% elif user.is_authenticated and not create_url and not url_params %}
                 {% endif %}
             </ul>
         </div>

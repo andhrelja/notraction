@@ -1,7 +1,15 @@
+from django.utils import timezone
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
-from .models import Championship, DriverSubCategoryPosition
+from django.db.models import Q
 from .forms import ChampionshipModelForm, DriverSubCategoryPositionForm
+from .models import (
+    Category, 
+    Championship, 
+    DriverSubCategoryPosition, 
+    CATEGORY_CHOICES
+)
+
 from django.views.generic import (
     ListView,
     DetailView,
@@ -14,6 +22,13 @@ from django.views.generic import (
 class ChampionshipListView(ListView):
     model = Championship
 
+    def get_context_data(self, **kwargs):
+        context = super(ChampionshipListView, self).get_context_data(**kwargs)
+        now = timezone.now()
+        context.update({'years': (year for year in range(2018, now.year+1))})
+        return context
+    
+
 
 class ChampionshipDetailView(DetailView):
     model = Championship
@@ -25,6 +40,7 @@ class ChampionshipCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView
     success_message = "Prvenstvo uspješno stvoreno"
 
 
+
 class ChampionshipUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Championship
     form_class = ChampionshipModelForm
@@ -34,10 +50,9 @@ class ChampionshipUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView
     def get_initial(self):
         initial = super(ChampionshipUpdateView, self).get_initial()
         self.object = self.get_object()
-        initial['championship_type'] = self.object.championship_type
         initial['organizer'] = self.object.organizer.name
         return initial
-        
+    
 
 class ChampionshipDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     model = Championship

@@ -4,15 +4,18 @@ from django.conf import settings
 from drivers.models import DriverSubCategoryPosition
 
 
+CATEGORY_CHOICES = (
+    (1, 'Brdo'),
+    (2, 'Formula Driver'),
+    (3, 'Drift'),
+    (4, 'Općenito'),
+)
+
 # Create your models here.
 class Championship(models.Model):
 
     # General
     name        = models.CharField("Naziv", max_length=64)
-    club_count  = models.IntegerField(
-        "Ukupan broj klubova", null=True, blank=True)
-    club_position = models.IntegerField(
-        "Pozicija kluba", null=True, blank=True)
     description = models.TextField("Opis", null=True, blank=True)
     location    = models.CharField("Lokacija", max_length=96)
     image       = models.ImageField("Slika", null=True, blank=True, upload_to='champtionships/images/')
@@ -26,9 +29,9 @@ class Championship(models.Model):
         "events.City", verbose_name="Grad", on_delete=models.CASCADE)
     organizer   = models.ForeignKey(
         "championships.Organizer", verbose_name="Organizator", on_delete=models.CASCADE)
-    album       = models.ManyToManyField("gallery.Gallery", verbose_name="Album")
-    championship_type = models.ForeignKey(
-        "championships.ChampionshipType", on_delete=models.CASCADE)
+    albums      = models.ManyToManyField("gallery.Gallery", verbose_name="Albumi")
+    category    = models.ForeignKey(
+        "championships.Category", on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['-start_date']
@@ -55,44 +58,10 @@ class Championship(models.Model):
         return reverse("championships:results-list", kwargs={"pk": self.pk})
 
 
-class ChampionshipType(models.Model):
-    CHAMPIONSHIP_TYPE_CHOICES = (
-        (1, 'Prvenstvo Hrvatske'),
-        (2, 'Prvenstvo Centralne Europske Zone'),
-        (3, 'Adria Drift Series'),
-        (4, 'Day of Champions'),
-        (5, 'FIA Hill CLimb Masters'),
-        (6, 'Formula Driver'),
-        (7, 'Auto i karting liga Zapad'),
-        (8, 'Auto i karting savez Istre'),
-    )
-
-    name = models.CharField("Naziv", max_length=128)
-
-    class Meta:
-        verbose_name = "Tip prvenstva"
-        verbose_name_plural = "Tipovi prvenstava"
-
-    def __str__(self):
-        return self.name
-
-    def get_absolute_url(self):
-        return reverse("championship:detail", kwargs={"pk": self.pk})
-
-
 class Category(models.Model):
-    CATEGORY_CHOICES = (
-        (1, 'Brdo'),
-        (2, 'Formula Driver'),
-        (3, 'Drift'),
-        (4, 'General'),
-    )
-
     # General
     name = models.IntegerField(
         "Naziv kategorije", choices=CATEGORY_CHOICES, default=4)
-    championship_type = models.ForeignKey(
-        "championships.ChampionshipType", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "Kategorija"
@@ -106,7 +75,7 @@ class SubCategory(models.Model):
 
     # General
     name = models.CharField(
-        "Naziv kategorije", default="General", max_length=64)
+        "Naziv kategorije", default="Općenito", max_length=64)
     active = models.BooleanField("Aktivna podkategorija", default=True)
 
     # Foreign keys

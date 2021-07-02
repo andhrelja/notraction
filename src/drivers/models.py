@@ -1,5 +1,4 @@
-import championships
-from django.db import models
+from django.db import models, reset_queries
 from django.shortcuts import reverse
 
 
@@ -36,11 +35,24 @@ class Driver(models.Model):
     def championships(self):
         subcategory_positions = self.driversubcategoryposition_set.all()
         return set([result.championship for result in subcategory_positions.select_related('championship')])
-
+    
     @property
     def get_categories_display(self):
         categories = (cat.get_name_display() for cat in self.categories.all())
         return ", ".join(categories)
+
+    def get_active_car(self):
+        cars = self.cars(active=True)
+        if len(cars) == 1:
+            return cars[0]
+        return None
+
+    def cars(self, active=False):
+        if active:
+            cars = (cd.car for cd in self.cardriver_set.filter(driver=self, active=True))
+        else:
+            cars = (cd.car for cd in self.cardriver_set.filter(driver=self))
+        return list(cars)
 
     def get_full_name(self):
         full_name = '{first} {last}'.format(first=self.first_name, last=self.last_name)
@@ -77,3 +89,18 @@ class DriverSubCategoryPosition(models.Model):
         verbose_name = "Pozicija natjecatelja"
         verbose_name_plural = "Pozicije natjecatelja"
 
+
+class CarDriver(models.Model):
+
+    car    = models.ForeignKey("cars.Car", verbose_name="Automobil", on_delete=models.CASCADE)
+    driver = models.ForeignKey("drivers.Driver", verbose_name="Vozač", on_delete=models.CASCADE)
+    active = models.BooleanField("Aktivan", default=True)
+    date_deactivated = models.DateTimeField("Datum deaktivacije", auto_now=False, auto_now_add=False, null=True)
+
+    class Meta:
+        verbose_name = "Vozač automobila"
+        verbose_name_plural = "Vozači automobila"
+        unique_together = ['car', 'active']
+    
+    def __str__(self):
+        return self.driver.get_full_name()

@@ -19,9 +19,9 @@ class Event(models.Model):
     end_time   = models.TimeField("Vrijeme završetka")
 
     # Foreign keys
-    #city        = models.ForeignKey("events.City", verbose_name="Grad", on_delete=models.CASCADE)
+    city        = models.ForeignKey("events.City", verbose_name="Grad", on_delete=models.CASCADE)
     author      = models.ForeignKey("auth.User", verbose_name="Autor", related_name="author", on_delete=models.CASCADE)
-    album       = models.ManyToManyField("gallery.Gallery", verbose_name="Galerija")
+    albums      = models.ManyToManyField("gallery.Gallery", verbose_name="Albumi")
 
     class Meta:
         verbose_name = "Događaj"

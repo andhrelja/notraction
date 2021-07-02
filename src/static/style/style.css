@@ -4,13 +4,24 @@ i.fab {
     text-align: center;
 }
 
+.txt-success {
+    color: rgb(116, 173, 116) !important;
+}
+
+.txt-success:hover {
+    color: rgb(64, 95, 64) !important;
+}
+
 .col {
     margin-bottom: 3%;
 }
 
+.navbar {
+    padding: 1%;
+}
 
 .nav-link {
-    font-size: large;
+    font-size: large !important;
 }
 
 .nav-item {

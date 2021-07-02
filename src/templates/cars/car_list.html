@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
-{% include 'partials/subnavbar_list.html' with brand='Popis automobila' object_name='automobil' create_url='cars:create' %}
+{% include 'partials/subnavbar_list.html' with brand='Popis automobila' object_name='automobil' %}
 {% include 'messages.html' %}
 
 <div class="container py-3">
@@ -18,7 +18,7 @@
                 <h4 class="card-title">{{ car.get_full_name }}</h4>
                 <p class="card-subtitle">
                     <i class="fas fa-address-card"></i>
-                    <span>{{ car.driver }}</span>
+                    <span>{{ car.get_driver }}</span>
                 </p>
                 {% if car.description %}
                 <p class="card-text">{{ car.description }}</p>

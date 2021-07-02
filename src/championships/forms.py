@@ -1,7 +1,6 @@
 from django import forms
 from .models import (
-    Category, Championship, 
-    ChampionshipType,
+    Category, Championship,
     DriverSubCategoryPosition,
     Organizer, SubCategory
 )
@@ -11,12 +10,12 @@ from drivers.models import Driver
 
 
 class ChampionshipModelForm(forms.ModelForm):
-    county              = forms.ModelChoiceField(label="Županija", queryset=County.objects.all(),
+    county    = forms.ModelChoiceField(label="Županija", queryset=County.objects.all(),
         widget=forms.Select(attrs={'class': 'custom-select', 'onchange': 'toggleCities()'}))
-    organizer           = forms.CharField(label="Organizator", max_length=64, required=True,
+    organizer = forms.CharField(label="Organizator", max_length=64, required=True,
         widget=forms.TextInput(attrs={'class': 'form-control'}))
-    championship_type   = forms.CharField(label="Tip prvenstva", max_length=128, required=True,
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Prvenstvo Hrvatske'}))
+    category  = forms.ModelChoiceField(label="Kategorija prvenstva", queryset=Category.objects.all(),
+        widget=forms.Select(attrs={'class': 'custom-select', 'placeholder': 'Kategorija'}))
 
 
     class Meta:
@@ -24,11 +23,9 @@ class ChampionshipModelForm(forms.ModelForm):
         ordering = ['-start_date']
         fields = (
             'name',
-            'image',
+            'category',
             'organizer',
-            'championship_type',
-            'club_count',
-            'club_position',            
+            'image',
             'start_date',
             'end_date',
             'county',
@@ -39,8 +36,6 @@ class ChampionshipModelForm(forms.ModelForm):
         widgets = {
             'name': forms.TextInput(attrs={'class': "form-control"}),
             'image': forms.ClearableFileInput(attrs={'class': "form-control"}),
-            'club_count': forms.NumberInput(attrs={'class': "form-control"}),
-            'club_position': forms.NumberInput(attrs={'class': "form-control"}),
             'location': forms.TextInput(attrs={'class': "form-control"}),
             'start_date': DateInput(attrs={'class': "form-control"}),
             'end_date': DateInput(attrs={'class': "form-control"}),
@@ -49,14 +44,10 @@ class ChampionshipModelForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(ChampionshipModelForm, self).__init__(*args, **kwargs)
+
         if kwargs['instance']:
             championship = kwargs['instance']
             self.fields['county'].initial = championship.city.county
-
-    def clean_championship_type(self):
-        championship_type_name = self.cleaned_data.get("championship_type")
-        championship_type, _ = ChampionshipType.objects.get_or_create(name=championship_type_name)
-        return championship_type
     
     def clean_organizer(self):
         organizer_name = self.cleaned_data.get("organizer")
@@ -65,7 +56,8 @@ class ChampionshipModelForm(forms.ModelForm):
     
     
 class DriverSubCategoryPositionForm(forms.ModelForm):
-    category     = forms.ModelChoiceField(label="Kategorija", queryset=Category.objects.all(), widget=forms.Select(attrs={'class': 'custom-select'}))
+    category  = forms.ModelChoiceField(label="Kategorija", 
+        queryset=Category.objects.all(), widget=forms.Select(attrs={'class': 'custom-select'}))
     # TODO: Add Countries
 
     class Meta:
@@ -92,6 +84,7 @@ class DriverSubCategoryPositionForm(forms.ModelForm):
         self.fields['category'].queryset = categories
         self.fields['driver'].queryset = Driver.objects.all()
         self.fields['subcategory'].queryset = SubCategory.objects.filter(active=True, category__in=categories)
+
         if self.fields['subcategory'].queryset.count() == 1:
             self.fields['subcategory'].initial = self.fields['subcategory'].queryset.first()
         

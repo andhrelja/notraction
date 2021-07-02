@@ -22,7 +22,7 @@ class EventDetailView(DetailView):
 class EventCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Event
     form_class = EventModelForm
-    success_message = "Događaj uspješno stvoren"
+    success_message = "Događaj uspješno spremljen"
 
 
 class EventUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):

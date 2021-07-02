@@ -15,13 +15,8 @@
                     </a>
                 </li>            
                 {% if object_name == "vozača" %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'cars:detail' object.car.pk %}">
-                        <i class="fas fa-car"></i>
-                        <span>Automobil</span>
-                    </a>
-                </li>                
-                {% elif object_name == "automobil" %}
+                            
+                {% elif object_name == "automobil" and not update_url %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'drivers:detail' object.driver.pk %}">
                         <i class="fas fa-id-card"></i>
@@ -62,9 +57,39 @@
                 {% if object_name == "rezultat" %}
                 {% comment %}
                 {% endcomment %}
+                {% elif object_name == "vozača" %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url update_url update_params %}">
+                        <i class="fas fa-pen"></i>
+                        <span>Uredi vozača</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'cars:create' object.id %}">
+                        <i class="fas fa-car"></i>
+                        <span>Dodaj automobil</span>
+                    </a>
+                </li>
+                {% elif object_name == "automobil" %}
+                {% if update_url and update_params %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url update_url update_params %}">
+                        <i class="fas fa-pen"></i>
+                        <span>Uredi automobil</span>
+                    </a>
+                </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url update_url object.id %}">
+                    <a class="nav-link" href="{% url 'cars:update' object.id %}">
+                        <i class="fas fa-pen"></i>
+                        <span>Uredi automobil</span>
+                    </a>
+                </li>
+                {% endif %}
+                
+                {% elif update_url and update_params %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url update_url update_params %}">
                         <i class="fas fa-pen"></i>
                         <span>Uredi {{ object_name }}</span>
                     </a>

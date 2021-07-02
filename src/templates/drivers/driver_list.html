@@ -19,7 +19,11 @@
                 <small class="card-text">{{ driver.location_name }}</small>
                 <p class="card-text mt-3">
                     <i class="fas fa-car"></i>
-                    <span>{{ driver.car }}</span>
+                    {% if driver.get_active_car %}
+                    <span>{{ driver.get_active_car }}</span>
+                    {% else %}
+                    <span>Još nema automobil</span>
+                    {% endif %}
                 </p>
             </div>
         </div>

@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand
 
 from django.conf import settings
-from drivers.models import Driver
+from drivers.models import Driver, DriverSubCategoryPosition
 from events.models import (
     Event,
     County,
@@ -14,8 +14,7 @@ from cars.models import (
 )
 from championships.models import (
     Championship,
-    Category,
-    CategoryDriverPosition)
+    Category)
 
 from pathlib import Path
 import json
@@ -27,17 +26,17 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         #self.delete_objects()
-        self.load_cars_manufacturer()
-        """
-        self.load_cars_model()
-        self.load_events_county()
-        self.load_events_city()
+        #self.load_cars_manufacturer()
+        
+        # self.load_cars_model()
+        # self.load_events_county()
+        # self.load_events_city()
 
-        self.load_events()
-        self.load_drivers()
+        # self.load_events()
+        # self.load_drivers()
         self.load_cars()
-        self.load_events()
-        """
+        # self.load_events()
+        
 
     def load_cars_manufacturer(self):
         manufacturers_list = get_read_json_file('cars_manufacturer.json')
@@ -62,7 +61,7 @@ class Command(BaseCommand):
         for model in models_list:
             self.stdout.write(self.style.MIGRATE_HEADING(
                 'Applying Model'), ending=" ")
-            model = Model.objects.create(**model)
+            model, _ = Model.objects.get_or_create(**model)
             self.stdout.write(self.style.MIGRATE_LABEL(
                 (':: {} ..'.format(model))), ending=" ")
             self.stdout.write(self.style.SUCCESS('OK'))
@@ -72,7 +71,7 @@ class Command(BaseCommand):
         for county in counties_list:
             self.stdout.write(self.style.MIGRATE_HEADING(
                 'Applying County'), ending=" ")
-            county = County.objects.create(**county)
+            county, _ = County.objects.get_or_create(**county)
             self.stdout.write(self.style.MIGRATE_LABEL(
                 (':: {} ..'.format(county))), ending=" ")
             self.stdout.write(self.style.SUCCESS('OK'))
@@ -83,7 +82,7 @@ class Command(BaseCommand):
         for grad in cities_list:
             self.stdout.write(self.style.MIGRATE_HEADING(
                 'Applying City'), ending=" ")
-            city = City.objects.create(**grad)
+            city, _ = City.objects.get_or_create(**grad)
             self.stdout.write(self.style.MIGRATE_LABEL(
                 (':: {} ..'.format(city))), ending=" ")
             self.stdout.write(self.style.SUCCESS('OK'))
@@ -93,7 +92,7 @@ class Command(BaseCommand):
         for driver in drivers_list:
             self.stdout.write(self.style.MIGRATE_HEADING(
                 'Applying Driver'), ending=" ")
-            driver = Driver.objects.create(**driver)
+            driver, _ = Driver.objects.get_or_create(**driver)
             self.stdout.write(self.style.MIGRATE_LABEL(
                 (':: {} ..'.format(driver))), ending=" ")
             self.stdout.write(self.style.SUCCESS('OK'))
@@ -103,7 +102,7 @@ class Command(BaseCommand):
         for car in cars_list:
             self.stdout.write(self.style.MIGRATE_HEADING(
                 'Applying Car'), ending=" ")
-            car = Car.objects.create(**car)
+            car, _ = Car.objects.get_or_create(**car)
             self.stdout.write(self.style.MIGRATE_LABEL(
                 (':: {} ..'.format(car))), ending=" ")
             self.stdout.write(self.style.SUCCESS('OK'))
@@ -113,7 +112,7 @@ class Command(BaseCommand):
         for event in events_list:
             self.stdout.write(self.style.MIGRATE_HEADING(
                 'Applying Event'), ending=" ")
-            event = Event.objects.create(**event)
+            event, _ = Event.objects.get_or_create(**event)
             self.stdout.write(self.style.MIGRATE_LABEL(
                 (':: {} ..'.format(event))), ending=" ")
             self.stdout.write(self.style.SUCCESS('OK'))
@@ -192,10 +191,10 @@ class Command(BaseCommand):
 
 
         self.stdout.write(self.style.WARNING(
-            'Deleting CategoryDriverPosition'), ending=" ")
-        CategoryDriverPosition.objects.all().delete()
+            'Deleting DriverSubCategoryPosition'), ending=" ")
+        DriverSubCategoryPosition.objects.all().delete()
         self.stdout.write(self.style.MIGRATE_LABEL(
-            (':: {} ..'.format(CategoryDriverPosition))), ending=" ")
+            (':: {} ..'.format(DriverSubCategoryPosition))), ending=" ")
         self.stdout.write(self.style.ERROR('OK'))
 
 

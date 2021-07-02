@@ -8,8 +8,7 @@
         "driver_image": "drivers/images/Amira_Bradaric.jpg",
         "email": "amira.bradaric@amk.hr",
         "phone": "+385 99 2342812",
-        "gender": "Z",
-        "discipline": 3
+        "gender": "Z"
     },
     {
         "id": 2,
@@ -20,8 +19,7 @@
         "driver_image": "drivers/images/Igor_Varesko.jpg",
         "email": "igor.varesko@amk.hr",
         "phone": "+385 996709497",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 3,
@@ -32,8 +30,7 @@
         "driver_image": "drivers/images/Ivan_Viskovic.jpg",
         "email": "ivan.viskovic@akm.hr",
         "phone": "+385 917273 214",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 4,
@@ -44,8 +41,7 @@
         "driver_image": "drivers/images/Leon_Dubroja.jpg",
         "email": "leon.dubroja@amk.hr",
         "phone": "+395 92 312 312",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 5,
@@ -56,8 +52,7 @@
         "driver_image": "drivers/images/Matija_Brkljacic.jpg",
         "email": "matija.brkljacic@amk.hr",
         "phone": "+385 99 2342812",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 6,
@@ -68,8 +63,7 @@
         "driver_image": "drivers/images/Rade_Kosanovic.jpg",
         "email": "rade.kosanovic@amk.hr",
         "phone": "+385 917273 214",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 7,
@@ -80,8 +74,7 @@
         "driver_image": "drivers/images/Roberto_Randic.jpg",
         "email": "roberto.randic@amk.hr",
         "phone": "+385 99 2342812",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 8,
@@ -92,8 +85,7 @@
         "driver_image": "drivers/images/Sasa_Radola.jpg",
         "email": "sasa.radola@amk.hr",
         "phone": "+385 99 2342812",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 9,
@@ -104,8 +96,7 @@
         "driver_image": "drivers/images/Toni_Cukon.jpg",
         "email": "toni.cukon@amk.hr",
         "phone": "+385 99 2342812",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 10,
@@ -116,8 +107,7 @@
         "driver_image": "drivers/images/Tony_Viskovic.jpg",
         "email": "tony.viskovic@amk.hr",
         "phone": "+385 917273 214",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 11,
@@ -128,8 +118,7 @@
         "driver_image": "drivers/images/Vedran_Divkovic.jpg",
         "email": "vedran.divkovic@amk.hr",
         "phone": "+395 92 312 312",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 12,
@@ -140,8 +129,7 @@
         "driver_image": "drivers/images/Alen_Celega.jpg",
         "email": "alen@celega.com",
         "phone": "+385 99 2342812",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     },
     {
         "id": 13,
@@ -152,8 +140,7 @@
         "driver_image": "drivers/images/Marina_Lisica.jpg",
         "email": "marina.lisica@amk.hr",
         "phone": "+385 917273 214",
-        "gender": "Z",
-        "discipline": 3
+        "gender": "Z"
     },
     {
         "id": 14,
@@ -164,7 +151,6 @@
         "driver_image": "drivers/images/Igor_Lisica.jpg",
         "email": "igor.lisica@amk.hr",
         "phone": "+385 99 2342812",
-        "gender": "M",
-        "discipline": 3
+        "gender": "M"
     }
 ]

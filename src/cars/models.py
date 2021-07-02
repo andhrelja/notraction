@@ -2,6 +2,9 @@ from django.conf import settings
 from django.db import models
 from django.shortcuts import reverse
 from django.templatetags.static import static
+
+from drivers.models import CarDriver
+
 from PIL import Image
 from io import BytesIO
 import requests
@@ -35,15 +38,18 @@ class Car(models.Model):
     description = models.TextField("Detalji", null=True, blank=True)
 
     # Foreign keys
-    driver = models.ForeignKey(
-        "drivers.Driver", verbose_name="Vozač", on_delete=models.CASCADE)
     model = models.ForeignKey(
         "cars.Model", verbose_name="Model", on_delete=models.CASCADE)
 
     # Images
     image = models.ImageField(
         "Slika", upload_to='cars/images/', blank=False, null=True)
-    album = models.ManyToManyField("gallery.Gallery", verbose_name="Galerija")
+    albums = models.ManyToManyField("gallery.Gallery", verbose_name="Albumi")
+
+    @property
+    def is_active(self):
+        car_driver = self.cardriver_set.first()
+        return car_driver.active
 
     def get_full_name(self):
         full_name = "{make} {model}, {year}".format(
@@ -52,6 +58,14 @@ class Car(models.Model):
     
     def get_short_name(self):
         short_name = "{model}, {year}".format(model=self.model, year=self.year)
+        return short_name.strip()
+
+    def get_driver(self):
+        car_driver = CarDriver.objects.filter(car=self, active=True)
+        if not car_driver.exists():
+            car_driver = CarDriver.objects.filter(car=self)
+        return car_driver.first()
+        
 
     # TODO: Crop driver image to a square
 
