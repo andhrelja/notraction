@@ -50,17 +50,12 @@ class Migration(migrations.Migration):
                 ('start_time', models.TimeField(verbose_name='Vrijeme početka')),
                 ('end_time', models.TimeField(verbose_name='Vrijeme završetka')),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='author', to=settings.AUTH_USER_MODEL, verbose_name='Autor')),
-                ('city', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='events.city', verbose_name='Grad')),
+                
             ],
             options={
                 'verbose_name': 'Događaj',
                 'verbose_name_plural': 'Događaji',
                 'ordering': ['-start_date'],
             },
-        ),
-        migrations.AddField(
-            model_name='city',
-            name='county',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='events.county', verbose_name='Županija'),
         ),
     ]
