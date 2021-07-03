@@ -3,7 +3,7 @@
 {% load championship_extras %}
 
 {% block body %}
-{% include 'partials/subnavbar_detail.html' with title=championship.name object_name='prvenstvo' update_url='championships:update' %}
+{% include 'partials/subnavbar_detail.html' with title=championship.name object_name='prvenstvo' update_url='championships:update' update_params=object.pk %}
 {% include 'messages.html' %}
 
 
@@ -37,8 +37,8 @@
                                 <p class="card-text">{{ championship.location_name }}</p>
                             </div>
                             <div class="detail-item-group">
-                                <h5 class="h5 mb-1">TIP PRVENSTVA</h5>
-                                <p class="card-text">{{ championship.championship_type }}</p>
+                                <h5 class="h5 mb-1">DISCIPLINA</h5>
+                                <p class="card-text">{{ championship.category }}</p>
                             </div>
                         </div>
                         <div class="col m-3">
@@ -49,10 +49,6 @@
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">DATUM ZAVRŠETKA</h5>
                                 <p class="card-text">{{ championship.end_date }}</p>
-                            </div>
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">UKUPAN REZULTAT KLUBA</h5>
-                                <p class="card-text">{{ championship.club_position }} / {{ championship.club_count }}</p>
                             </div>
                         </div>
                     </div>
@@ -77,10 +73,9 @@
                     <h3 class="h3 card-title text-light mb-0">Najbolji plasmani</h3>
                 </div>
                 <div class="card-body card-detail h-100">
-                    {% for category in championship.championship_type.category_set.all %}
                     <div class="card">
                         <div class="card-body">
-                            {% for subcategory in category.subcategory_set.all %}
+                            {% for subcategory in object.category.subcategory_set.all %}
                             {% if subcategory|results:championship and subcategory|top_results:championship %}
                             {% if subcategory == "General" %}
                                 <div class="card-title font-weight-bold">{{ category }}</div>
@@ -111,7 +106,7 @@
                             
                         </div>
                     </div>
-                    {% endfor %}
+                    
                 </div>
             </div>
         </div>

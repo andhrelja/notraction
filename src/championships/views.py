@@ -25,7 +25,10 @@ class ChampionshipListView(ListView):
     def get_context_data(self, **kwargs):
         context = super(ChampionshipListView, self).get_context_data(**kwargs)
         now = timezone.now()
-        context.update({'years': (year for year in range(2018, now.year+1))})
+        context.update({
+            'years': (year for year in range(2017, now.year+1)),
+            'categories': Category.objects.filter(~Q(name=4))
+        })
         return context
     
 
@@ -80,6 +83,9 @@ class DriverSubCategoryPositionCreateView(LoginRequiredMixin, SuccessMessageMixi
     def get_success_url(self):
         context = self.get_context_data()
         return context["championship"].get_results_url()
+    
+    def form_invalid(self, form):
+        return super().form_invalid(form)
 
 
 class DriverSubCategoryPositionUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
@@ -87,10 +93,10 @@ class DriverSubCategoryPositionUpdateView(LoginRequiredMixin, SuccessMessageMixi
     form_class = DriverSubCategoryPositionForm
     success_message = "Rezultat uspješno ažuriran"
     template_name = "championships/driversubcategoryposition_update_list.html"
-
+    
     def get_initial(self):
         initial = super(DriverSubCategoryPositionUpdateView, self).get_initial()
-        initial['championship'] = Championship.objects.get(id=self.kwargs.get('championship_pk'))
+        initial['championship'] = Championship.objects.get(id=self.kwargs.get('pk'))
         return initial
             
     def get_context_data(self, **kwargs):

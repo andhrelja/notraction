@@ -1,4 +1,6 @@
 from django import forms
+
+import championships
 from .models import (
     Category, Championship,
     DriverSubCategoryPosition,
@@ -56,14 +58,14 @@ class ChampionshipModelForm(forms.ModelForm):
     
     
 class DriverSubCategoryPositionForm(forms.ModelForm):
-    category  = forms.ModelChoiceField(label="Kategorija", 
-        queryset=Category.objects.all(), widget=forms.Select(attrs={'class': 'custom-select'}))
+    # category  = forms.ModelChoiceField(label="Kategorija", 
+    #    queryset=Category.objects.all(), widget=forms.Select(attrs={'class': 'custom-select'}))
     # TODO: Add Countries
 
     class Meta:
         model = DriverSubCategoryPosition
         fields = (
-            'category',
+            #'category',
             'subcategory',
             'driver',
             'position',
@@ -79,20 +81,13 @@ class DriverSubCategoryPositionForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(DriverSubCategoryPositionForm, self).__init__(*args, **kwargs)
         self.championship = self.initial['championship']
-        categories = self.championship.championship_type.category_set.all()
+        categories = Category.objects.all()
         
-        self.fields['category'].queryset = categories
         self.fields['driver'].queryset = Driver.objects.all()
         self.fields['subcategory'].queryset = SubCategory.objects.filter(active=True, category__in=categories)
 
         if self.fields['subcategory'].queryset.count() == 1:
             self.fields['subcategory'].initial = self.fields['subcategory'].queryset.first()
         
-        self.fields['category'].initial = self.fields['category'].queryset.first()
         self.fields['driver'].initial = self.fields['driver'].queryset.first()
         self.fields['championship'].initial = self.championship
-
-
-    def clean_championship(self):
-        return self.championship
-    

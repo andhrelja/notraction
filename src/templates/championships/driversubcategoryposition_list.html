@@ -26,10 +26,6 @@
                                     <h5 class="h5">DATUM PRVENSTVA</h5>
                                     <p class="card-text">{{ championship.end_date|date:"m/Y" }}</p>
                                 </div>
-                                <div class="detail-item-group">
-                                    <h5 class="h5">UKUPAN REZULTAT KLUBA</h5>
-                                    <p class="card-text">{{ championship.club_position }} / {{ championship.club_count }}</p>
-                                </div>
                             </ul>
                         </div>
                     </div>
@@ -69,8 +65,8 @@
                                     <p class="card-text">{{ championship.end_date|date:"m/Y" }}</p>
                                 </div>
                                 <div class="detail-item-group inline">
-                                    <h5 class="h5">UKUPAN REZULTAT KLUBA</h5>
-                                    <p class="card-text">{{ championship.club_position }} / {{ championship.club_count }}</p>
+                                    <h5 class="h5">KATEGORIJA</h5>
+                                    <p class="card-text">{{ object.category }}</p>
                                 </div>
                             </ul>
                         </div>
@@ -86,13 +82,10 @@
                     <h3 class="h3 card-title text-light mb-0">Rezultati</h3>
                 </div>
                 <div class="card-body card-detail h-100">
-                    {% for category in championship.championship_type.category_set.all %}
+                    
                     <div class="card">
-                        <div class="card-header">
-                            <h4 class="h4 font-weight-bold card-title">{{ category }}</h4>
-                        </div>
                         <div class="card-body">
-                            {% for subcategory in category.subcategory_set.all %}
+                            {% for subcategory in object.category.subcategory_set.all %}
                             {% if subcategory|results:championship  %}
                             <div class="table-responsive">
                                 <table class="table table-striped mb-5">
@@ -150,7 +143,7 @@
                             {% endfor %}
                         </div>
                     </div>
-                    {% endfor %}
+                    
                 </div>
             </div>
         </div>

@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
+{% load championship_extras %}
 
 {% block body %}
 
 
 <nav class="navbar navbar-expand-sm navbar-light border-bottom" style="background-color: #e6e6e6">
     <div class="navbar-brand">
-        <h3 class="h3 mb-0">Općenito</h3>
+        <h3 class="h3 mb-0">Prvenstva po godinama</h3>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".opcenito-subnavbar">
         <i class="fas fa-caret-down fa-lg"></i>
@@ -24,61 +25,52 @@
                     <span>Sortiraj po</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link txt-success" href="{% url 'championships:create' %}">
+                    <i class="fas fa-calendar-plus"></i>
+                    <span>Novo prvenstvo</span>
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
 
 {% for year in years %}
 
-{% include 'partials/subnavbar_list.html' with brand=year object_name='rezultat' create_url='championships:create' url_params=championship_type.get_name_display %}
+{% include 'partials/subnavbar_list.html' with brand=year object_name='prvenstvo' %}
 
 {% if forloop.first %}
 {% include 'messages.html' %}
 {% endif %}
 
-<div class="container">
-    {% for championship in championship_type.championship_set.all %}
-    {% if forloop.first or forloop.counter0|divisibleby:3 %}
-    <div class="row">
-    {% endif %}
-        <div class="col-md-4 mt-3 mb-3">
-            <div class="card card-link h-100" onclick="location.href='{% url 'championships:detail' championship.pk %}'">
-                <div class="card-header bg-primary">
-                    <h3 class="h3 mb-0 text-light">{{ championship.name }}, {{ championship.start_date|date:"Y" }}</h3>
-                </div>
-                <div class="card-body h-100">
-                    <div class="card-image text-center mb-3">
-                        <img src="{{ championship.image.url }}" alt="{{ championship.image }}" class="img-thumbnail" style="max-height: 200px;">
+<div class="container pt-2 pb-2">
+    {% for category in categories %}
+    {% if category|championships_by_year:year %}
+    <div class="card mt-2 mb-2">
+        <div class="card-header bg-primary">
+            <h3 class="h3 card-title text-light mb-0">{{ category.get_name_display }}</h3>
+        </div>
+        <div class="row">
+            {% for championship in category|championships_by_year:year %}
+            <div class="col-md-4 m-3">
+                <div class="card card-link h-100" onclick="location.href='{% url 'championships:detail' championship.pk %}'">
+                    <div class="card-header">
+                        <h3 class="h3 mb-0">{{ championship.city }}, {{ championship.start_date|date:"Y" }}</h3>
                     </div>
-                    <p class="card-text text-center">
-                        <small>{{ championship.start_date }} - {{ championship.end_date }}</small>
-                    </p>
-                    <p class="card-text">
-                        <i class="fas fa-award"></i>
-                        <span>{{ championship.category }}</span>
-                    </p>
-                    <p class="card-text">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>{{ championship.location_name }}</span>
-                    </p>
+                    <div class="card-body h-100">
+                        <div class="card-image text-center mb-3">
+                            <img src="{{ championship.image.url }}" alt="{{ championship.image }}" class="img-thumbnail" style="max-height: 200px;">
+                        </div>
+                        <p class="card-text text-center">
+                            <small>{{ championship.start_date }} - {{ championship.end_date }}</small>
+                        </p>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-    {% if forloop.counter0|add:1|divisibleby:3%}
     </div>
     {% endif %}
-    {% empty %}
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">Još nema rezultata</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     {% endfor %}
 </div></div>
 {% endfor %}

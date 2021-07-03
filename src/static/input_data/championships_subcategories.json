@@ -1,0 +1,281 @@
+[
+    {
+        "model": "championships.subcategory",
+        "pk": 1,
+        "fields": {
+            "name": "Kategorija I",
+            "active": true,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 2,
+        "fields": {
+            "name": "Kategorija II",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 3,
+        "fields": {
+            "name": "Klasa 1 - N/1400",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 4,
+        "fields": {
+            "name": "Klasa 2 - N/1600",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 5,
+        "fields": {
+            "name": "Klasa 3 - N/2000",
+            "active": true,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 6,
+        "fields": {
+            "name": "Klasa 4 - N/2000+",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 7,
+        "fields": {
+            "name": "Klasa 6 - A/1400",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 8,
+        "fields": {
+            "name": "Klasa 7 - A/1600",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 9,
+        "fields": {
+            "name": "Klasa 8 - A/2000",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 10,
+        "fields": {
+            "name": "Klasa 11- E1/1400 moto",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 11,
+        "fields": {
+            "name": "Klasa 14  - E1/1400",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 12,
+        "fields": {
+            "name": "Klasa 15 - E1/1600",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 13,
+        "fields": {
+            "name": "Klasa 16 - E1/2000",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 14,
+        "fields": {
+            "name": "Klasa 17 - E1/2500",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 15,
+        "fields": {
+            "name": "Klasa 19 - C,CN,C3,D,E/2000",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 16,
+        "fields": {
+            "name": "Klasa 20 - C,CN,C3,D,E/3000",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 17,
+        "fields": {
+            "name": "Klasa 23 - E1,GT,WRC/6500",
+            "active": false,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 18,
+        "fields": {
+            "name": "Voza\u010dice",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 19,
+        "fields": {
+            "name": "Juniori",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 20,
+        "fields": {
+            "name": "Klasa 1",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 21,
+        "fields": {
+            "name": "Klasa 2",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 22,
+        "fields": {
+            "name": "Klasa 3",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 23,
+        "fields": {
+            "name": "Klasa 4",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 24,
+        "fields": {
+            "name": "Klasa 5",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 25,
+        "fields": {
+            "name": "Klasa 6",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 26,
+        "fields": {
+            "name": "Klasa 7",
+            "active": true,
+            "category": 2
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 27,
+        "fields": {
+            "name": "General",
+            "active": true,
+            "category": 3
+        }
+    },
+
+    {
+        "model": "championships.subcategory",
+        "pk": 28,
+        "fields": {
+            "name": "Grupa N",
+            "active": true,
+            "category": 1
+        }
+    }
+]

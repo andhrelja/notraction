@@ -57,6 +57,19 @@
                 {% if object_name == "rezultat" %}
                 {% comment %}
                 {% endcomment %}
+                {% elif object_name == "prvenstvo" %}
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="{% url update_url update_params %}">
+                        <i class="fas fa-pen"></i>
+                        <span>Uredi prvenstvo</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link txt-success" href="{% url 'championships:results-create' update_params %}">
+                        <i class="fas fa-pen"></i>
+                        <span>Novi rezultat</span>
+                    </a>
+                </li>
                 {% elif object_name == "vozača" %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url update_url update_params %}">
