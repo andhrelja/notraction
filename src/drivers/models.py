@@ -1,4 +1,4 @@
-from django.db import models, reset_queries
+from django.db import models
 from django.shortcuts import reverse
 
 
@@ -12,14 +12,14 @@ class Driver(models.Model):
     # General
     first_name      = models.CharField("Ime", max_length=64)
     last_name       = models.CharField("Prezime", max_length=64)
-    birth_date      = models.DateField("Datum rođenja")
-    gender          = models.CharField("Spol", max_length=1, default='M', choices=GENDER_CHOICES)
+    birth_date      = models.DateField("Datum rođenja", blank=True, null=True)
+    gender          = models.CharField("Spol", max_length=1, default='M', choices=GENDER_CHOICES, blank=True, null=True)
     driver_image    = models.ImageField( # , width_field='512', height_field='512'
         "Slika", default='accounts/profile/default.jpg', upload_to='people/images/')
 
     # Contact
-    email           = models.EmailField("Email")
-    phone           = models.CharField("Telefon", max_length=15)
+    email           = models.EmailField("Email", blank=True, null=True)
+    phone           = models.CharField("Telefon", max_length=15, blank=True, null=True)
 
     # Foreign keys
     city            = models.ForeignKey("events.City", verbose_name="Grad", on_delete=models.CASCADE)
@@ -66,7 +66,8 @@ class Driver(models.Model):
 
     class Meta:
         verbose_name = "Vozač"
-        verbose_name_plural = "Vozači"        
+        verbose_name_plural = "Vozači"
+        ordering = ['first_name', 'last_name']       
 
 
 class DriverSubCategoryPosition(models.Model):
@@ -76,7 +77,7 @@ class DriverSubCategoryPosition(models.Model):
     )
 
     # Rank
-    position = models.IntegerField("Mjesto", null=True)
+    position = models.IntegerField("Plasman", blank=True, null=True)
     championship_type = models.CharField("Prvenstvo", choices=CHAMPIONSHIP_TYPE_CHOICES, max_length=32)
 
     # Foreign keys

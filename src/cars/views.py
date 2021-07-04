@@ -1,4 +1,4 @@
-from .models import Car, Manufacturer
+from .models import Car, Manufacturer, Model
 from .forms import CarModelForm
 from django.utils import timezone
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -28,19 +28,20 @@ class CarCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     success_message = "Automobil uspješno spremljen"
     success_url = "/cars/"
 
+
+    def get_initial(self):
+        initial = super().get_initial()
+        initial.update({ 'driver': Driver.objects.get(id=self.kwargs['driver_pk']) })
+        return initial
+
     def get_form_kwargs(self):
         kwargs = super(CarCreateView, self).get_form_kwargs()
-        kwargs.update({
-            'driver': Driver.objects.filter(id=self.kwargs['driver_pk']),
-            'create': True
-        })
+        kwargs.update({ 'create': True })
         return kwargs
     
     def form_valid(self, form):
-        driver = form.cleaned_data.pop('driver')
-        make = form.cleaned_data.pop('make')
-        active = form.cleaned_data.pop('active')
         response = super(CarCreateView, self).form_valid(form)
+        driver = Driver.objects.get(id=self.kwargs['driver_pk'])
         CarDriver.objects.get_or_create(driver=driver, car=self.object)
         return response
     
@@ -51,14 +52,15 @@ class CarUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     form_class = CarModelForm
     template_name_suffix = "_update_form"
     success_message = "Automobil uspješno ažuriran"
-    
+
+
     def get_form_kwargs(self):
         kwargs = super(CarUpdateView, self).get_form_kwargs()
         car_driver = self.object.cardriver_set.first()
         kwargs.update({
             'driver': self.object.get_driver(),
             'active': car_driver.active,
-            'make': Manufacturer.objects.filter(id=self.object.model.manufacturer.id),
+            'models': Model.objects.filter(manufacturer=self.object.model.manufacturer),
             'create': False
         })
         return kwargs

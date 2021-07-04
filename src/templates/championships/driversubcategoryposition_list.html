@@ -99,7 +99,7 @@
                                         </tr>
                                         <tr>
                                             <th width="40px"></th>
-                                            <th >Plasman</th>
+                                            <th>Plasman</th>
                                             <th>Ime i prezime</th>
                                             <th>Prvenstvo</th>
                                             {% if user.is_authenticated and user.is_staff %}
@@ -120,7 +120,12 @@
                                             <td class="text-center" width="40px"></td>
                                             {% endif %}
 
-                                            <td >{{ result.position }}</td>
+                                            {% if result.position %}
+                                            <td>{{ result.position }}</td>
+                                            {% else %}
+                                            <td>-</td>
+                                            {% endif %}
+                                            
                                             <td>{{ result.driver }}</td>
                                             <td>{{ result.get_championship_type_display }}</td>
 

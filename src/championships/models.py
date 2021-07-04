@@ -34,7 +34,7 @@ class Championship(models.Model):
         "championships.Category", on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['-start_date']
+        ordering = ['start_date']
         verbose_name = "Prvenstvo"
         verbose_name_plural = "Prvenstva"
 

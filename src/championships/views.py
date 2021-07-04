@@ -25,8 +25,10 @@ class ChampionshipListView(ListView):
     def get_context_data(self, **kwargs):
         context = super(ChampionshipListView, self).get_context_data(**kwargs)
         now = timezone.now()
+        min_year = Championship.objects.earliest('start_date').start_date.year
         context.update({
-            'years': (year for year in range(2017, now.year+1)),
+            'years': (year for year in range(now.year, min_year-1, -1)),
+            'year_today': now.year,
             'categories': Category.objects.filter(~Q(name=4))
         })
         return context
@@ -96,7 +98,7 @@ class DriverSubCategoryPositionUpdateView(LoginRequiredMixin, SuccessMessageMixi
     
     def get_initial(self):
         initial = super(DriverSubCategoryPositionUpdateView, self).get_initial()
-        initial['championship'] = Championship.objects.get(id=self.kwargs.get('pk'))
+        initial['championship'] = Championship.objects.get(id=self.kwargs.get('championship_pk'))
         return initial
             
     def get_context_data(self, **kwargs):

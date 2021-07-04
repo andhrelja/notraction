@@ -58,14 +58,10 @@ class ChampionshipModelForm(forms.ModelForm):
     
     
 class DriverSubCategoryPositionForm(forms.ModelForm):
-    # category  = forms.ModelChoiceField(label="Kategorija", 
-    #    queryset=Category.objects.all(), widget=forms.Select(attrs={'class': 'custom-select'}))
-    # TODO: Add Countries
 
     class Meta:
         model = DriverSubCategoryPosition
         fields = (
-            #'category',
             'subcategory',
             'driver',
             'championship_type',
@@ -82,14 +78,13 @@ class DriverSubCategoryPositionForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(DriverSubCategoryPositionForm, self).__init__(*args, **kwargs)
-        self.championship = self.initial['championship']
+        championship = self.initial['championship']
         categories = Category.objects.all()
         
-        self.fields['driver'].queryset = Driver.objects.all()
+        #self.fields['driver'].queryset = Driver.objects.all()
         self.fields['subcategory'].queryset = SubCategory.objects.filter(active=True, category__in=categories)
 
         if self.fields['subcategory'].queryset.count() == 1:
             self.fields['subcategory'].initial = self.fields['subcategory'].queryset.first()
         
-        self.fields['driver'].initial = self.fields['driver'].queryset.first()
-        self.fields['championship'].initial = self.championship
+        self.fields['championship'].initial = championship

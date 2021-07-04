@@ -66,7 +66,8 @@ class Car(models.Model):
         car_driver = CarDriver.objects.filter(car=self, active=True)
         if not car_driver.exists():
             car_driver = CarDriver.objects.filter(car=self)
-        return car_driver.first()
+        car_driver = car_driver.first()
+        return car_driver.driver
         
 
     # TODO: Crop driver image to a square
@@ -80,6 +81,7 @@ class Car(models.Model):
     class Meta:
         verbose_name = "Automobil"
         verbose_name_plural = "Automobili"
+        ordering = ['model__manufacturer__name']
 
 
 class Manufacturer(models.Model):

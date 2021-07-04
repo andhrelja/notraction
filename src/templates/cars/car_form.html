@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block body %}
 {% include 'messages.html' %}
 
@@ -20,9 +22,22 @@
 </div>
 
 
+<script src="{% static 'js/toggleCarMakes.js' %}"></script>
 <script>
 toggleActive("cars");
+
+let makes = {};
+let models = {};
+
+fetch("{% static 'input_data/cars_manufacturer.json' %}")
+    .then((make_data) => make_data.json())
+    .then((json_data) => makes = json_data)
+    .then(() => fetch("{% static 'input_data/cars_model.json' %}")
+        .then((model_data) => model_data.json())
+        .then((json_data) => models = json_data));
+
 </script>
+
 
 {% endblock body %}
 

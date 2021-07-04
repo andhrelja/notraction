@@ -72,6 +72,7 @@ class County(models.Model):
     class Meta:
         verbose_name = "Županija"
         verbose_name_plural = "Županije"
+        ordering = ['name']
 
     def __str__(self):
         return self.name
@@ -95,6 +96,7 @@ class City(models.Model):
     class Meta:
         verbose_name = "Grad"
         verbose_name_plural = "Gradovi"
+        ordering = ['name']
 
     def __str__(self):
         return self.full_name

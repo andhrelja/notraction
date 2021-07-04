@@ -13,6 +13,7 @@
     </button>
     <div class="navbar-collapse collapse w-100 order-3 opcenito-subnavbar">
         <ul class="navbar-nav ml-auto">
+            <!--
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i class="fas fa-filter"></i>
@@ -25,6 +26,7 @@
                     <span>Sortiraj po</span>
                 </a>
             </li>
+            -->
             <li class="nav-item">
                 <a class="nav-link txt-success" href="{% url 'championships:create' %}">
                     <i class="fas fa-calendar-plus"></i>
@@ -35,46 +37,64 @@
     </div>
 </nav>
 
+{% include 'messages.html' %}
+
+
 {% for year in years %}
 
-{% include 'partials/subnavbar_list.html' with brand=year object_name='prvenstvo' %}
-
-{% if forloop.first %}
-{% include 'messages.html' %}
-{% endif %}
-
-<div class="container pt-2 pb-2">
-    {% for category in categories %}
-    {% if category|championships_by_year:year %}
-    <div class="card mt-2 mb-2">
-        <div class="card-header bg-primary">
-            <h3 class="h3 card-title text-light mb-0">{{ category.get_name_display }}</h3>
+<div class="accordion{{ year }}" id="accordion{{ year }}">
+    <div class="card">
+        <div class="card-header bg-primary" id="heading{{ year }}">
+            <h2 class="mb-0">
+                <button class="btn btn-link nav-link text-light" type="button" data-toggle="collapse" data-target="#collapse{{ year }}" aria-expanded="true" aria-controls="collapse{{ year }}">
+                    {{ year }}
+                </button>
+            </h2>
         </div>
-        <div class="row">
-            {% for championship in category|championships_by_year:year %}
-            <div class="col-md-4 m-3">
-                <div class="card card-link h-100" onclick="location.href='{% url 'championships:detail' championship.pk %}'">
-                    <div class="card-header">
-                        <h3 class="h3 mb-0">{{ championship.name }}, {{ championship.location }}</h3>
+
+        {% if year == year_today %}
+        <div id="collapse{{ year }}" class="collapse show" aria-labelledby="heading{{ year }}" data-parent="#accordion{{ year }}">
+        {% else %}
+        <div id="collapse{{ year }}" class="collapse collapsed" aria-labelledby="heading{{ year }}" data-parent="#accordion{{ year }}">
+        {% endif %}
+        
+            <div class="container">
+            {% for category in categories %}
+            {% if category|championships_by_year:year %}
+                <div class="card mt-2 mb-2">
+                    <div class="card-header bg-primary">
+                        <h3 class="h3 card-title text-light mb-0">{{ category.get_name_display }}</h3>
                     </div>
-                    <div class="card-body h-100">
-                        <div class="card-image text-center mb-3">
-                            <img src="{{ championship.image.url }}" alt="{{ championship.image }}" class="img-thumbnail" style="max-height: 200px;">
+                    <div class="row">
+                        {% for championship in category|championships_by_year:year %}
+                        <div class="col-md-4 m-3">
+                            <div class="card card-link h-100" onclick="location.href='{% url 'championships:detail' championship.pk %}'">
+                                <div class="card-header">
+                                    <h3 class="h3 mb-0">{{ championship.name }}, {{ championship.location }}</h3>
+                                </div>
+                                <div class="card-body h-100">
+                                    <div class="card-image text-center mb-3">
+                                        <img src="{{ championship.image.url }}" alt="{{ championship.image }}" class="img-thumbnail" style="max-height: 200px;">
+                                    </div>
+                                    <p class="card-text text-center">
+                                        <small>{{ championship.start_date }} - {{ championship.end_date }}</small>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="card-text text-center">
-                            <small>{{ championship.start_date }} - {{ championship.end_date }}</small>
-                        </p>
+                        {% endfor %}
                     </div>
                 </div>
-            </div>
+            {% endif %}
             {% endfor %}
+            </div>
         </div>
     </div>
-    {% endif %}
-    {% endfor %}
-</div></div>
-{% endfor %}
 </div>
+
+{% endfor %}
+
+
 
 <script>
 toggleActive("championships");
