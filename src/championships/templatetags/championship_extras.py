@@ -25,4 +25,4 @@ def driver_championship_results(subcategory, championship):
 
 @register.filter
 def driver_categories(championship, driver):
-    return championship.championship_type.category_set.filter(driver=driver)
+    return championship.category_set.filter(driver=driver)
