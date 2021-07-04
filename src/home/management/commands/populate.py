@@ -28,14 +28,13 @@ class Command(BaseCommand):
         #self.delete_objects()
         #self.load_cars_manufacturer()
         
-        # self.load_cars_model()
-        # self.load_events_county()
-        # self.load_events_city()
+        #self.load_cars_model()
+        #self.load_events_county()
+        #self.load_events_city()
 
         # self.load_events()
         # self.load_drivers()
         self.load_cars()
-        # self.load_events()
         
 
     def load_cars_manufacturer(self):

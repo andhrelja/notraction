@@ -70,9 +70,14 @@ class Driver(models.Model):
 
 
 class DriverSubCategoryPosition(models.Model):
+    CHAMPIONSHIP_TYPE_CHOICES = (
+        ('ph', 'PH'),
+        ('pir', 'PIR')
+    )
 
     # Rank
     position = models.IntegerField("Mjesto", null=True)
+    championship_type = models.CharField("Prvenstvo", choices=CHAMPIONSHIP_TYPE_CHOICES, max_length=32)
 
     # Foreign keys
     subcategory = models.ForeignKey(

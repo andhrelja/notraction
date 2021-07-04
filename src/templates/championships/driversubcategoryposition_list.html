@@ -92,7 +92,7 @@
                                     <thead>
                                         <tr>
                                         {% if subcategory.name != "General" %}
-                                            <th class="bg-primary text-light rounded-top" {% if user.is_authenticated and user.is_staff %}colspan="4"{% else %}colspan="3"{% endif %}>
+                                            <th class="bg-primary text-light rounded-top" {% if user.is_authenticated and user.is_staff %}colspan="5"{% else %}colspan="4"{% endif %}>
                                                 <h5 class="h5 font-weight-bold mb-0">{{ subcategory }}</h5>
                                             </th>
                                         {% endif %}
@@ -101,6 +101,7 @@
                                             <th width="40px"></th>
                                             <th >Plasman</th>
                                             <th>Ime i prezime</th>
+                                            <th>Prvenstvo</th>
                                             {% if user.is_authenticated and user.is_staff %}
                                             <th></th>
                                             {% endif %}
@@ -121,6 +122,7 @@
 
                                             <td >{{ result.position }}</td>
                                             <td>{{ result.driver }}</td>
+                                            <td>{{ result.get_championship_type_display }}</td>
 
                                             {% if user.is_authenticated and user.is_staff %}
                                             <td class="text-right">

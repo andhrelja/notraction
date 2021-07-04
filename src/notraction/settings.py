@@ -85,7 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'notraction',
-        'USER': 'postgres',
+        'USER': 'andrea',
         'PASSWORD': 'user',
         'HOST': 'localhost'
     },

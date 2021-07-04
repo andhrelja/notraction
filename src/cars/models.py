@@ -49,7 +49,9 @@ class Car(models.Model):
     @property
     def is_active(self):
         car_driver = self.cardriver_set.first()
-        return car_driver.active
+        if car_driver:
+            return car_driver.active
+        return False
 
     def get_full_name(self):
         full_name = "{make} {model}, {year}".format(

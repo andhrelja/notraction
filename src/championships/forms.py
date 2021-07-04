@@ -68,12 +68,14 @@ class DriverSubCategoryPositionForm(forms.ModelForm):
             #'category',
             'subcategory',
             'driver',
+            'championship_type',
             'position',
             'championship'
         )
         widgets = {
             'driver'        : forms.Select(attrs={'class': 'custom-select'}),
             'subcategory'   : forms.Select(attrs={'class': 'custom-select'}),
+            'championship_type' : forms.Select(attrs={'class': 'custom-select'}),
             'position'      : forms.NumberInput(attrs={'class': 'form-control'}),
             'championship'  : forms.HiddenInput()
         }

@@ -1,7 +1,6 @@
 [
     {
         "id": 1,
-        "gallery": null,
         "model_id": 536,
         "image": "cars/images/Amira_Bradaric.jpg",
         "capacity": 1,
@@ -10,7 +9,6 @@
     },
     {
         "id": 2,
-        "gallery": null,
         "model_id": 597,
         "image": "cars/images/Igor_Varesko.jpg",
         "capacity": 2,
@@ -19,7 +17,6 @@
     },
     {
         "id": 3,
-        "gallery": null,
         "model_id": 75,
         "image": "cars/images/Ivan_Viskovic.jpg",
         "capacity": 3,
@@ -28,7 +25,6 @@
     },
     {
         "id": 4,
-        "gallery": null,
         "model_id": 597,
         "image": "cars/images/Leon_Dubroja.jpg",
         "capacity": 2,
@@ -37,7 +33,6 @@
     },
     {
         "id": 5,
-        "gallery": null,
         "model_id": 261,
         "image": "cars/images/Matija_Brkljacic.jpg",
         "capacity": 2,
@@ -46,7 +41,6 @@
     },
     {
         "id": 6,
-        "gallery": null,
         "model_id": 75,
         "image": "cars/images/Rade_Kosanovic.jpg",
         "capacity": 4,
@@ -55,7 +49,6 @@
     },
     {
         "id": 7,
-        "gallery": null,
         "model_id": 75,
         "image": "cars/images/Roberto_Randic.jpg",
         "capacity": 3,
@@ -64,7 +57,6 @@
     },
     {
         "id": 8,
-        "gallery": null,
         "model_id": 261,
         "image": "cars/images/Sasa_Radola.jpg",
         "capacity": 3,
@@ -73,7 +65,6 @@
     },
     {
         "id": 9,
-        "gallery": null,
         "model_id": 159,
         "image": "cars/images/Toni_Cukon.jpg",
         "capacity": 1,
@@ -82,7 +73,6 @@
     },
     {
         "id": 10,
-        "gallery": null,
         "model_id": 75,
         "image": "cars/images/Tony_Viskovic.jpg",
         "capacity": 3,
@@ -91,7 +81,6 @@
     },
     {
         "id": 11,
-        "gallery": null,
         "model_id": 536,
         "image": "cars/images/Vedran_Divkovic.jpg",
         "capacity": 2,
@@ -100,7 +89,6 @@
     },
     {
         "id": 12,
-        "gallery": null,
         "model_id": 769,
         "image": "cars/images/Alen_Celega.jpg",
         "capacity": 4,
@@ -109,7 +97,6 @@
     },
     {
         "id": 13,
-        "gallery": null,
         "model_id": 536,
         "image": "cars/images/Marina_Lisica.jpg",
         "capacity": 3,
@@ -118,7 +105,6 @@
     },
     {
         "id": 14,
-        "gallery": null,
         "model_id": 536,
         "image": "cars/images/Igor_Lisica.jpg",
         "capacity": 3,

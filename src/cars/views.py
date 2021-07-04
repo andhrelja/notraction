@@ -41,7 +41,7 @@ class CarCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         make = form.cleaned_data.pop('make')
         active = form.cleaned_data.pop('active')
         response = super(CarCreateView, self).form_valid(form)
-        CarDriver.objects.create(driver=driver, car=self.object)
+        CarDriver.objects.get_or_create(driver=driver, car=self.object)
         return response
     
 

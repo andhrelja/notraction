@@ -18,7 +18,11 @@
                 <h4 class="card-title">{{ car.get_full_name }}</h4>
                 <p class="card-subtitle">
                     <i class="fas fa-address-card"></i>
+                    {% if car.get_driver %}
                     <span>{{ car.get_driver }}</span>
+                    {% else %}
+                    <span>Još nema vozača</span>
+                    {% endif %}
                 </p>
                 {% if car.description %}
                 <p class="card-text">{{ car.description }}</p>
