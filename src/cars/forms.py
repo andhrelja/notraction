@@ -60,7 +60,7 @@ class CarModelForm(forms.ModelForm):
             driver = self.initial['driver']
 
         car_driver = driver.cardriver_set.filter(active=True)
-        if car_driver[0].car != self.instance:
+        if car_driver.exists() and car_driver[0].car != self.instance:
             car = car_driver[0].car
             self.add_error('driver', error="Vozač već vozi {}".format(car.get_full_name()))
         else:
