@@ -3,6 +3,8 @@ from django import forms
 from drivers.models import Driver
 from .models import Car, Manufacturer
 
+import re
+
 
 class CarModelForm(forms.ModelForm):
     make = forms.ModelChoiceField(label="Proizvođač", queryset=Manufacturer.objects.all(),
@@ -30,7 +32,7 @@ class CarModelForm(forms.ModelForm):
             'image'         : forms.ClearableFileInput(attrs={'class': "form-control"}),
             'model'         : forms.Select(attrs={'class': "custom-select"}),
             'horse_power'   : forms.NumberInput(attrs={'class': "form-control"}),
-            'capacity'      : forms.Select(attrs={'class': "custom-select"}),
+            'capacity'      : forms.TextInput(attrs={'class': "form-control"}),
             'year'          : forms.Select(attrs={'class': "custom-select"}),
             'description'   : forms.Textarea(attrs={'class': "form-control"})            
         }
@@ -58,6 +60,19 @@ class CarModelForm(forms.ModelForm):
             driver = self.initial['driver']
 
         car_driver = driver.cardriver_set.filter(active=True)
-        if car_driver.count() >= 1:
+        if car_driver[0].car != self.instance:
             car = car_driver[0].car
             self.add_error('driver', error="Vozač već vozi {}".format(car.get_full_name()))
+        else:
+            return driver
+
+    def clean_capacity(self):
+        cleaned_data = super(CarModelForm, self).clean()
+        capacity = cleaned_data['capacity']
+        if not capacity:
+            capacity = self.initial['capacity']
+        
+        if capacity and re.match(r'^[1-9]\.[0-9]$', capacity):
+            return capacity
+        else:
+            self.add_error('capacity', error="Kubikaža ne zadovoljava format [1-9].[0-9]")

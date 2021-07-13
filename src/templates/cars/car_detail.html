@@ -11,7 +11,7 @@
                 <div class="card-header bg-primary">
                     <h3 class="h3 card-title text-light mb-0">Detalji o automobilu</h3>
                 </div>
-                {% if object.is_active %}
+                {% if car.is_active %}
                 <div class="card-body card-detail h-100">
                 {% else %}
                 <div class="card-body card-detail h-100" style="background-color: #D3D3D3">
@@ -45,19 +45,23 @@
                                     <p class="card-text">{{ car.model.manufacturer }}</p>
                                 </div>
                                 <div class="detail-item-group">
-                                    <h5 class="h5 mb-1">MODEL, GODINA</h5>
-                                    <p class="card-text">{{ car.get_short_name }}</p>
+                                    <h5 class="h5 mb-1">MODEL</h5>
+                                    <p class="card-text">{{ car.model }}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col ml-5">
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">GODINA</h5>
+                                <p class="card-text">{{ car.year }}</p>
+                            </div>
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">KONJSKIH SNAGA</h5>
                                 <p class="card-text">{{ car.horse_power }} HP</p>
                             </div>
                             <div class="detail-item-group">
                                 <h5 class="h5 mb-1">ZAPREMNINA</h5>
-                                <p class="card-text">{{ car.get_capacity_display }} ccm</p>
+                                <p class="card-text">{{ car.capacity }}</p>
                             </div>
                         </div>
                     </div>

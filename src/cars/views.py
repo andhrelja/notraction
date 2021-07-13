@@ -1,4 +1,4 @@
-from .models import Car, Manufacturer, Model
+from .models import Car, Model
 from .forms import CarModelForm
 from django.utils import timezone
 from django.contrib.auth.mixins import LoginRequiredMixin

@@ -26,7 +26,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         #self.delete_objects()
-        #self.load_cars_manufacturer()
+        self.load_cars_manufacturer()
         
         #self.load_cars_model()
         #self.load_events_county()
@@ -34,11 +34,11 @@ class Command(BaseCommand):
 
         # self.load_events()
         # self.load_drivers()
-        self.load_cars()
+        # self.load_cars()
         
 
     def load_cars_manufacturer(self):
-        manufacturers_list = get_read_json_file('cars_manufacturer.json')
+        manufacturers_list = get_read_json_file('cars_manufacturer_v2.json')
         for manufacturer in manufacturers_list:
             self.stdout.write(self.style.MIGRATE_HEADING(
                 'Applying Manufacturer'), ending=" ")
@@ -48,7 +48,15 @@ class Command(BaseCommand):
                 make = Manufacturer.objects.get(id=manufacturer['id'])
             except Manufacturer.DoesNotExist:
                 make = Manufacturer.objects.create(**manufacturer)
-            make.image_url = manufacturer['image_url']
+            
+            if make.name == manufacturer['name']:
+                make.image_url = manufacturer['image_url']
+            else:
+                for manufacturer1 in manufacturers_list:
+                    if manufacturer1['name'] == make.name:
+                        make.image_url = manufacturer1['raw_image']
+                        break
+                
             make.save()
             
             self.stdout.write(self.style.MIGRATE_LABEL(
