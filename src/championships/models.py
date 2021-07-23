@@ -9,6 +9,7 @@ CATEGORY_CHOICES = (
     (2, 'Formula Driver'),
     (3, 'Drift'),
     (4, 'Općenito'),
+    (5, 'OSV'),
 )
 
 # Create your models here.

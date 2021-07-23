@@ -73,6 +73,7 @@ class Manufacturer(models.Model):
     image_url = models.CharField("Logo URL", max_length=2000)
 
     class Meta:
+        ordering = ['name']
         verbose_name = "Proizvođač"
         verbose_name_plural = "Proizvođači"
 
