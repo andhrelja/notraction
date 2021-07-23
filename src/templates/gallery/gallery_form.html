@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+{% include 'messages.html' %}
+
+<div class="container p-3">
+    <div class="card m-auto border-secondary mb-3">
+        <div class="card-header bg-primary p-3">
+            <h2 class="h2 text-light mb-0"><strong>Novi album</strong></h2>
+        </div>
+        <div class="card-body p-5">
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% include 'partials/form_snippet.html' %}
+                <input type="submit" class="btn btn-secondary" value="Spremi album">
+                <a href="{% url 'gallery:list' %}" class="btn btn-outline-danger">Odustani</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}
+

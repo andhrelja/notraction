@@ -1,8 +1,11 @@
 from django.db import models
+from django.urls import reverse
 import os
 
+from championships.models import Championship
+
 def get_upload_path(image_instance, filename):
-    return os.path.join(image_instance.app_name, 'images', filename)
+    return os.path.join('gallery', 'images', filename)
 
 
 class Gallery(models.Model):
@@ -11,7 +14,16 @@ class Gallery(models.Model):
     name    = models.CharField("Naziv", max_length=64)
 
     # Foreign keys
-    images  = models.ManyToManyField("gallery.Image", verbose_name="Slike")
+    images  = models.ManyToManyField("gallery.Image", blank=True, verbose_name="Slike")
+
+    @property
+    def championship(self):
+        championship = self.championship_set.first()
+        return championship
+    
+    def display_name(self):
+        display_name = self.championship.name + " - " + self.name
+        return display_name.strip()
 
     class Meta:
         verbose_name = "Galerija"
@@ -19,6 +31,10 @@ class Gallery(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse("gallery:detail", kwargs={"pk": self.pk})
+    
 
 
 class Image(models.Model):

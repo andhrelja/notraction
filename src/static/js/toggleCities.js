@@ -2,6 +2,10 @@ let cityLabel = findLabel('id_city');
 let citySelect = document.getElementById('id_city');
 let countySelect = document.getElementById('id_county');
 
+function setup_initial() {
+    selectedCountyOption = countySelect.selectedOptions[0];
+    console.log(selectedCountyOption);
+}
 
 function findLabel(for_id) {
 
@@ -15,7 +19,7 @@ function findLabel(for_id) {
 
 
 function toggleCities() {
-    selectedCountyOption = countySelect.selectedOptions[0]
+    selectedCountyOption = countySelect.selectedOptions[0];
 
     if (selectedCountyOption.value == "") {
         emptySelectList(citySelect)

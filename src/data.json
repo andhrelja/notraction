@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$180000$XY3bmnxgqMOt$eRxH2sn1b0BW8nwMKc6wKOAXdBozZXt3i40NouUDvf4=",
-        "last_login": "2021-07-02T15:38:10Z",
+        "last_login": "2021-07-13T22:43:32.034Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "AMK",
@@ -19,6 +19,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "0dbaezfh28hvpakabadzq3b9jyw68i08",
+    "fields": {
+        "session_data": "ZWZlMDViODJjYjc4ODM5Zjg1YjY1NDhkY2ZjYTk3YTUxZmYzYmVlZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMDFjNThjZjNkMDE3MmUzYzNiNTBmZmExNWVkMjIyZDgwNDUyMDUwIn0=",
+        "expire_date": "2021-07-27T21:57:57.987Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "3kqqtqdw0z4tdz5xwsfb5f8j89jfgmm2",
     "fields": {
         "session_data": "ZWZlMDViODJjYjc4ODM5Zjg1YjY1NDhkY2ZjYTk3YTUxZmYzYmVlZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMDFjNThjZjNkMDE3MmUzYzNiNTBmZmExNWVkMjIyZDgwNDUyMDUwIn0=",
@@ -27,10 +35,34 @@
 },
 {
     "model": "sessions.session",
+    "pk": "kswf7q8u54slj4oonx54maws5bhhkcf2",
+    "fields": {
+        "session_data": "ZWZlMDViODJjYjc4ODM5Zjg1YjY1NDhkY2ZjYTk3YTUxZmYzYmVlZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMDFjNThjZjNkMDE3MmUzYzNiNTBmZmExNWVkMjIyZDgwNDUyMDUwIn0=",
+        "expire_date": "2021-07-27T22:43:32.090Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "tjytr4xf0gkwdksdpserzrkeb7zasu4j",
     "fields": {
         "session_data": "ZWZlMDViODJjYjc4ODM5Zjg1YjY1NDhkY2ZjYTk3YTUxZmYzYmVlZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMDFjNThjZjNkMDE3MmUzYzNiNTBmZmExNWVkMjIyZDgwNDUyMDUwIn0=",
         "expire_date": "2021-07-16T15:38:08.025Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yqyyvnkjg1gn8b5xafeiie1otilq60nb",
+    "fields": {
+        "session_data": "ZWZlMDViODJjYjc4ODM5Zjg1YjY1NDhkY2ZjYTk3YTUxZmYzYmVlZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMDFjNThjZjNkMDE3MmUzYzNiNTBmZmExNWVkMjIyZDgwNDUyMDUwIn0=",
+        "expire_date": "2021-07-27T22:34:18.803Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yy450i8o90h54i4k6a8tcxq51x0iohfj",
+    "fields": {
+        "session_data": "ZWZlMDViODJjYjc4ODM5Zjg1YjY1NDhkY2ZjYTk3YTUxZmYzYmVlZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMDFjNThjZjNkMDE3MmUzYzNiNTBmZmExNWVkMjIyZDgwNDUyMDUwIn0=",
+        "expire_date": "2021-07-18T23:33:48.059Z"
     }
 },
 {
@@ -207,7 +239,9 @@
         "email": "vedran.divkovic@amk.hr",
         "phone": "+395 92 312 312",
         "city": 475,
-        "categories": []
+        "categories": [
+            2
+        ]
     }
 },
 {
@@ -218,7 +252,7 @@
         "last_name": "Celega",
         "birth_date": "1991-07-21",
         "gender": "M",
-        "driver_image": "drivers/images/Alen_Celega.jpg",
+        "driver_image": "people/images/1626000823286.jpg",
         "email": "alen@celega.com",
         "phone": "+385 99 2342812",
         "city": 475,
@@ -258,6 +292,74 @@
     }
 },
 {
+    "model": "drivers.driver",
+    "pk": 15,
+    "fields": {
+        "first_name": "Zoran",
+        "last_name": "Vlahovi\u0107",
+        "birth_date": "1985-01-01",
+        "gender": "M",
+        "driver_image": "people/images/1625996514487.jpg",
+        "email": "celega01@gmail.com",
+        "phone": null,
+        "city": 475,
+        "categories": [
+            4
+        ]
+    }
+},
+{
+    "model": "drivers.driver",
+    "pk": 16,
+    "fields": {
+        "first_name": "Tomislav",
+        "last_name": "Kova\u010devi\u0107",
+        "birth_date": "1988-01-01",
+        "gender": "M",
+        "driver_image": "people/images/Tomislav_kova\u010devi\u0107.jpg",
+        "email": "celega01@gmail.com",
+        "phone": null,
+        "city": 9,
+        "categories": [
+            3
+        ]
+    }
+},
+{
+    "model": "drivers.driver",
+    "pk": 17,
+    "fields": {
+        "first_name": "Juraj",
+        "last_name": "Raji\u0107",
+        "birth_date": "1995-01-01",
+        "gender": "M",
+        "driver_image": "people/images/Juraj_Raji\u0107.jfif",
+        "email": "celega01@gmail.com",
+        "phone": null,
+        "city": 475,
+        "categories": [
+            2
+        ]
+    }
+},
+{
+    "model": "drivers.driver",
+    "pk": 18,
+    "fields": {
+        "first_name": "Ivan",
+        "last_name": "Tominovi\u0107",
+        "birth_date": "1992-01-01",
+        "gender": "M",
+        "driver_image": "people/images/1625999850037.jpg",
+        "email": "celega01@gmail.com",
+        "phone": null,
+        "city": 475,
+        "categories": [
+            2
+        ]
+    }
+},
+{
     "model": "drivers.driversubcategoryposition",
     "pk": 1,
     "fields": {
@@ -277,6 +379,336 @@
         "subcategory": 25,
         "driver": 12,
         "championship": 4
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 3,
+    "fields": {
+        "position": 1,
+        "championship_type": "ph",
+        "subcategory": 27,
+        "driver": 15,
+        "championship": 6
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 4,
+    "fields": {
+        "position": 3,
+        "championship_type": "ph",
+        "subcategory": 27,
+        "driver": 3,
+        "championship": 7
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 5,
+    "fields": {
+        "position": 5,
+        "championship_type": "ph",
+        "subcategory": 27,
+        "driver": 7,
+        "championship": 7
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 6,
+    "fields": {
+        "position": 6,
+        "championship_type": "ph",
+        "subcategory": 27,
+        "driver": 6,
+        "championship": 7
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 7,
+    "fields": {
+        "position": 8,
+        "championship_type": "ph",
+        "subcategory": 27,
+        "driver": 10,
+        "championship": 7
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 8,
+    "fields": {
+        "position": 1,
+        "championship_type": "ph",
+        "subcategory": 27,
+        "driver": 3,
+        "championship": 8
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 9,
+    "fields": {
+        "position": 1,
+        "championship_type": "ph",
+        "subcategory": 19,
+        "driver": 9,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 10,
+    "fields": {
+        "position": 3,
+        "championship_type": "ph",
+        "subcategory": 19,
+        "driver": 5,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 11,
+    "fields": {
+        "position": 5,
+        "championship_type": "ph",
+        "subcategory": 19,
+        "driver": 10,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 12,
+    "fields": {
+        "position": 14,
+        "championship_type": "ph",
+        "subcategory": 19,
+        "driver": 17,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 13,
+    "fields": {
+        "position": 3,
+        "championship_type": "ph",
+        "subcategory": 18,
+        "driver": 13,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 14,
+    "fields": {
+        "position": 4,
+        "championship_type": "ph",
+        "subcategory": 18,
+        "driver": 1,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 15,
+    "fields": {
+        "position": 6,
+        "championship_type": "ph",
+        "subcategory": 20,
+        "driver": 17,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 16,
+    "fields": {
+        "position": 5,
+        "championship_type": "ph",
+        "subcategory": 21,
+        "driver": 9,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 17,
+    "fields": {
+        "position": 14,
+        "championship_type": "ph",
+        "subcategory": 21,
+        "driver": 3,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 18,
+    "fields": {
+        "position": 16,
+        "championship_type": "ph",
+        "subcategory": 21,
+        "driver": 10,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 19,
+    "fields": {
+        "position": 10,
+        "championship_type": "ph",
+        "subcategory": 22,
+        "driver": 2,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 20,
+    "fields": {
+        "position": 6,
+        "championship_type": "ph",
+        "subcategory": 23,
+        "driver": 11,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 21,
+    "fields": {
+        "position": 8,
+        "championship_type": "ph",
+        "subcategory": 23,
+        "driver": 14,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 22,
+    "fields": {
+        "position": 16,
+        "championship_type": "ph",
+        "subcategory": 23,
+        "driver": 13,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 23,
+    "fields": {
+        "position": 17,
+        "championship_type": "ph",
+        "subcategory": 23,
+        "driver": 8,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 24,
+    "fields": {
+        "position": 5,
+        "championship_type": "ph",
+        "subcategory": 24,
+        "driver": 5,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 25,
+    "fields": {
+        "position": 6,
+        "championship_type": "ph",
+        "subcategory": 24,
+        "driver": 12,
+        "championship": 1
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 26,
+    "fields": {
+        "position": 3,
+        "championship_type": "ph",
+        "subcategory": 20,
+        "driver": 3,
+        "championship": 4
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 27,
+    "fields": {
+        "position": 8,
+        "championship_type": "ph",
+        "subcategory": 20,
+        "driver": 18,
+        "championship": 4
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 28,
+    "fields": {
+        "position": 3,
+        "championship_type": "ph",
+        "subcategory": 25,
+        "driver": 5,
+        "championship": 4
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 29,
+    "fields": {
+        "position": 3,
+        "championship_type": "ph",
+        "subcategory": 27,
+        "driver": 15,
+        "championship": 9
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 30,
+    "fields": {
+        "position": 3,
+        "championship_type": "ph",
+        "subcategory": 1,
+        "driver": 15,
+        "championship": 9
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 31,
+    "fields": {
+        "position": 3,
+        "championship_type": "ph",
+        "subcategory": 20,
+        "driver": 15,
+        "championship": 9
+    }
+},
+{
+    "model": "drivers.driversubcategoryposition",
+    "pk": 32,
+    "fields": {
+        "position": 3,
+        "championship_type": "pir",
+        "subcategory": 20,
+        "driver": 15,
+        "championship": 10
     }
 },
 {
@@ -300,11 +732,71 @@
     }
 },
 {
+    "model": "drivers.cardriver",
+    "pk": 17,
+    "fields": {
+        "car": 20,
+        "driver": 16,
+        "active": true,
+        "date_deactivated": null
+    }
+},
+{
+    "model": "drivers.cardriver",
+    "pk": 18,
+    "fields": {
+        "car": 21,
+        "driver": 3,
+        "active": true,
+        "date_deactivated": null
+    }
+},
+{
+    "model": "drivers.cardriver",
+    "pk": 19,
+    "fields": {
+        "car": 22,
+        "driver": 17,
+        "active": true,
+        "date_deactivated": null
+    }
+},
+{
+    "model": "drivers.cardriver",
+    "pk": 20,
+    "fields": {
+        "car": 23,
+        "driver": 18,
+        "active": true,
+        "date_deactivated": null
+    }
+},
+{
+    "model": "drivers.cardriver",
+    "pk": 21,
+    "fields": {
+        "car": 24,
+        "driver": 11,
+        "active": true,
+        "date_deactivated": null
+    }
+},
+{
+    "model": "drivers.cardriver",
+    "pk": 22,
+    "fields": {
+        "car": 25,
+        "driver": 14,
+        "active": true,
+        "date_deactivated": null
+    }
+},
+{
     "model": "cars.car",
     "pk": 2,
     "fields": {
         "horse_power": 68,
-        "capacity": 1,
+        "capacity": "1",
         "year": 2000,
         "description": "",
         "model": 536,
@@ -317,7 +809,7 @@
     "pk": 19,
     "fields": {
         "horse_power": 260,
-        "capacity": 4,
+        "capacity": "4",
         "year": 1981,
         "description": "Golf MK I",
         "model": 769,
@@ -326,11 +818,89 @@
     }
 },
 {
+    "model": "cars.car",
+    "pk": 20,
+    "fields": {
+        "horse_power": 400,
+        "capacity": "9",
+        "year": 2002,
+        "description": "BMW E46  4.0 V8 turbo +500ks",
+        "model": 75,
+        "image": "cars/images/Tomislav_kova\u010devi\u0107.jpg",
+        "albums": []
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 21,
+    "fields": {
+        "horse_power": 400,
+        "capacity": "3.0",
+        "year": 1998,
+        "description": "BMW E36 2.5 stroker turbo",
+        "model": 75,
+        "image": "cars/images/viber_image_2019-03-29__10.31.28.jpg",
+        "albums": []
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 22,
+    "fields": {
+        "horse_power": 100,
+        "capacity": "1",
+        "year": 1996,
+        "description": "Suzuki Swift 1.3 gti",
+        "model": 683,
+        "image": "cars/images/Juraj_Raji\u0107.jfif",
+        "albums": []
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 23,
+    "fields": {
+        "horse_power": 90,
+        "capacity": "2",
+        "year": 1998,
+        "description": "",
+        "model": 473,
+        "image": "cars/images/1625999850037.jpg",
+        "albums": []
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 24,
+    "fields": {
+        "horse_power": 140,
+        "capacity": "3",
+        "year": 2000,
+        "description": "Peugeot 106 1.6 8v",
+        "model": 536,
+        "image": "cars/images/viber_image_2019-03-29__08.51.17.jpg",
+        "albums": []
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 25,
+    "fields": {
+        "horse_power": 130,
+        "capacity": "1.4",
+        "year": 1999,
+        "description": "",
+        "model": 536,
+        "image": "cars/images/Igor_Lisica_vkURNq0.jpg",
+        "albums": []
+    }
+},
+{
     "model": "cars.manufacturer",
     "pk": 1,
     "fields": {
         "name": "Acura",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Acura.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/acura.png"
     }
 },
 {
@@ -338,7 +908,7 @@
     "pk": 2,
     "fields": {
         "name": "Alfa Romeo",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Alfa Romeo.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/alfa-romeo.jpg"
     }
 },
 {
@@ -346,7 +916,7 @@
     "pk": 3,
     "fields": {
         "name": "Aston Martin",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Aston Martin.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/aston-martin.jpg"
     }
 },
 {
@@ -354,7 +924,7 @@
     "pk": 4,
     "fields": {
         "name": "Audi",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Audi.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/audi.jpg"
     }
 },
 {
@@ -362,7 +932,7 @@
     "pk": 5,
     "fields": {
         "name": "Bentley",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Bentley.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/bentley.jpg"
     }
 },
 {
@@ -370,7 +940,7 @@
     "pk": 6,
     "fields": {
         "name": "BMW",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/BMW.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/bmw.png"
     }
 },
 {
@@ -378,7 +948,7 @@
     "pk": 7,
     "fields": {
         "name": "Cadillac",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Cadillac.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/cadillac.jpg"
     }
 },
 {
@@ -386,7 +956,7 @@
     "pk": 8,
     "fields": {
         "name": "Chevrolet",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Chevrolet.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/chevrolet.jpg"
     }
 },
 {
@@ -394,7 +964,7 @@
     "pk": 9,
     "fields": {
         "name": "Chrysler",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Chrysler.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/chrysler.jpg"
     }
 },
 {
@@ -402,7 +972,7 @@
     "pk": 10,
     "fields": {
         "name": "Citro\u00ebn",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Citro\u00ebn.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/alfa-romeo.png"
     }
 },
 {
@@ -410,7 +980,7 @@
     "pk": 11,
     "fields": {
         "name": "Dacia",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Dacia.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dacia.jpg"
     }
 },
 {
@@ -418,7 +988,7 @@
     "pk": 12,
     "fields": {
         "name": "Daewoo",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Daewoo.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/daewoo.jpg"
     }
 },
 {
@@ -426,7 +996,7 @@
     "pk": 13,
     "fields": {
         "name": "Daihatsu",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Daihatsu.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/daihatsu.png"
     }
 },
 {
@@ -434,7 +1004,7 @@
     "pk": 14,
     "fields": {
         "name": "Dodge",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Dodge.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dodge.jpg"
     }
 },
 {
@@ -442,7 +1012,7 @@
     "pk": 15,
     "fields": {
         "name": "Ferrari",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Ferrari.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ferrari.png"
     }
 },
 {
@@ -450,7 +1020,7 @@
     "pk": 16,
     "fields": {
         "name": "Fiat",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Fiat.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/fiat.jpg"
     }
 },
 {
@@ -458,7 +1028,7 @@
     "pk": 17,
     "fields": {
         "name": "Fisker",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Fisker.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/fisker.jpg"
     }
 },
 {
@@ -466,7 +1036,7 @@
     "pk": 18,
     "fields": {
         "name": "Ford",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Ford.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ford.png"
     }
 },
 {
@@ -474,7 +1044,7 @@
     "pk": 19,
     "fields": {
         "name": "Great Wall",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Great Wall.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/great-wall.jpg"
     }
 },
 {
@@ -482,7 +1052,7 @@
     "pk": 20,
     "fields": {
         "name": "Honda",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Honda.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/honda.png"
     }
 },
 {
@@ -490,7 +1060,7 @@
     "pk": 21,
     "fields": {
         "name": "Hummer",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Hummer.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hummer.png"
     }
 },
 {
@@ -498,7 +1068,7 @@
     "pk": 22,
     "fields": {
         "name": "Hyundai",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Hyundai.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hyundai.jpg"
     }
 },
 {
@@ -506,7 +1076,7 @@
     "pk": 23,
     "fields": {
         "name": "Infiniti",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Infiniti.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/infiniti.jpg"
     }
 },
 {
@@ -514,7 +1084,7 @@
     "pk": 24,
     "fields": {
         "name": "Isuzu",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Isuzu.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/isuzu.jpg"
     }
 },
 {
@@ -522,7 +1092,7 @@
     "pk": 25,
     "fields": {
         "name": "Jaguar",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Jaguar.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jaguar.jpg"
     }
 },
 {
@@ -530,7 +1100,7 @@
     "pk": 26,
     "fields": {
         "name": "Jeep",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Jeep.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jeep.jpg"
     }
 },
 {
@@ -538,7 +1108,7 @@
     "pk": 27,
     "fields": {
         "name": "KIA",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/KIA.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/auburn.png"
     }
 },
 {
@@ -546,7 +1116,7 @@
     "pk": 28,
     "fields": {
         "name": "Lada",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Lada.jpg"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lada.jpg"
     }
 },
 {
@@ -554,7 +1124,7 @@
     "pk": 29,
     "fields": {
         "name": "Lamborghini",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Lamborghini.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lamborghini.png"
     }
 },
 {
@@ -562,7 +1132,7 @@
     "pk": 30,
     "fields": {
         "name": "Lancia",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Lancia.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lancia.jpg"
     }
 },
 {
@@ -570,7 +1140,7 @@
     "pk": 31,
     "fields": {
         "name": "Land Rover",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Land Rover.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/land-rover.jpg"
     }
 },
 {
@@ -578,7 +1148,7 @@
     "pk": 32,
     "fields": {
         "name": "Lexus",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Lexus.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lexus.jpg"
     }
 },
 {
@@ -586,7 +1156,7 @@
     "pk": 33,
     "fields": {
         "name": "Lincoln",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Lincoln.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lincoln.jpg"
     }
 },
 {
@@ -594,7 +1164,7 @@
     "pk": 34,
     "fields": {
         "name": "Mahindra",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Mahindra.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mahindra.jpg"
     }
 },
 {
@@ -602,7 +1172,7 @@
     "pk": 35,
     "fields": {
         "name": "Maserati",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Maserati.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/maserati.jpg"
     }
 },
 {
@@ -610,7 +1180,7 @@
     "pk": 36,
     "fields": {
         "name": "Mazda",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Mazda.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mazda.jpg"
     }
 },
 {
@@ -618,7 +1188,7 @@
     "pk": 37,
     "fields": {
         "name": "Mercedes-Benz",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Mercedes-Benz.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mercedes-benz.jpg"
     }
 },
 {
@@ -626,7 +1196,7 @@
     "pk": 38,
     "fields": {
         "name": "MG",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/MG.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mg.jpg"
     }
 },
 {
@@ -634,7 +1204,7 @@
     "pk": 39,
     "fields": {
         "name": "Mini",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Mini.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mini.jpg"
     }
 },
 {
@@ -642,7 +1212,7 @@
     "pk": 40,
     "fields": {
         "name": "Mitsubishi",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Mitsubishi.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mitsubishi.jpg"
     }
 },
 {
@@ -650,7 +1220,7 @@
     "pk": 41,
     "fields": {
         "name": "Nissan",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Nissan.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/nissan.png"
     }
 },
 {
@@ -658,7 +1228,7 @@
     "pk": 42,
     "fields": {
         "name": "Opel",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Opel.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/opel.jpg"
     }
 },
 {
@@ -666,7 +1236,7 @@
     "pk": 43,
     "fields": {
         "name": "Peugeot",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Peugeot.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/peugeot.jpg"
     }
 },
 {
@@ -674,7 +1244,7 @@
     "pk": 44,
     "fields": {
         "name": "Pontiac",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Pontiac.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/pontiac.jpg"
     }
 },
 {
@@ -682,7 +1252,7 @@
     "pk": 45,
     "fields": {
         "name": "Porsche",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Porsche.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/porsche.png"
     }
 },
 {
@@ -690,7 +1260,7 @@
     "pk": 46,
     "fields": {
         "name": "Renault",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Renault.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/renault.jpg"
     }
 },
 {
@@ -698,7 +1268,7 @@
     "pk": 47,
     "fields": {
         "name": "Rolls-Royce",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Rolls-Royce.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rolls-royce.jpg"
     }
 },
 {
@@ -706,7 +1276,7 @@
     "pk": 48,
     "fields": {
         "name": "Rover",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Rover.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rover.jpg"
     }
 },
 {
@@ -714,7 +1284,7 @@
     "pk": 49,
     "fields": {
         "name": "Saab",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Saab.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/saab.jpg"
     }
 },
 {
@@ -722,7 +1292,7 @@
     "pk": 50,
     "fields": {
         "name": "SEAT",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/SEAT.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/seat.jpg"
     }
 },
 {
@@ -730,7 +1300,7 @@
     "pk": 51,
     "fields": {
         "name": "Smart",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Smart.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/smart.jpg"
     }
 },
 {
@@ -738,7 +1308,7 @@
     "pk": 52,
     "fields": {
         "name": "SsangYong",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/SsangYong.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ssangyong.jpg"
     }
 },
 {
@@ -746,7 +1316,7 @@
     "pk": 53,
     "fields": {
         "name": "Subaru",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Subaru.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/subaru.jpg"
     }
 },
 {
@@ -754,7 +1324,7 @@
     "pk": 54,
     "fields": {
         "name": "Suzuki",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Suzuki.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/suzuki.jpg"
     }
 },
 {
@@ -762,7 +1332,7 @@
     "pk": 55,
     "fields": {
         "name": "\u0160koda",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/\u0160koda.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/bufori.png"
     }
 },
 {
@@ -770,7 +1340,7 @@
     "pk": 56,
     "fields": {
         "name": "Tesla",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Tesla.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/tesla.png"
     }
 },
 {
@@ -778,7 +1348,7 @@
     "pk": 57,
     "fields": {
         "name": "Toyota",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Toyota.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/toyota.png"
     }
 },
 {
@@ -786,7 +1356,7 @@
     "pk": 58,
     "fields": {
         "name": "Trabant",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/IFA_Trabant_Logo.svg"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/byton.png"
     }
 },
 {
@@ -794,7 +1364,7 @@
     "pk": 59,
     "fields": {
         "name": "Volvo",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Volvo.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/volvo.jpg"
     }
 },
 {
@@ -802,7 +1372,7 @@
     "pk": 60,
     "fields": {
         "name": "Volkswagen",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Volkswagen.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/volkswagen.jpg"
     }
 },
 {
@@ -810,7 +1380,7 @@
     "pk": 61,
     "fields": {
         "name": "Wartburg",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Wartburg.png"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/wartburg.jpg"
     }
 },
 {
@@ -818,7 +1388,7 @@
     "pk": 62,
     "fields": {
         "name": "Yugo",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Yugo-logo.svg"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/caparo.png"
     }
 },
 {
@@ -826,7 +1396,2503 @@
     "pk": 63,
     "fields": {
         "name": "Zastava",
-        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/images/Zastava.jpg"
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zastava.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 64,
+    "fields": {
+        "name": "CAMC",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/camc.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 65,
+    "fields": {
+        "name": "Changan",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/changan.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 66,
+    "fields": {
+        "name": "Changfeng",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/changfeng.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 67,
+    "fields": {
+        "name": "Chery",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/chery.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 68,
+    "fields": {
+        "name": "Caterham",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/caterham.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 69,
+    "fields": {
+        "name": "Chevrolet Corvette",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/chevrolet-corvette.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 70,
+    "fields": {
+        "name": "Chevrolet",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/chevrolet.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 71,
+    "fields": {
+        "name": "Chrysler",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/chrysler.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 72,
+    "fields": {
+        "name": "Cisitalia",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/cisitalia.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 73,
+    "fields": {
+        "name": "Cizeta",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/cizeta.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 74,
+    "fields": {
+        "name": "Citro\u00c3\u00abn",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/citroen.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 75,
+    "fields": {
+        "name": "Cole",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/cole.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 76,
+    "fields": {
+        "name": "Corre La Licorne",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/corre-la-licorne.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 77,
+    "fields": {
+        "name": "DAF",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/daf.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 78,
+    "fields": {
+        "name": "Daewoo",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/daewoo.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 79,
+    "fields": {
+        "name": "Dacia",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dacia.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 80,
+    "fields": {
+        "name": "Daimler",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/daimler.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 81,
+    "fields": {
+        "name": "Daihatsu",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/daihatsu.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 82,
+    "fields": {
+        "name": "David Brown",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/david-brown.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 83,
+    "fields": {
+        "name": "Datsun",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/datsun.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 84,
+    "fields": {
+        "name": "Dartz",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dartz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 85,
+    "fields": {
+        "name": "De Tomaso",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/de-tomaso.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 86,
+    "fields": {
+        "name": "Dayun",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dayun.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 87,
+    "fields": {
+        "name": "Delage",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/delage.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 88,
+    "fields": {
+        "name": "Devel Sixteen",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/devel-sixteen.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 89,
+    "fields": {
+        "name": "Detroit Electric",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/detroit-electric.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 90,
+    "fields": {
+        "name": "Diatto",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/diatto.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 91,
+    "fields": {
+        "name": "DINA",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dina.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 92,
+    "fields": {
+        "name": "DeSoto",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/desoto.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 93,
+    "fields": {
+        "name": "DKW",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dkw.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 94,
+    "fields": {
+        "name": "Dodge",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dodge.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 95,
+    "fields": {
+        "name": "Dongfeng",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dongfeng.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 96,
+    "fields": {
+        "name": "Dodge Viper",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/dodge-viper.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 97,
+    "fields": {
+        "name": "Drako",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/drako.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 98,
+    "fields": {
+        "name": "Donkervoort",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/donkervoort.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 99,
+    "fields": {
+        "name": "DS",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ds.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 100,
+    "fields": {
+        "name": "EDAG",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/edag.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 101,
+    "fields": {
+        "name": "Eagle",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/eagle.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 102,
+    "fields": {
+        "name": "Eicher",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/eicher.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 103,
+    "fields": {
+        "name": "Edsel",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/edsel.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 104,
+    "fields": {
+        "name": "Duesenberg",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/duesenberg.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 105,
+    "fields": {
+        "name": "Elemental",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/elemental.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 106,
+    "fields": {
+        "name": "Elfin",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/elfin.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 107,
+    "fields": {
+        "name": "Elva",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/elva.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 108,
+    "fields": {
+        "name": "Eterniti",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/eterniti.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 109,
+    "fields": {
+        "name": "ERF",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/erf.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 110,
+    "fields": {
+        "name": "Englon",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/englon.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 111,
+    "fields": {
+        "name": "Exeed",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/exeed.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 112,
+    "fields": {
+        "name": "9ff",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/9ff.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 113,
+    "fields": {
+        "name": "Faraday Future",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/faraday-future.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 114,
+    "fields": {
+        "name": "Facel Vega",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/facel-vega.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 115,
+    "fields": {
+        "name": "FAW Jiefang",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/faw-jiefang.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 116,
+    "fields": {
+        "name": "FAW",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/faw.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 117,
+    "fields": {
+        "name": "Ferrari",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ferrari.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 118,
+    "fields": {
+        "name": "Fioravanti",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/fioravanti.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 119,
+    "fields": {
+        "name": "Fiat",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/fiat.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 120,
+    "fields": {
+        "name": "Fisker",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/fisker.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 121,
+    "fields": {
+        "name": "Force Motors",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/force-motors.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 122,
+    "fields": {
+        "name": "Foden",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/foden.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 123,
+    "fields": {
+        "name": "Foton",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/foton.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 124,
+    "fields": {
+        "name": "Ford Mustang",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ford-mustang.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 125,
+    "fields": {
+        "name": "Ford",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ford.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 126,
+    "fields": {
+        "name": "Franklin",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/franklin.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 127,
+    "fields": {
+        "name": "FPV",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/fpv.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 128,
+    "fields": {
+        "name": "Freightliner",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/freightliner.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 129,
+    "fields": {
+        "name": "FSO",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/fso.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 130,
+    "fields": {
+        "name": "Gardner Douglas",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/gardner-douglas.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 131,
+    "fields": {
+        "name": "GAC Group",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/gac-group.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 132,
+    "fields": {
+        "name": "GAZ",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/gaz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 133,
+    "fields": {
+        "name": "Geely",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/geely.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 134,
+    "fields": {
+        "name": "Geo",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/geo.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 135,
+    "fields": {
+        "name": "Genesis",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/genesis.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 136,
+    "fields": {
+        "name": "Geometry",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/geometry.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 137,
+    "fields": {
+        "name": "Gillet",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/gillet.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 138,
+    "fields": {
+        "name": "Gilbern",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/gilbern.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 139,
+    "fields": {
+        "name": "GMC",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/gmc.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 140,
+    "fields": {
+        "name": "Ginetta",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ginetta.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 141,
+    "fields": {
+        "name": "Gonow",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/gonow.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 142,
+    "fields": {
+        "name": "Golden Dragon",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/golden-dragon.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 143,
+    "fields": {
+        "name": "Grinnall",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/grinnall.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 144,
+    "fields": {
+        "name": "Great Wall",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/great-wall.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 145,
+    "fields": {
+        "name": "General Motors",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/general-motors.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 146,
+    "fields": {
+        "name": "Gumpert",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/gumpert.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 147,
+    "fields": {
+        "name": "Hafei",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hafei.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 148,
+    "fields": {
+        "name": "Haval",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/haval.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 149,
+    "fields": {
+        "name": "Haima",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/haima.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 150,
+    "fields": {
+        "name": "Hawtai",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hawtai.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 151,
+    "fields": {
+        "name": "Hennessey",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hennessey.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 152,
+    "fields": {
+        "name": "Hillman",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hillman.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 153,
+    "fields": {
+        "name": "Higer",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/higer.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 154,
+    "fields": {
+        "name": "Hino",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hino.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 155,
+    "fields": {
+        "name": "Hispano-Suiza",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hispano-suiza.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 156,
+    "fields": {
+        "name": "Holden",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/holden.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 157,
+    "fields": {
+        "name": "Hommell",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hommell.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 158,
+    "fields": {
+        "name": "Honda",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/honda.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 159,
+    "fields": {
+        "name": "Hongyan",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hongyan.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 160,
+    "fields": {
+        "name": "Horch",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/horch.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 161,
+    "fields": {
+        "name": "Hongqi",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hongqi.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 162,
+    "fields": {
+        "name": "HSV",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hsv.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 163,
+    "fields": {
+        "name": "Hudson",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hudson.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 164,
+    "fields": {
+        "name": "Hummer",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hummer.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 165,
+    "fields": {
+        "name": "Hupmobile",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hupmobile.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 166,
+    "fields": {
+        "name": "Hyundai",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/hyundai.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 167,
+    "fields": {
+        "name": "IC Bus",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ic-bus.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 168,
+    "fields": {
+        "name": "Infiniti",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/infiniti.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 169,
+    "fields": {
+        "name": "Intermeccanica",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/intermeccanica.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 170,
+    "fields": {
+        "name": "Innocenti",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/innocenti.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 171,
+    "fields": {
+        "name": "IH",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ih.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 172,
+    "fields": {
+        "name": "International",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/international.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 173,
+    "fields": {
+        "name": "IKCO",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ikco.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 174,
+    "fields": {
+        "name": "Irizar",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/irizar.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 175,
+    "fields": {
+        "name": "Isdera",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/isdera.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 176,
+    "fields": {
+        "name": "Iso",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/iso.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 177,
+    "fields": {
+        "name": "Isuzu",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/isuzu.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 178,
+    "fields": {
+        "name": "JAC",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jac.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 179,
+    "fields": {
+        "name": "Jaguar",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jaguar.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 180,
+    "fields": {
+        "name": "Iveco",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/iveco.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 181,
+    "fields": {
+        "name": "Jawa",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jawa.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 182,
+    "fields": {
+        "name": "JBA Motors",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jba-motors.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 183,
+    "fields": {
+        "name": "Jeep",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jeep.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 184,
+    "fields": {
+        "name": "Jetta",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jetta.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 185,
+    "fields": {
+        "name": "Jensen",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jensen.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 186,
+    "fields": {
+        "name": "JMC",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/jmc.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 187,
+    "fields": {
+        "name": "Kaiser",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/kaiser.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 188,
+    "fields": {
+        "name": "Kamaz",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/kamaz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 189,
+    "fields": {
+        "name": "Karma",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/karma.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 190,
+    "fields": {
+        "name": "Karlmann King",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/karlmann-king.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 191,
+    "fields": {
+        "name": "Keating",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/keating.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 192,
+    "fields": {
+        "name": "Kenworth",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/kenworth.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 193,
+    "fields": {
+        "name": "King Long",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/king-long.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 194,
+    "fields": {
+        "name": "Kia",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/kia.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 195,
+    "fields": {
+        "name": "Koenigsegg",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/koenigsegg.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 196,
+    "fields": {
+        "name": "KTM",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ktm.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 197,
+    "fields": {
+        "name": "Lada",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lada.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 198,
+    "fields": {
+        "name": "Lagonda",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lagonda.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 199,
+    "fields": {
+        "name": "Lamborghini",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lamborghini.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 200,
+    "fields": {
+        "name": "Lancia",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lancia.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 201,
+    "fields": {
+        "name": "Land Rover",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/land-rover.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 202,
+    "fields": {
+        "name": "Landwind",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/landwind.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 203,
+    "fields": {
+        "name": "Laraki",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/laraki.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 204,
+    "fields": {
+        "name": "Lexus",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lexus.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 205,
+    "fields": {
+        "name": "Li Auto",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/li-auto.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 206,
+    "fields": {
+        "name": "Leyland",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/leyland.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 207,
+    "fields": {
+        "name": "Lifan",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lifan.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 208,
+    "fields": {
+        "name": "Ligier",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ligier.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 209,
+    "fields": {
+        "name": "Lincoln",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lincoln.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 210,
+    "fields": {
+        "name": "Lister",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lister.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 211,
+    "fields": {
+        "name": "Lloyd",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lloyd.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 212,
+    "fields": {
+        "name": "Lobini",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lobini.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 213,
+    "fields": {
+        "name": "LEVC",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/levc.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 214,
+    "fields": {
+        "name": "Lordstown",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lordstown.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 215,
+    "fields": {
+        "name": "Lucid",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lucid.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 216,
+    "fields": {
+        "name": "Luxgen",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/luxgen.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 217,
+    "fields": {
+        "name": "Lotus",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lotus.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 218,
+    "fields": {
+        "name": "Lynk & Co",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/lynk-and-co.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 219,
+    "fields": {
+        "name": "Mack",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mack.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 220,
+    "fields": {
+        "name": "Mahindra",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mahindra.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 221,
+    "fields": {
+        "name": "Mansory",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mansory.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 222,
+    "fields": {
+        "name": "MAN",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/man.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 223,
+    "fields": {
+        "name": "Marcos",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/marcos.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 224,
+    "fields": {
+        "name": "Marlin",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/marlin.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 225,
+    "fields": {
+        "name": "Maserati",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/maserati.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 226,
+    "fields": {
+        "name": "Mastretta",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mastretta.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 227,
+    "fields": {
+        "name": "Maxus",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/maxus.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 228,
+    "fields": {
+        "name": "Maybach",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/maybach.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 229,
+    "fields": {
+        "name": "MAZ",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/maz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 230,
+    "fields": {
+        "name": "Mazda",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mazda.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 231,
+    "fields": {
+        "name": "McLaren",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mclaren.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 232,
+    "fields": {
+        "name": "Melkus",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/melkus.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 233,
+    "fields": {
+        "name": "Mercedes-AMG",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mercedes-amg.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 234,
+    "fields": {
+        "name": "Mazzanti",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mazzanti.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 235,
+    "fields": {
+        "name": "Mercedes-Benz",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mercedes-benz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 236,
+    "fields": {
+        "name": "Mercury",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mercury.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 237,
+    "fields": {
+        "name": "MEV",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mev.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 238,
+    "fields": {
+        "name": "Merkur",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/merkur.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 239,
+    "fields": {
+        "name": "MG",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mg.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 240,
+    "fields": {
+        "name": "Microcar",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/microcar.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 241,
+    "fields": {
+        "name": "Mini",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mini.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 242,
+    "fields": {
+        "name": "Mitsubishi",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mitsubishi.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 243,
+    "fields": {
+        "name": "Mitsuoka",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mitsuoka.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 244,
+    "fields": {
+        "name": "MK",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mk.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 245,
+    "fields": {
+        "name": "Morgan",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/morgan.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 246,
+    "fields": {
+        "name": "Morris",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/morris.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 247,
+    "fields": {
+        "name": "Mosler",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/mosler.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 248,
+    "fields": {
+        "name": "Navistar",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/navistar.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 249,
+    "fields": {
+        "name": "NEVS",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/nevs.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 250,
+    "fields": {
+        "name": "NIO",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/nio.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 251,
+    "fields": {
+        "name": "Nikola",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/nikola.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 252,
+    "fields": {
+        "name": "Nissan Nismo",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/nissan-nismo.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 253,
+    "fields": {
+        "name": "Nissan",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/nissan.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 254,
+    "fields": {
+        "name": "Nissan GT-R",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/nissan-gt-r.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 255,
+    "fields": {
+        "name": "Oldsmobile",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/oldsmobile.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 256,
+    "fields": {
+        "name": "Oltcit",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/oltcit.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 257,
+    "fields": {
+        "name": "Noble",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/noble.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 258,
+    "fields": {
+        "name": "OSCA",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/osca.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 259,
+    "fields": {
+        "name": "Opel",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/opel.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 260,
+    "fields": {
+        "name": "Paccar",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/paccar.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 261,
+    "fields": {
+        "name": "Pagani",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/pagani.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 262,
+    "fields": {
+        "name": "Panhard",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/panhard.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 263,
+    "fields": {
+        "name": "Panoz",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/panoz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 264,
+    "fields": {
+        "name": "Packard",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/packard.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 265,
+    "fields": {
+        "name": "Pegaso",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/pegaso.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 266,
+    "fields": {
+        "name": "Perodua",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/perodua.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 267,
+    "fields": {
+        "name": "Peterbilt",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/peterbilt.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 268,
+    "fields": {
+        "name": "Peugeot",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/peugeot.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 269,
+    "fields": {
+        "name": "PGO",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/pgo.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 270,
+    "fields": {
+        "name": "Pierce-Arrow",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/pierce-arrow.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 271,
+    "fields": {
+        "name": "Pininfarina",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/pininfarina.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 272,
+    "fields": {
+        "name": "Polestar",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/polestar.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 273,
+    "fields": {
+        "name": "Plymouth",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/plymouth.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 274,
+    "fields": {
+        "name": "Pontiac",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/pontiac.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 275,
+    "fields": {
+        "name": "Porsche",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/porsche.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 276,
+    "fields": {
+        "name": "Premier",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/premier.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 277,
+    "fields": {
+        "name": "Praga",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/praga.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 278,
+    "fields": {
+        "name": "Prodrive",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/prodrive.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 279,
+    "fields": {
+        "name": "Proton",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/proton.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 280,
+    "fields": {
+        "name": "Qoros",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/qoros.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 281,
+    "fields": {
+        "name": "Radical",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/radical.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 282,
+    "fields": {
+        "name": "RAM",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ram.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 283,
+    "fields": {
+        "name": "Rambler",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rambler.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 284,
+    "fields": {
+        "name": "Ranz",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ranz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 285,
+    "fields": {
+        "name": "Renault",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/renault.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 286,
+    "fields": {
+        "name": "Renault Samsung",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/renault-samsung.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 287,
+    "fields": {
+        "name": "Rezvani",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rezvani.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 288,
+    "fields": {
+        "name": "Riley",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/riley.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 289,
+    "fields": {
+        "name": "Rimac",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rimac.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 290,
+    "fields": {
+        "name": "Rinspeed",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rinspeed.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 291,
+    "fields": {
+        "name": "Rivian",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rivian.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 292,
+    "fields": {
+        "name": "Rolls-Royce",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rolls-royce.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 293,
+    "fields": {
+        "name": "Roewe",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/roewe.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 294,
+    "fields": {
+        "name": "Ronart",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ronart.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 295,
+    "fields": {
+        "name": "Rossion",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rossion.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 296,
+    "fields": {
+        "name": "Rover",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/rover.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 297,
+    "fields": {
+        "name": "RUF",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ruf.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 298,
+    "fields": {
+        "name": "Saab",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/saab.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 299,
+    "fields": {
+        "name": "Saipa",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/saipa.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 300,
+    "fields": {
+        "name": "SAIC Motor",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/saic-motor.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 301,
+    "fields": {
+        "name": "Saleen",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/saleen.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 302,
+    "fields": {
+        "name": "Saturn",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/saturn.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 303,
+    "fields": {
+        "name": "Scania",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/scania.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 304,
+    "fields": {
+        "name": "Scion",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/scion.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 305,
+    "fields": {
+        "name": "SEAT",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/seat.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 306,
+    "fields": {
+        "name": "Setra",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/setra.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 307,
+    "fields": {
+        "name": "Shacman",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/shacman.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 308,
+    "fields": {
+        "name": "Simca",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/simca.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 309,
+    "fields": {
+        "name": "Singer",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/singer.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 310,
+    "fields": {
+        "name": "Singulato",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/singulato.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 311,
+    "fields": {
+        "name": "Sisu",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/sisu.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 312,
+    "fields": {
+        "name": "Sinotruk",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/sinotruk.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 313,
+    "fields": {
+        "name": "\u00c5\u00a0koda",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/skoda.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 314,
+    "fields": {
+        "name": "Smart",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/smart.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 315,
+    "fields": {
+        "name": "Soueast",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/soueast.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 316,
+    "fields": {
+        "name": "Spania GTA",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/spania-gta.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 317,
+    "fields": {
+        "name": "Spirra",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/spirra.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 318,
+    "fields": {
+        "name": "Spyker",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/spyker.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 319,
+    "fields": {
+        "name": "SsangYong",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ssangyong.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 320,
+    "fields": {
+        "name": "Sterling",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/sterling.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 321,
+    "fields": {
+        "name": "SSC",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ssc.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 322,
+    "fields": {
+        "name": "Studebaker",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/studebaker.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 323,
+    "fields": {
+        "name": "Subaru",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/subaru.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 324,
+    "fields": {
+        "name": "Suzuki",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/suzuki.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 325,
+    "fields": {
+        "name": "Suffolk",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/suffolk.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 326,
+    "fields": {
+        "name": "Stutz",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/stutz.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 327,
+    "fields": {
+        "name": "Talbot",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/talbot.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 328,
+    "fields": {
+        "name": "Tata",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/tata.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 329,
+    "fields": {
+        "name": "Tesla",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/tesla.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 330,
+    "fields": {
+        "name": "Tatra",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/tatra.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 331,
+    "fields": {
+        "name": "TechArt",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/techart.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 332,
+    "fields": {
+        "name": "Toyota Alphard",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/toyota-alphard.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 333,
+    "fields": {
+        "name": "Toyota",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/toyota.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 334,
+    "fields": {
+        "name": "Toyota Crown",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/toyota-crown.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 335,
+    "fields": {
+        "name": "Tramontana",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/tramontana.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 336,
+    "fields": {
+        "name": "Toyota Century",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/toyota-century.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 337,
+    "fields": {
+        "name": "Trion",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/trion.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 338,
+    "fields": {
+        "name": "Troller",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/troller.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 339,
+    "fields": {
+        "name": "Triumph",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/triumph.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 340,
+    "fields": {
+        "name": "TVR",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/tvr.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 341,
+    "fields": {
+        "name": "UAZ",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/uaz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 342,
+    "fields": {
+        "name": "Tucker",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/tucker.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 343,
+    "fields": {
+        "name": "Ultima",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ultima.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 344,
+    "fields": {
+        "name": "UD",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ud.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 345,
+    "fields": {
+        "name": "Vandenbrink",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/vandenbrink.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 346,
+    "fields": {
+        "name": "Vauxhall",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/vauxhall.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 347,
+    "fields": {
+        "name": "Vector",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/vector.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 348,
+    "fields": {
+        "name": "Venturi",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/venturi.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 349,
+    "fields": {
+        "name": "Vencer",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/vencer.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 350,
+    "fields": {
+        "name": "Venucia",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/venucia.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 351,
+    "fields": {
+        "name": "Volkswagen",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/volkswagen.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 352,
+    "fields": {
+        "name": "VinFast",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/vinfast.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 353,
+    "fields": {
+        "name": "Volvo",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/volvo.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 354,
+    "fields": {
+        "name": "Wanderer",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/wanderer.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 355,
+    "fields": {
+        "name": "W Motors",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/w-motors.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 356,
+    "fields": {
+        "name": "Wartburg",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/wartburg.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 357,
+    "fields": {
+        "name": "Weltmeister",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/weltmeister.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 358,
+    "fields": {
+        "name": "WEY",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/wey.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 359,
+    "fields": {
+        "name": "Western Star",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/western-star.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 360,
+    "fields": {
+        "name": "Westfield",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/westfield.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 361,
+    "fields": {
+        "name": "Willys-Overland",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/willys-overland.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 362,
+    "fields": {
+        "name": "Wiesmann",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/wiesmann.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 363,
+    "fields": {
+        "name": "Workhorse",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/workhorse.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 364,
+    "fields": {
+        "name": "XPeng",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/xpeng.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 365,
+    "fields": {
+        "name": "Wuling",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/wuling.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 366,
+    "fields": {
+        "name": "Yulon",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/yulon.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 367,
+    "fields": {
+        "name": "Zastava",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zastava.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 368,
+    "fields": {
+        "name": "Yutong",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/yutong.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 369,
+    "fields": {
+        "name": "ZAZ",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zaz.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 370,
+    "fields": {
+        "name": "Zenos",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zenos.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 371,
+    "fields": {
+        "name": "Zhongtong",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zhongtong.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 372,
+    "fields": {
+        "name": "Zenvo",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zenvo.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 373,
+    "fields": {
+        "name": "Zotye",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zotye.jpg"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 374,
+    "fields": {
+        "name": "Zinoro",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zinoro.png"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 375,
+    "fields": {
+        "name": "Zinoro",
+        "image_url": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/zinoro.png"
     }
 },
 {
@@ -7406,6 +10472,102 @@
     }
 },
 {
+    "model": "championships.championship",
+    "pk": 5,
+    "fields": {
+        "name": "OSV memorijal Kre\u0161o Merli\u0107",
+        "description": null,
+        "location": "Brezovica",
+        "image": "champtionships/images/Merla-1.jpg",
+        "start_date": "2021-07-10",
+        "end_date": "2021-07-10",
+        "city": 1,
+        "organizer": 4,
+        "category": 4,
+        "albums": []
+    }
+},
+{
+    "model": "championships.championship",
+    "pk": 6,
+    "fields": {
+        "name": "OSV memorijal Kre\u0161o Merli\u0107",
+        "description": null,
+        "location": "Brezovica",
+        "image": "champtionships/images/Merla-1_mPVD8v2.jpg",
+        "start_date": "2021-07-10",
+        "end_date": "2021-07-10",
+        "city": 1,
+        "organizer": 4,
+        "category": 4,
+        "albums": []
+    }
+},
+{
+    "model": "championships.championship",
+    "pk": 7,
+    "fields": {
+        "name": "Croatia Drifr Challenge",
+        "description": null,
+        "location": "Mi\u010devec",
+        "image": "champtionships/images/CDC_zagreb.jpg",
+        "start_date": "2018-09-15",
+        "end_date": "2018-09-16",
+        "city": 9,
+        "organizer": 5,
+        "category": 3,
+        "albums": []
+    }
+},
+{
+    "model": "championships.championship",
+    "pk": 8,
+    "fields": {
+        "name": "Night Strike",
+        "description": null,
+        "location": "Kr\u0161ko (SLO)",
+        "image": "champtionships/images/Adria_Drift_KRSKO.jpg",
+        "start_date": "2018-10-06",
+        "end_date": "2018-10-06",
+        "city": 475,
+        "organizer": 6,
+        "category": 3,
+        "albums": []
+    }
+},
+{
+    "model": "championships.championship",
+    "pk": 9,
+    "fields": {
+        "name": "OSV Dubrovik 2021",
+        "description": null,
+        "location": "Luka Dubrovnik",
+        "image": "champtionships/images/OSV_dubrovnik.jpg",
+        "start_date": "2012-05-29",
+        "end_date": "2012-05-30",
+        "city": 510,
+        "organizer": 7,
+        "category": 4,
+        "albums": []
+    }
+},
+{
+    "model": "championships.championship",
+    "pk": 10,
+    "fields": {
+        "name": "OSV Dubrovik 2021",
+        "description": null,
+        "location": "Luka Dubrovnik",
+        "image": "champtionships/images/OSV_dubrovnik_VxfBoaY.jpg",
+        "start_date": "2021-05-29",
+        "end_date": "2021-05-30",
+        "city": 510,
+        "organizer": 7,
+        "category": 3,
+        "albums": []
+    }
+},
+{
     "model": "championships.category",
     "pk": 1,
     "fields": {
@@ -7431,6 +10593,13 @@
     "pk": 4,
     "fields": {
         "name": 4
+    }
+},
+{
+    "model": "championships.category",
+    "pk": 5,
+    "fields": {
+        "name": 5
     }
 },
 {
@@ -7704,6 +10873,34 @@
     "pk": 3,
     "fields": {
         "name": "AK Opatija Motosport"
+    }
+},
+{
+    "model": "championships.organizer",
+    "pk": 4,
+    "fields": {
+        "name": "AK Dugo Selo"
+    }
+},
+{
+    "model": "championships.organizer",
+    "pk": 5,
+    "fields": {
+        "name": "CDC Zegreb"
+    }
+},
+{
+    "model": "championships.organizer",
+    "pk": 6,
+    "fields": {
+        "name": "Adria Drift Series"
+    }
+},
+{
+    "model": "championships.organizer",
+    "pk": 7,
+    "fields": {
+        "name": "Durovnik Racin Team"
     }
 },
 {
@@ -13998,6 +17195,24 @@
         "object_repr": "DriverSubCategoryPosition object (2)",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Championship\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2021-07-13T22:43:49.165Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "championships",
+            "category"
+        ],
+        "object_id": "5",
+        "object_repr": "OSV",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
     }
 }
 ]

@@ -1,4 +1,5 @@
 from django.urls import path
+from django.views.generic import RedirectView
 from . import views
 
 app_name = "championships"
@@ -16,4 +17,7 @@ urlpatterns = [
     ), name="results-list"),
     path("detail/<int:pk>/results/create/",  views.DriverSubCategoryPositionCreateView.as_view(), name="results-create"),
     path("detail/<int:championship_pk>/results/update/<int:pk>/",  views.DriverSubCategoryPositionUpdateView.as_view(), name="results-update"),
+
+    # Gallery
+    path("detail/<int:championship_pk>/gallery/create/",  RedirectView.as_view(pattern_name="gallery:create"), name="gallery-create"),
 ]

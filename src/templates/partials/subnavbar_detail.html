@@ -8,14 +8,16 @@
         </button>
         <div class="navbar-collapse collapse w-100 order-3 subnavbar">
             <ul class="navbar-nav ml-auto">
+                {% if object.gallery %}
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <i class="fas fa-photo-video"></i>
                         <span>Galerija</span>
                     </a>
-                </li>            
+                </li>
+                {% endif %}
                 {% if object_name == "vozača" %}
-                            
+                
                 {% elif object_name == "automobil" and not update_url %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'drivers:detail' object.driver.pk %}">
@@ -64,6 +66,21 @@
                         <span>Uredi prvenstvo</span>
                     </a>
                 </li>
+                {% if object.gallery %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-photo-video"></i>
+                        <span>Galerija</span>
+                    </a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link txt-success" href="{% url 'championships:gallery-create' update_params %}">
+                        <i class="fas fa-plus"></i>
+                        <span>Novi album</span>
+                    </a>
+                </li>
+                {% endif %}
                 <li class="nav-item">
                     <a class="nav-link txt-success" href="{% url 'championships:results-create' update_params %}">
                         <i class="fas fa-pen"></i>

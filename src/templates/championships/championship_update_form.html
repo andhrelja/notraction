@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<script src="{% static 'js/toggleCities.js' %}"></script>
+<script src="{% static 'js/toggleCities.js' %}">setup_initial();</script>
 <script>
 toggleActive("championships");
 
@@ -32,6 +32,7 @@ fetch("{% static 'input_data/events_county.json' %}")
     .then(() => fetch("{% static 'input_data/events_city.json' %}")
         .then((city_data) => city_data.json())
         .then((json_data) => cities = json_data));
+
 
 </script>
 
