@@ -41,6 +41,14 @@
                         <span>Rezultati</span>
                     </a>
                 </li>
+                {% if object.albums %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'championships:gallery-list' update_params %}">
+                        <i class="fas fa-photo-video"></i>
+                        <span>Galerija</span>
+                    </a>
+                </li>
+                {% endif %}
                 {% elif object_name == "rezultat" %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'championships:detail' object.id %}">
