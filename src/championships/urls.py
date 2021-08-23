@@ -20,4 +20,5 @@ urlpatterns = [
 
     # Gallery
     path("detail/<int:championship_pk>/gallery/create/",  RedirectView.as_view(pattern_name="gallery:create"), name="gallery-create"),
+    path("detail/<int:championship_pk>/gallery/",         RedirectView.as_view(pattern_name="gallery:list"), name="gallery-list"),
 ]

@@ -14,7 +14,7 @@
                 {% csrf_token %}
                 {% include 'partials/form_snippet.html' %}
                 <input type="submit" class="btn btn-secondary" value="Spremi album">
-                <a href="{% url 'gallery:list' %}" class="btn btn-outline-danger">Odustani</a>
+                <a href="{% url 'championships:detail' championship.pk %}" class="btn btn-outline-danger">Odustani</a>
             </form>
         </div>
     </div>

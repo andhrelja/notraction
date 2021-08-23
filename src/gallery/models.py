@@ -2,8 +2,6 @@ from django.db import models
 from django.urls import reverse
 import os
 
-from championships.models import Championship
-
 def get_upload_path(image_instance, filename):
     return os.path.join('gallery', 'images', filename)
 

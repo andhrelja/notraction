@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+{% include 'messages.html' %}
+
+<div class="container p-3">
+    <div class="card m-auto border-secondary mb-3">
+        <div class="card-header bg-primary p-3">
+            <h2 class="h2 text-light mb-0"><strong>Uredi album</strong></h2>
+        </div>
+        <div class="card-body p-5">
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% include 'partials/form_snippet.html' %}
+
+                <label for="delete-images">
+                    Izbriši slike
+                </label>
+                <div class="row" id="delete-images">
+                    {% for image in object.images.all %}
+                    <div class="col-md-3">
+                        <div class="custom-control custom-checkbox image-checkbox">
+                            <input type="checkbox" name="delete_images" class="custom-control-input" id="image-{{ image.id }}" value="{{ image.id }}">
+                            <label class="custom-control-label" for="image-{{ image.id }}">
+                                <img src="{{ image.image.url }}" alt="{{ image.alt }}" class="img-thumbnail" />
+                            </label>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <input type="submit" class="btn btn-secondary" value="Spremi album">
+                <a href="{% url 'gallery:detail' object.id %}" class="btn btn-outline-danger">Odustani</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}
+

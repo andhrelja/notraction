@@ -23,14 +23,14 @@
                 <li class="nav-item">
                     <a class="nav-link txt-success" href="{% url create_url url_params %}">
                         <i class="fas fa-calendar-plus"></i>
-                        <span>Novo {{ object_name }}</span>
+                        <span>Novi {{ object_name }}</span>
                     </a>
                 </li>
                 {% elif user.is_authenticated and create_url and not url_params %}
                 <li class="nav-item">
                     <a class="nav-link txt-success" href="{% url create_url %}">
                         <i class="fas fa-calendar-plus"></i>
-                        <span>Novo {{ object_name }}</span>
+                        <span>Novi {{ object_name }}</span>
                     </a>
                 </li>
                 {% elif user.is_authenticated and not create_url and not url_params %}

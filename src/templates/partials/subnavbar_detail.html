@@ -60,15 +60,9 @@
                 {% comment %}
                 {% endcomment %}
                 {% elif object_name == "prvenstvo" %}
+                {% if object.albums %}
                 <li class="nav-item">
-                    <a class="nav-link text-primary" href="{% url update_url update_params %}">
-                        <i class="fas fa-pen"></i>
-                        <span>Uredi prvenstvo</span>
-                    </a>
-                </li>
-                {% if object.gallery %}
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{% url 'championships:gallery-list' update_params %}">
                         <i class="fas fa-photo-video"></i>
                         <span>Galerija</span>
                     </a>
@@ -81,6 +75,12 @@
                     </a>
                 </li>
                 {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="{% url update_url update_params %}">
+                        <i class="fas fa-pen"></i>
+                        <span>Uredi prvenstvo</span>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link txt-success" href="{% url 'championships:results-create' update_params %}">
                         <i class="fas fa-pen"></i>
