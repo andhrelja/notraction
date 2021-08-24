@@ -40,9 +40,9 @@ class Image(models.Model):
     # General
     image   = models.ImageField("Slika", upload_to=get_upload_path, height_field=None, width_field=None, max_length=None)
     alt     = models.CharField("Naziv", max_length=50)
+    drivers = models.ManyToManyField("drivers.Driver", verbose_name="Vozači na slici")
 
     class Meta:
-        # app_label = str()
         verbose_name = "Slika"
         verbose_name_plural = "Slike"
 

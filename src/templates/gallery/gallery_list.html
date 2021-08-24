@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load championship_extras %}
 
 {% block body %}
 
@@ -23,7 +23,7 @@
                         <div class="col-lg-3">
                             <div class="card mb-3">
                                 <div class="card-body p-0">
-                                    <a onclick="toggleCarousel('image-{{ image.id }}', '{{ object.id }}')" style="cursor:pointer">
+                                    <a onclick="toggleCarousel('image-{{ image.id }}')" style="cursor:pointer">
                                         <img src="{{ image.image.url }}" alt="{{ image.alt }}" class="img-thumbnail" />
                                     </a>
                                 </div>
@@ -38,33 +38,78 @@
 </div>
 
 <div class="container-fluid px-0">
-    <div id="galleryCarousel-{{ object.id }}" class="carousel slide" data-interval="false">
-        <div>
-            <button id="galleryCarouselCloseButton-{{ object.id }}" type="button" class="close text-light" onclick="toggleCarousel(null, '{{ object.id }}')" style="z-index: 11000;position: absolute;top: 1vh;right: 3vw;font-size: 24pt;">
-                &times;
-            </button>
-        </div>
-        <div id="galleryCarouselWrapper" class="carousel-inner bg-primary" role="listbox">
+    <div id="galleryCarousel-{{ object.id }}" class="carousel slide galleryCarousel" data-interval="false" style="position:fixed; top:0; left:0; z-index:10000; min-width:100vw; min-height : 100vh;" hidden>
+        <div id="" class="carousel-inner bg-primary galleryCarouselWrapper" role="listbox">
             {% for image in object.images.all %}
-            <div id="image-{{ image.id }}" class="carousel-item">
+            <div class="carousel-caption d-none d-sm-block w-100" style="position: absolute; top: 1vh; left:0; padding-top:5px; z-index: 30">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h5 class="ml-4 mt-2">{{ object.championship }}</h5>
+                    </div>
+                    <div class="col-sm-5 text-right">
+                        <a class="btn btn-outline-secondary" href="#">
+                            <i class="fas fa-pen"></i>
+                            <span>Uredi vozače na slici</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <button type="button" class="close text-light mr-5 p-2" onclick="toggleCarousel()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="image-{{ image.id }}" class="carousel-item" style="margin-top: 40px">
                 <div class="d-flex align-items-center justify-content-center min-vh-100">
-                    <img src="{{ image.image.url }}" alt="{{ image.alt }}" style="max-height: 100vh; max-width: 100vh; padding:60px 0px 140px 0px" />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>{{ image.alt }}</h5>
-                        <p>{{ object.championship }}</p>
+                    <img src="{{ image.image.url }}" alt="{{ image.alt }}" style="max-height: 100vh; max-width: 100%; width: auto; height: auto; padding:60px 0px 140px 0px" />
+                    <div class="carousel-caption d-none d-sm-block w-100" style="position: absolute; bottom: 1vh; left:0; right: 0; z-index: 30">
+                        <div class="row mb-2">
+                            <div class="col-sm-11 text-left">
+                                {% for driver in object.drivers %}
+                                <ul class="list-group list-group-numbered">
+                                    {% for driversubcategoryposition in driver|driver_positions:object.championship %}
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">{{ driver.get_full_name }}</div>
+                                            {{ driversubcategoryposition.subcategory }}
+                                        </div>
+                                        <span class="badge bg-primary rounded-pill">{{ driversubcategoryposition.position }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endfor %}
+                            </div>
+                            
+                            <div class="col-sm-1 text-right">
+                                <p class="mr-5 p-2">{{ forloop.counter }}/{{ object.images.count }}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#galleryCarousel-{{ object.id }}" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#galleryCarousel-{{ object.id }}" role="button" data-slide="prev" style="z-index: 30; margin-top: 45px">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#galleryCarousel-{{ object.id }}" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#galleryCarousel-{{ object.id }}" role="button" data-slide="next" style="z-index: 30; margin-top: 45px">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
+</div>
+
+{% empty %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card m-2">
+                <div class="card-body">
+                    <h3 class="h3 card-title mb-0">Galerija još ne postoji</h3>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endfor %}
@@ -77,33 +122,41 @@ window.onkeydown = function(event) {
         toggleCarousel();
 }
 
-function toggleCarousel(image_id, carouselId) {
-    let galleryCarousel = document.getElementById('galleryCarousel-' + carouselId);
-    let galleryCarouselCloseButton = document.getElementById('galleryCarouselCloseButton-' + carouselId);
-    let galleryCarouselWrapper = document.getElementById("galleryCarouselWrapper");
+function toggleCarousel(image_id) {
+    let galleryCarousels = document.getElementsByClassName('galleryCarousel');
+    let galleryCarouselCloseButton = document.getElementById('galleryCarouselCloseButton');
+    let galleryCarouselWrappers = document.getElementsByClassName("galleryCarouselWrapper");
     
-    for (let carouselImage of galleryCarouselWrapper.children) {
-        carouselImage.classList.remove('active');    
+    for (let galleryCarouselWrapper of galleryCarouselWrappers) {
+        for (let carouselImage of galleryCarouselWrapper.children) {
+            carouselImage.classList.remove('active');    
+        }
     }
 
-    console.log(image_id)
     if (image_id != null){        
         let carouselImage = document.getElementById(image_id);
         carouselImage.classList.add('active');
         
-        galleryCarousel.style.position = "fixed";
-        galleryCarousel.style.top = "0";
-        galleryCarousel.style.left = "0";
-        galleryCarousel.style.zIndex = "10000";
-        galleryCarousel.style.minWidth = "100vw";
-        galleryCarousel.style.minHeight = "100vh";
-
-        galleryCarousel.hidden = false;
-        galleryCarouselCloseButton.hidden = false;
+        for (let galleryCarousel of galleryCarousels) {
+            for (let child of galleryCarousel.children) {
+                if (child.classList.contains('galleryCarouselWrapper')) {
+                    for (let carouselImage of child.children) {
+                        if (carouselImage.id == image_id) {
+                            galleryCarousel.hidden = false;
+                            galleryCarouselCloseButton.hidden = false;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+        }
     }
     else {
-        galleryCarousel.hidden = true;
-        galleryCarouselCloseButton.hidden = true;
+        for (let galleryCarousel of galleryCarousels) {
+            galleryCarousel.hidden = true;
+            galleryCarouselCloseButton.hidden = true;
+        }
     }
 }
 

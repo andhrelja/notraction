@@ -2,6 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
 from django.shortcuts import redirect
+from django.urls import reverse
 from django.views.generic import (
     ListView,
     DetailView,
@@ -100,5 +101,12 @@ class GalleryUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
 
 class GalleryDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     model = Gallery
-    success_message = "Galerija uspješno izbrisana"
-    success_url = "/galleries/"
+    success_message = "Album uspješno izbrisan"
+
+    def post(self, request, *args, **kwargs):
+        self.championship_pk = request.POST.get('championship_pk')
+        messages.success(request, self.success_message)
+        return super().post(request, *args, **kwargs)
+    
+    def get_success_url(self):
+        return reverse('gallery:list', args=(self.championship_pk))

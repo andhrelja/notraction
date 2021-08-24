@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% include 'messages.html' %}
+
+<div class="container p-3">
+    <div class="card m-auto border-secondary mb-3">
+        <div class="card-header bg-primary p-3">
+            <h2 class="h2 text-light mb-0"><strong>Brisanje albuma</strong></h2>
+        </div>
+        <div class="card-body p-5">
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% include 'partials/form_snippet.html' %}
+                <h4 class="h4">Jeste li sigurni da želite izbrisati album "<b>{{ object }}</b>" prvenstva "<b>{{ object.championship }}</b>"?</h4>
+                <div class="text-center">
+                    <input type="hidden" name="championship_pk" value="{{ object.championship.pk }}">
+                    <input type="submit" class="btn btn-secondary" value="Da">
+                    <a href="{% url 'gallery:detail' object.pk %}" class="btn btn-outline-danger">Ne</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+toggleActive("championships");
+</script>
+
+{% endblock body %}

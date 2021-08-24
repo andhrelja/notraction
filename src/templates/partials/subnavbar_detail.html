@@ -8,14 +8,17 @@
         </button>
         <div class="navbar-collapse collapse w-100 order-3 subnavbar">
             <ul class="navbar-nav ml-auto">
+                {% if object_name == "album" %}
                 {% if object.gallery %}
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-photo-video"></i>
-                        <span>Galerija</span>
-                    </a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-photo-video"></i>
+                            <span>Galerija</span>
+                        </a>
+                    </li>
                 {% endif %}
+                {% endif %}
+                
                 {% if object_name == "vozača" %}
                 
                 {% elif object_name == "automobil" and not update_url %}
@@ -67,22 +70,20 @@
                 {% if object_name == "rezultat" %}
                 {% comment %}
                 {% endcomment %}
+                {% elif object_name == "album" %}
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="{% url update_url url_params %}">
+                        <i class="fas fa-pen"></i>
+                        <span>Uredi album</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="{% url delete_url url_params %}">
+                        <i class="fas fa-trash"></i>
+                        <span>Izbriši album</span>
+                    </a>
+                </li>
                 {% elif object_name == "prvenstvo" %}
-                {% if object.albums %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'championships:gallery-list' update_params %}">
-                        <i class="fas fa-photo-video"></i>
-                        <span>Galerija</span>
-                    </a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link txt-success" href="{% url 'championships:gallery-create' update_params %}">
-                        <i class="fas fa-plus"></i>
-                        <span>Novi album</span>
-                    </a>
-                </li>
-                {% endif %}
                 <li class="nav-item">
                     <a class="nav-link text-primary" href="{% url update_url update_params %}">
                         <i class="fas fa-pen"></i>
